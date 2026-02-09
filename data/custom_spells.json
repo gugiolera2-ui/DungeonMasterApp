@@ -1,0 +1,6009 @@
+[
+  // ... (i 65 incantesimi precedenti qui sopra)
+
+  // ================== LIVELLO 0 (TRUCCHETTI) ==================
+  {
+    "id": "accensione",
+    "name": "Accensione",
+    "school": "Transmutation",
+    "levels": {
+      "sorcerer/wizard": 0,
+      "druid": 0
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S"],
+    "range": "Touch",
+    "target": "Oggetto nonmagico infiammabile",
+    "duration": "Instantaneous",
+    "saving_throw": "None",
+    "spell_resistance": false,
+    "description": "Fai prendere fuoco a un oggetto infiammabile. Puoi accendere una candela, una torcia o un piccolo falò.",
+    "short_description": "Accendi oggetti infiammabili.",
+    "effects": [
+      {
+        "effect_type": "utility",
+        "value": "ignite",
+        "duration": "Instantaneous"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "amica",
+    "name": "Amica",
+    "school": "Enchantment",
+    "subschool": "Charm",
+    "descriptors": ["Mind-Affecting"],
+    "levels": {
+      "bard": 0,
+      "sorcerer/wizard": 0
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S"],
+    "range": "Close (25 ft. + 5 ft./2 levels)",
+    "target": "Una creatura",
+    "duration": "1 min. or less",
+    "saving_throw": "Will negates",
+    "spell_resistance": true,
+    "description": "Rendi una creatura amichevole verso di te per 1 minuto o fino a quando non la attacchi o la minacci.",
+    "short_description": "Rendi una creatura amichevole per 1 minuto.",
+    "effects": [
+      {
+        "effect_type": "condition",
+        "value": "friendly",
+        "duration": "1 min.",
+        "applies_to": "enemy"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "cura_ferite_minori",
+    "name": "Cura Ferite Minori",
+    "school": "Conjuration",
+    "subschool": "Healing",
+    "levels": {
+      "cleric": 0,
+      "druid": 0
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S"],
+    "range": "Touch",
+    "target": "Creatura toccata",
+    "duration": "Instantaneous",
+    "saving_throw": "Will half (harmless)",
+    "spell_resistance": true,
+    "description": "Cura 1 punto ferita a una creatura vivente.",
+    "short_description": "Cura 1 PF.",
+    "effects": [
+      {
+        "effect_type": "heal",
+        "value": "1",
+        "duration": "Instantaneous",
+        "applies_to": "ally"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "dardo_acido",
+    "name": "Dardo Acido",
+    "school": "Conjuration",
+    "subschool": "Creation",
+    "descriptors": ["Acid"],
+    "levels": {
+      "sorcerer/wizard": 0
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S"],
+    "range": "Close (25 ft. + 5 ft./2 levels)",
+    "effect": "Un dardo di acido",
+    "duration": "Instantaneous",
+    "saving_throw": "None",
+    "spell_resistance": false,
+    "description": "Lanci un dardo di acido che infligge 1d3 danni da acido. Colpisce automaticamente.",
+    "short_description": "1d3 danni da acido, colpo automatico.",
+    "effects": [
+      {
+        "effect_type": "damage",
+        "value": "1d3",
+        "value_type": "acid",
+        "duration": "Instantaneous",
+        "applies_to": "enemy"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "detectare_magia",
+    "name": "Detectare Magia",
+    "school": "Divination",
+    "levels": {
+      "bard": 0,
+      "cleric": 0,
+      "druid": 0,
+      "paladin": 1,
+      "ranger": 1,
+      "sorcerer/wizard": 0
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S"],
+    "range": "60 ft.",
+    "area_type": "cone",
+    "area_size": "Cone 60 ft.",
+    "duration": "Concentration, up to 1 min./level",
+    "saving_throw": "None",
+    "spell_resistance": false,
+    "description": "Riveli la presenza di magia. Puoi determinare la scuola di magia con concentrazione prolungata.",
+    "short_description": "Rivela presenza di magia e scuola.",
+    "effects": [
+      {
+        "effect_type": "utility",
+        "value": "detect_magic",
+        "duration": "Concentration"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "leggere_magia",
+    "name": "Leggere Magia",
+    "school": "Divination",
+    "levels": {
+      "bard": 0,
+      "cleric": 0,
+      "druid": 0,
+      "paladin": 1,
+      "ranger": 1,
+      "sorcerer/wizard": 0
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S", "F"],
+    "focus": "Una lente d'ingrandimento di cristallo",
+    "range": "Personal",
+    "target": "Te stesso",
+    "duration": "10 min./level",
+    "saving_throw": "None",
+    "spell_resistance": false,
+    "description": "Puoi leggere scritture magiche, pergamene e libri incantati.",
+    "short_description": "Permette di leggere scritture magiche.",
+    "effects": [
+      {
+        "effect_type": "utility",
+        "value": "read_magic",
+        "duration": "10 min./level"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "mano_spettrale",
+    "name": "Mano Spettrale",
+    "school": "Evocation",
+    "levels": {
+      "sorcerer/wizard": 0
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S"],
+    "range": "Close (25 ft. + 5 ft./2 levels)",
+    "target": "Un oggetto fino a 5 libbre",
+    "duration": "Concentration",
+    "saving_throw": "None",
+    "spell_resistance": false,
+    "description": "Puoi muovere oggetti leggeri a distanza. Puoi aprire porte non bloccate, tirare leve, etc.",
+    "short_description": "Muovi oggetti leggeri a distanza.",
+    "effects": [
+      {
+        "effect_type": "utility",
+        "value": "mage_hand",
+        "duration": "Concentration"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "messaggio",
+    "name": "Messaggio",
+    "school": "Transmutation",
+    "levels": {
+      "bard": 0,
+      "sorcerer/wizard": 0
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S", "F"],
+    "focus": "Un pezzo di rame filato",
+    "range": "Medium (100 ft. + 10 ft./level)",
+    "target": "Una creatura",
+    "duration": "10 min./level",
+    "saving_throw": "None",
+    "spell_resistance": false,
+    "description": "Puoi sussurrare messaggi e la creatura bersaglio può rispondere. Solo voi due potete sentire.",
+    "short_description": "Comunicazione sussurrata a distanza.",
+    "effects": [
+      {
+        "effect_type": "utility",
+        "value": "message",
+        "duration": "10 min./level"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "pulizia",
+    "name": "Pulizia",
+    "school": "Transmutation",
+    "levels": {
+      "sorcerer/wizard": 0
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S"],
+    "range": "Close (25 ft. + 5 ft./2 levels)",
+    "target": "1 oggetto cubo di 1 piede",
+    "duration": "Instantaneous",
+    "saving_throw": "None",
+    "spell_resistance": false,
+    "description": "Pulisci un oggetto da sporco, macchie, polvere o liquidi non magici.",
+    "short_description": "Pulisci un oggetto istantaneamente.",
+    "effects": [
+      {
+        "effect_type": "utility",
+        "value": "prestidigitation_clean",
+        "duration": "Instantaneous"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "raffreddamento",
+    "name": "Raffreddamento",
+    "school": "Evocation",
+    "descriptors": ["Cold"],
+    "levels": {
+      "sorcerer/wizard": 0
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S"],
+    "range": "Touch",
+    "target": "1 piede cubo di liquido o oggetto",
+    "duration": "Instantaneous",
+    "saving_throw": "None",
+    "spell_resistance": false,
+    "description": "Raffreddi un oggetto o liquido. Puoi raffreddare una bevanda o creare brina su una superficie.",
+    "short_description": "Raffredda oggetti o liquidi.",
+    "effects": [
+      {
+        "effect_type": "utility",
+        "value": "chill",
+        "duration": "Instantaneous"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "riparo",
+    "name": "Riparo",
+    "school": "Transmutation",
+    "levels": {
+      "sorcerer/wizard": 0
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S"],
+    "range": "Touch",
+    "target": "Oggetto rotto di 1 libbra o meno",
+    "duration": "Instantaneous",
+    "saving_throw": "Will negates (object)",
+    "spell_resistance": true,
+    "description": "Ripari un oggetto piccolo rotto. Non funziona su oggetti magici, cristallo o oggetti complessi.",
+    "short_description": "Ripara oggetti piccoli rotti.",
+    "effects": [
+      {
+        "effect_type": "utility",
+        "value": "mend",
+        "duration": "Instantaneous"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "scossa",
+    "name": "Scossa",
+    "school": "Evocation",
+    "descriptors": ["Electricity"],
+    "levels": {
+      "sorcerer/wizard": 0
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S"],
+    "range": "Touch",
+    "target": "Creatura o oggetto toccato",
+    "duration": "Instantaneous",
+    "saving_throw": "None",
+    "spell_resistance": true,
+    "description": "Infliggi 1d3 danni da elettricità a una creatura toccata. Se la creatura ha armatura metallica, ottieni +3 al tiro per colpire.",
+    "short_description": "1d3 danni elettrici al tocco.",
+    "effects": [
+      {
+        "effect_type": "damage",
+        "value": "1d3",
+        "value_type": "electricity",
+        "duration": "Instantaneous",
+        "applies_to": "enemy"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "soffio_gelido",
+    "name": "Soffio Gelido",
+    "school": "Evocation",
+    "descriptors": ["Cold"],
+    "levels": {
+      "sorcerer/wizard": 0
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S"],
+    "range": "Close (25 ft. + 5 ft./2 levels)",
+    "effect": "Ray",
+    "duration": "Instantaneous",
+    "saving_throw": "None",
+    "spell_resistance": true,
+    "description": "Un raggio di freddo intenso infligge 1d3 danni da freddo a un bersaglio entro portata.",
+    "short_description": "1d3 danni da freddo a distanza.",
+    "effects": [
+      {
+        "effect_type": "damage",
+        "value": "1d3",
+        "value_type": "cold",
+        "duration": "Instantaneous",
+        "applies_to": "enemy"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "suono_spettrale",
+    "name": "Suono Spettrale",
+    "school": "Illusion",
+    "subschool": "Figment",
+    "levels": {
+      "bard": 0,
+      "sorcerer/wizard": 0
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S", "M"],
+    "material_components": "Un pezzo di lana",
+    "range": "Close (25 ft. + 5 ft./2 levels)",
+    "effect": "Suoni illusori",
+    "duration": "1 round/level",
+    "saving_throw": "Will disbelief",
+    "spell_resistance": false,
+    "description": "Crea suoni illusori come passi, sussurri, o musica. I suoni possono muoversi lentamente.",
+    "short_description": "Crea suoni illusori.",
+    "effects": [
+      {
+        "effect_type": "utility",
+        "value": "ghost_sound",
+        "duration": "1 round/level"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "tocco_fatato",
+    "name": "Tocco Fatato",
+    "school": "Transmutation",
+    "levels": {
+      "bard": 0,
+      "sorcerer/wizard": 0
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S"],
+    "range": "Touch",
+    "target": "1 oggetto non tenuto o 1 creatura",
+    "duration": "Instantaneous",
+    "saving_throw": "Fortitude negates",
+    "spell_resistance": true,
+    "description": "Puoi distrarre una creatura o far cadere un oggetto tenuto in mano. È un'azione standard per raccoglierlo.",
+    "short_description": "Fa cadere oggetti o distrae creature.",
+    "effects": [
+      {
+        "effect_type": "utility",
+        "value": "disrupt",
+        "duration": "Instantaneous"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "tocco_raffreddante",
+    "name": "Tocco Raffreddante",
+    "school": "Necromancy",
+    "descriptors": ["Cold"],
+    "levels": {
+      "sorcerer/wizard": 0
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S"],
+    "range": "Touch",
+    "target": "Creatura toccata",
+    "duration": "Instantaneous",
+    "saving_throw": "Fortitude negates",
+    "spell_resistance": true,
+    "description": "Il tuo tocco infligge 1 punto di danno da freddo e il bersaglio è affaticato per 1 round.",
+    "short_description": "1 danno freddo + affaticamento 1 round.",
+    "effects": [
+      {
+        "effect_type": "damage",
+        "value": "1",
+        "value_type": "cold",
+        "duration": "Instantaneous",
+        "applies_to": "enemy"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "vista_scura",
+    "name": "Vista Scura",
+    "school": "Transmutation",
+    "levels": {
+      "sorcerer/wizard": 0
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S"],
+    "range": "Touch",
+    "target": "Creatura toccata",
+    "duration": "1 hour",
+    "saving_throw": "Will negates (harmless)",
+    "spell_resistance": true,
+    "description": "Concedi visione crepuscolare per 1 ora. Il bersaglio vede al buio come un elfo.",
+    "short_description": "Concede visione crepuscolare 1 ora.",
+    "effects": [
+      {
+        "effect_type": "buff",
+        "value": "low_light_vision",
+        "value_type": "enhancement",
+        "duration": "1 hour"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "zampa_di_ragno",
+    "name": "Zampa di Ragno",
+    "school": "Transmutation",
+    "levels": {
+      "sorcerer/wizard": 0,
+      "druid": 0
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S"],
+    "range": "Touch",
+    "target": "Creatura toccata",
+    "duration": "1 min./level",
+    "saving_throw": "Will negates (harmless)",
+    "spell_resistance": true,
+    "description": "Il bersaglio può arrampicarsi su superfici verticali o persino a testa in giù come un ragno.",
+    "short_description": "Permette di arrampicarsi su superfici verticali.",
+    "effects": [
+      {
+        "effect_type": "buff",
+        "value": "spider_climb",
+        "value_type": "enhancement",
+        "duration": "1 min./level"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+
+  // ================== LIVELLO 1 ==================
+  {
+    "id": "allarme",
+    "name": "Allarme",
+    "school": "Abjuration",
+    "levels": {
+      "bard": 1,
+      "ranger": 1,
+      "sorcerer/wizard": 1
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S", "F"],
+    "focus": "Una piccola campana d'argento",
+    "range": "Close (25 ft. + 5 ft./2 levels)",
+    "area_type": "emanation",
+    "area_size": "Emanation 20 ft. radius",
+    "duration": "2 hours/level",
+    "saving_throw": "None",
+    "spell_resistance": false,
+    "description": "Crea un'allerta magica che suona una campana mentale o udibile quando una creatura di taglia Piccola o più grande entra nell'area.",
+    "short_description": "Avvisa quando creature entrano in un'area.",
+    "effects": [
+      {
+        "effect_type": "utility",
+        "value": "alarm",
+        "duration": "2 hours/level"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "anima_protetta",
+    "name": "Anima Protetta",
+    "school": "Abjuration",
+    "levels": {
+      "cleric": 1,
+      "paladin": 1
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S", "D"],
+    "divine_focus": true,
+    "range": "Touch",
+    "target": "Creatura toccata",
+    "duration": "1 min./level",
+    "saving_throw": "Will negates (harmless)",
+    "spell_resistance": true,
+    "description": "Conferisce +4 bonus di resistenza ai tiri salvezza contro incantesimi ed effetti di necromanzia.",
+    "short_description": "+4 salvezze contro necromanzia.",
+    "effects": [
+      {
+        "effect_type": "buff",
+        "value": "+4_saves_necromancy",
+        "value_type": "resistance",
+        "duration": "1 min./level"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "armatura_magica",
+    "name": "Armatura Magica",
+    "school": "Conjuration",
+    "subschool": "Creation",
+    "levels": {
+      "sorcerer/wizard": 1
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S", "F"],
+    "focus": "Un pezzo di pelle curata",
+    "range": "Touch",
+    "target": "Creatura toccata",
+    "duration": "1 hour/level",
+    "saving_throw": "Will negates (harmless)",
+    "spell_resistance": true,
+    "description": "Una forza invisibile fornisce un bonus alla CA di +4. Non si accumula con armature reali.",
+    "short_description": "+4 bonus alla CA.",
+    "effects": [
+      {
+        "effect_type": "buff",
+        "value": "+4_ac",
+        "value_type": "force",
+        "duration": "1 hour/level"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "caduta_feather",
+    "name": "Caduta di Piuma",
+    "school": "Transmutation",
+    "levels": {
+      "bard": 1,
+      "sorcerer/wizard": 1
+    },
+    "casting_time": "1 immediate action",
+    "components": ["V"],
+    "range": "Close (25 ft. + 5 ft./2 levels)",
+    "target": "Una creatura Medium o più piccola",
+    "duration": "Until landing or 1 round/level",
+    "saving_throw": "Will negates (harmless)",
+    "spell_resistance": true,
+    "description": "Il bersaglio cade lentamente a 60 piedi per round e non subisce danni da caduta.",
+    "short_description": "Caduta lenta senza danni.",
+    "effects": [
+      {
+        "effect_type": "buff",
+        "value": "feather_fall",
+        "value_type": "transmutation",
+        "duration": "Until landing"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "camuffamento",
+    "name": "Camuffamento",
+    "school": "Illusion",
+    "subschool": "Glamer",
+    "levels": {
+      "bard": 1,
+      "druid": 1,
+      "ranger": 1,
+      "sorcerer/wizard": 1
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S", "M"],
+    "material_components": "Un pizzico di terra o foglie",
+    "range": "Touch",
+    "target": "Creatura o oggetto di 100 libbre/livello",
+    "duration": "10 min./level",
+    "saving_throw": "Will negates (harmless, object)",
+    "spell_resistance": true,
+    "description": "Cambia l'aspetto del bersaglio per farlo sembrare parte dell'ambiente circostante. +10 bonus alle prove di Nascondersi.",
+    "short_description": "Mimetizza con l'ambiente (+10 Nascondersi).",
+    "effects": [
+      {
+        "effect_type": "buff",
+        "value": "+10_hide",
+        "value_type": "circumstance",
+        "duration": "10 min./level"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "charme_persona",
+    "name": "Charme Persona",
+    "school": "Enchantment",
+    "subschool": "Charm",
+    "descriptors": ["Mind-Affecting"],
+    "levels": {
+      "bard": 1,
+      "sorcerer/wizard": 1
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S"],
+    "range": "Close (25 ft. + 5 ft./2 levels)",
+    "target": "Una creatura umanoide",
+    "duration": "1 hour/level",
+    "saving_throw": "Will negates",
+    "spell_resistance": true,
+    "description": "Rendi una creatura umanoide amichevole verso di te. Ti considera un amico fidato.",
+    "short_description": "Rendi una creatura umanoide amichevole.",
+    "effects": [
+      {
+        "effect_type": "condition",
+        "value": "charmed",
+        "duration": "1 hour/level",
+        "applies_to": "enemy"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "comprehendi_lingue",
+    "name": "Comprehendi Lingue",
+    "school": "Divination",
+    "levels": {
+      "bard": 1,
+      "cleric": 1,
+      "sorcerer/wizard": 1
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S", "M"],
+    "material_components": "Un pizzico di polvere di carbone e sale",
+    "range": "Personal",
+    "target": "Te stesso",
+    "duration": "10 min./level",
+    "saving_throw": "None",
+    "spell_resistance": false,
+    "description": "Puoi comprendere qualsiasi lingua parlata o scritta che vedi o senti.",
+    "short_description": "Comprendi qualsiasi lingua.",
+    "effects": [
+      {
+        "effect_type": "buff",
+        "value": "comprehend_languages",
+        "value_type": "divination",
+        "duration": "10 min./level"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "cono_di_freddo_minore",
+    "name": "Cono di Freddo Minore",
+    "school": "Evocation",
+    "descriptors": ["Cold"],
+    "levels": {
+      "sorcerer/wizard": 1
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S", "M"],
+    "material_components": "Un cristallo o una perla blu",
+    "range": "15 ft.",
+    "area_type": "cone",
+    "area_size": "Cone 15 ft.",
+    "duration": "Instantaneous",
+    "saving_throw": "Reflex half",
+    "spell_resistance": true,
+    "description": "Un cono di aria gelida infligge 1d4 danni da freddo per livello (massimo 5d4).",
+    "short_description": "1d4/level danni da freddo in cono.",
+    "effects": [
+      {
+        "effect_type": "damage",
+        "value": "1d4_per_level",
+        "value_type": "cold",
+        "duration": "Instantaneous",
+        "applies_to": "area"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "creare_acqua",
+    "name": "Creare Acqua",
+    "school": "Conjuration",
+    "subschool": "Creation",
+    "levels": {
+      "cleric": 0,
+      "druid": 0,
+      "paladin": 1
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S"],
+    "range": "Close (25 ft. + 5 ft./2 levels)",
+    "effect": "Fino a 2 galloni d'acqua/livello",
+    "duration": "Instantaneous",
+    "saving_throw": "None",
+    "spell_resistance": false,
+    "description": "Crei acqua pulita e potabile. Puoi creare fino a 2 galloni per livello.",
+    "short_description": "Crea acqua potabile.",
+    "effects": [
+      {
+        "effect_type": "utility",
+        "value": "create_water",
+        "duration": "Instantaneous"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "dardo_incantato",
+    "name": "Dardo Incantato",
+    "school": "Evocation",
+    "levels": {
+      "bard": 1,
+      "sorcerer/wizard": 1
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S"],
+    "range": "Close (25 ft. + 5 ft./2 levels)",
+    "effect": "Ray",
+    "duration": "Instantaneous",
+    "saving_throw": "None",
+    "spell_resistance": true,
+    "description": "Un dardo di energia forza infligge 1d4+1 danni. Colpisce automaticamente.",
+    "short_description": "1d4+1 danni da forza, colpo automatico.",
+    "effects": [
+      {
+        "effect_type": "damage",
+        "value": "1d4+1",
+        "value_type": "force",
+        "duration": "Instantaneous",
+        "applies_to": "enemy"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "dissimulare_allineamento",
+    "name": "Dissimulare Allineamento",
+    "school": "Abjuration",
+    "levels": {
+      "cleric": 1,
+      "paladin": 1
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S"],
+    "range": "Touch",
+    "target": "Creatura toccata",
+    "duration": "1 hour/level",
+    "saving_throw": "Will negates (harmless)",
+    "spell_resistance": false,
+    "description": "Nascondi l'allineamento del bersaglio da divinazioni. Non può essere rilevato da 'Rilevare Allineamento'.",
+    "short_description": "Nasconde l'allineamento dalle divinazioni.",
+    "effects": [
+      {
+        "effect_type": "buff",
+        "value": "undetectable_alignment",
+        "value_type": "abjuration",
+        "duration": "1 hour/level"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "espansione_reticolare",
+    "name": "Espansione Reticolare",
+    "school": "Transmutation",
+    "levels": {
+      "sorcerer/wizard": 1
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S", "M"],
+    "material_components": "Una palla di gomma",
+    "range": "Touch",
+    "target": "Oggetto toccato di fino a 1 piede cubo/livello",
+    "duration": "1 min./level",
+    "saving_throw": "Will negates (object)",
+    "spell_resistance": true,
+    "description": "Fai crescere un oggetto inanimato fino a 16 volte le sue dimensioni originali. Il peso aumenta di conseguenza.",
+    "short_description": "Ingrandisci oggetti inanimati.",
+    "effects": [
+      {
+        "effect_type": "utility",
+        "value": "enlarge_object",
+        "duration": "1 min./level"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "fascino",
+    "name": "Fascino",
+    "school": "Enchantment",
+    "subschool": "Charm",
+    "descriptors": ["Mind-Affecting"],
+    "levels": {
+      "bard": 1,
+      "sorcerer/wizard": 1
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S"],
+    "range": "Close (25 ft. + 5 ft./2 levels)",
+    "area_type": "burst",
+    "area_size": "10-ft.-radius burst",
+    "duration": "1 hour/level",
+    "saving_throw": "Will negates",
+    "spell_resistance": true,
+    "description": "Rendi tutte le creature nell'area ben disposte verso di te. Non le puoi comandare, ma sono amichevoli.",
+    "short_description": "Rendi creature amichevoli in un'area.",
+    "effects": [
+      {
+        "effect_type": "condition",
+        "value": "friendly_area",
+        "duration": "1 hour/level",
+        "applies_to": "enemy"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "frusta_di_spine",
+    "name": "Frusta di Spine",
+    "school": "Conjuration",
+    "subschool": "Creation",
+    "levels": {
+      "druid": 1
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S"],
+    "range": "0 ft.",
+    "effect": "Una frusta di spine lunga 10 piedi",
+    "duration": "1 round/level",
+    "saving_throw": "None",
+    "spell_resistance": false,
+    "description": "Crei una frusta fatta di spine viventi che puoi usare come arma. Infligge 1d6 danni da taglio e si allunga fino a 10 piedi.",
+    "short_description": "Crea una frusta di spine che infligge 1d6 danni.",
+    "effects": [
+      {
+        "effect_type": "damage",
+        "value": "1d6",
+        "value_type": "slashing",
+        "duration": "1 round/level",
+        "applies_to": "enemy"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "fulmine_celere",
+    "name": "Fulmine Celere",
+    "school": "Evocation",
+    "descriptors": ["Electricity"],
+    "levels": {
+      "sorcerer/wizard": 1
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S"],
+    "range": "Close (25 ft. + 5 ft./2 levels)",
+    "effect": "Ray",
+    "duration": "Instantaneous",
+    "saving_throw": "Reflex half",
+    "spell_resistance": true,
+    "description": "Scagli un fulmine che infligge 1d6 danni da elettricità per livello (massimo 5d6).",
+    "short_description": "1d6/level danni elettrici.",
+    "effects": [
+      {
+        "effect_type": "damage",
+        "value": "1d6_per_level",
+        "value_type": "electricity",
+        "duration": "Instantaneous",
+        "applies_to": "enemy"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "gravità_zero",
+    "name": "Gravità Zero",
+    "school": "Transmutation",
+    "levels": {
+      "sorcerer/wizard": 1
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S", "M"],
+    "material_components": "Una piuma di struzzo",
+    "range": "Close (25 ft. + 5 ft./2 levels)",
+    "target": "Un oggetto di fino a 100 libbre/livello",
+    "duration": "1 round/level",
+    "saving_throw": "Will negates (object)",
+    "spell_resistance": true,
+    "description": "Rendi un oggetto senza peso. Può galleggiare nell'aria e essere spostato facilmente.",
+    "short_description": "Rendi un oggetto senza peso.",
+    "effects": [
+      {
+        "effect_type": "utility",
+        "value": "zero_gravity",
+        "duration": "1 round/level"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "illusione_minore_migliorata",
+    "name": "Illusione Minore Migliorata",
+    "school": "Illusion",
+    "subschool": "Figment",
+    "levels": {
+      "bard": 1,
+      "sorcerer/wizard": 1
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S"],
+    "range": "Long (400 ft. + 40 ft./level)",
+    "effect": "Illusione di 4 cubi di 10 piedi",
+    "duration": "Concentration + 2 rounds",
+    "saving_throw": "Will disbelief",
+    "spell_resistance": false,
+    "description": "Crea un'illusione visiva più complessa di Illusione Minore. Puoi creare scene più dettagliate.",
+    "short_description": "Illusione visiva più complessa.",
+    "effects": [
+      {
+        "effect_type": "utility",
+        "value": "minor_image_improved",
+        "duration": "Concentration + 2 rounds"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "invisibilita_oggetto",
+    "name": "Invisibilità Oggetto",
+    "school": "Illusion",
+    "subschool": "Glamer",
+    "levels": {
+      "bard": 1,
+      "sorcerer/wizard": 1
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S", "M"],
+    "material_components": "Una ciglia avvolta in gomma arabica",
+    "range": "Touch",
+    "target": "Oggetto toccato fino a 100 libbre/livello",
+    "duration": "1 min./level",
+    "saving_throw": "Will negates (harmless, object)",
+    "spell_resistance": true,
+    "description": "Rendi un oggetto invisibile. Se l'oggetto è usato come arma, l'incantesimo termina.",
+    "short_description": "Rendi un oggetto invisibile.",
+    "effects": [
+      {
+        "effect_type": "condition",
+        "value": "invisible_object",
+        "duration": "1 min./level"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "lancio_acido",
+    "name": "Lancio Acido",
+    "school": "Conjuration",
+    "subschool": "Creation",
+    "descriptors": ["Acid"],
+    "levels": {
+      "sorcerer/wizard": 1
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S"],
+    "range": "Close (25 ft. + 5 ft./2 levels)",
+    "effect": "Una sfera di acido",
+    "duration": "Instantaneous",
+    "saving_throw": "Reflex half",
+    "spell_resistance": true,
+    "description": "Lanci una sfera di acido che infligge 1d8 danni da acido per due livelli (massimo 5d8).",
+    "short_description": "1d8/2 levels danni da acido.",
+    "effects": [
+      {
+        "effect_type": "damage",
+        "value": "1d8_per_2_levels",
+        "value_type": "acid",
+        "duration": "Instantaneous",
+        "applies_to": "enemy"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "leggere_pensieri",
+    "name": "Leggere Pensieri",
+    "school": "Divination",
+    "descriptors": ["Mind-Affecting"],
+    "levels": {
+      "bard": 1,
+      "sorcerer/wizard": 1
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S", "F"],
+    "focus": "Una moneta di rame",
+    "range": "60 ft.",
+    "target": "Una creatura",
+    "duration": "1 min./level",
+    "saving_throw": "Will negates",
+    "spell_resistance": true,
+    "description": "Puoi sentire i pensieri superficiali di una creatura. Ottieni +4 bonus alle prove di Bluff contro di lei.",
+    "short_description": "Leggi i pensieri superficiali.",
+    "effects": [
+      {
+        "effect_type": "utility",
+        "value": "detect_thoughts",
+        "duration": "1 min./level"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "levitazione",
+    "name": "Levitazione",
+    "school": "Transmutation",
+    "levels": {
+      "sorcerer/wizard": 2,
+      "bard": 2
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S", "F"],
+    "focus": "Una piccola piastra di rame",
+    "range": "Personal or close",
+    "target": "Te stesso o una creatura fino a 100 libbre/livello",
+    "duration": "1 min./level",
+    "saving_throw": "None",
+    "spell_resistance": false,
+    "description": "Fai levitare te stesso o un'altra creatura. Puoi muoverti verticalmente ma non orizzontalmente senza appigli.",
+    "short_description": "Fai levitare una creatura.",
+    "effects": [
+      {
+        "effect_type": "buff",
+        "value": "levitate",
+        "value_type": "transmutation",
+        "duration": "1 min./level"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "manto_dell'ombra",
+    "name": "Manto dell'Ombra",
+    "school": "Illusion",
+    "subschool": "Glamer",
+    "levels": {
+      "sorcerer/wizard": 1,
+      "bard": 1
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S"],
+    "range": "Touch",
+    "target": "Creatura toccata",
+    "duration": "10 min./level",
+    "saving_throw": "Will negates (harmless)",
+    "spell_resistance": true,
+    "description": "Il bersaglio diventa parzialmente trasparente, ottenendo bonus +2 alla CA e +2 alle prove di Furtività.",
+    "short_description": "+2 CA e +2 Furtività.",
+    "effects": [
+      {
+        "effect_type": "buff",
+        "value": "+2_ac_stealth",
+        "value_type": "circumstance",
+        "duration": "10 min./level"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "montatura_fantasma",
+    "name": "Montatura Fantasma",
+    "school": "Conjuration",
+    "subschool": "Creation",
+    "levels": {
+      "paladin": 1
+    },
+    "casting_time": "10 minutes",
+    "components": ["V", "S"],
+    "range": "0 ft.",
+    "effect": "Una creatura simile a un cavallo",
+    "duration": "1 hour/level",
+    "saving_throw": "None",
+    "spell_resistance": false,
+    "description": "Conjuri una cavalcatura leale e addestrata. Scompare se uccisa o quando l'incantesimo termina.",
+    "short_description": "Crea una cavalcatura magica.",
+    "effects": [
+      {
+        "effect_type": "summon",
+        "value": "phantom_steed",
+        "duration": "1 hour/level"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "nebbia_oscura",
+    "name": "Nebbia Oscura",
+    "school": "Conjuration",
+    "subschool": "Creation",
+    "levels": {
+      "sorcerer/wizard": 1
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S"],
+    "range": "Medium (100 ft. + 10 ft./level)",
+    "effect": "Nebbia in un cubo di 20 piedi",
+    "duration": "1 min./level",
+    "saving_throw": "None",
+    "spell_resistance": false,
+    "description": "Crea una nube di nebbia scura che blocca la vista normale. Fornisce copertura parziale.",
+    "short_description": "Crea nebbia che blocca la vista.",
+    "effects": [
+      {
+        "effect_type": "utility",
+        "value": "obscuring_mist",
+        "duration": "1 min./level"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "occhi_di_notte",
+    "name": "Occhi di Notte",
+    "school": "Transmutation",
+    "levels": {
+      "druid": 1,
+      "ranger": 1
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S", "M"],
+    "material_components": "Una bacca di belladonna",
+    "range": "Touch",
+    "target": "Creatura toccata",
+    "duration": "1 hour/level",
+    "saving_throw": "Will negates (harmless)",
+    "spell_resistance": true,
+    "description": "Concede visione nel buio a 30 piedi. Non funziona in magia oscurità soprannaturale.",
+    "short_description": "Concede visione nel buio 30 piedi.",
+    "effects": [
+      {
+        "effect_type": "buff",
+        "value": "darkvision_30ft",
+        "value_type": "enhancement",
+        "duration": "1 hour/level"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "parlare_con_gli_animali",
+    "name": "Parlare con gli Animali",
+    "school": "Divination",
+    "levels": {
+      "bard": 1,
+      "druid": 1,
+      "ranger": 1
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S"],
+    "range": "Personal",
+    "target": "Te stesso",
+    "duration": "1 min./level",
+    "saving_throw": "None",
+    "spell_resistance": false,
+    "description": "Puoi comunicare con animali. Puoi porre domande e ricevere risposte semplici.",
+    "short_description": "Comunichi con animali.",
+    "effects": [
+      {
+        "effect_type": "utility",
+        "value": "speak_with_animals",
+        "duration": "1 min./level"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "passare_senza_tracce",
+    "name": "Passare Senza Tracce",
+    "school": "Transmutation",
+    "levels": {
+      "druid": 1,
+      "ranger": 1
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S", "M"],
+    "material_components": "Una manciata di cenere",
+    "range": "Touch",
+    "target": "Una creatura/livello toccata",
+    "duration": "1 hour/level",
+    "saving_throw": "Will negates (harmless)",
+    "spell_resistance": true,
+    "description": "Il bersaglio non lascia tracce e non può essere tracciato. +10 bonus alle prove di Sopravvivenza per seguire tracce.",
+    "short_description": "Non lasci tracce (+10 tracciare).",
+    "effects": [
+      {
+        "effect_type": "buff",
+        "value": "pass_without_trace",
+        "value_type": "enhancement",
+        "duration": "1 hour/level"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "pelle_di_corteccia",
+    "name": "Pelle di Corteccia",
+    "school": "Transmutation",
+    "levels": {
+      "druid": 1
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S", "M"],
+    "material_components": "Un pezzo di corteccia",
+    "range": "Touch",
+    "target": "Creatura toccata",
+    "duration": "10 min./level",
+    "saving_throw": "Will negates (harmless)",
+    "spell_resistance": true,
+    "description": "La pelle del bersaglio diventa dura come corteccia d'albero, concedendo +2 bonus naturale alla CA.",
+    "short_description": "+2 bonus naturale alla CA.",
+    "effects": [
+      {
+        "effect_type": "buff",
+        "value": "+2_natural_ac",
+        "value_type": "enhancement",
+        "duration": "10 min./level"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "porta_segreta",
+    "name": "Porta Segreta",
+    "school": "Transmutation",
+    "levels": {
+      "sorcerer/wizard": 1
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S"],
+    "range": "Touch",
+    "target": "Porta, cassa o serratura toccata",
+    "duration": "Instantaneous",
+    "saving_throw": "None",
+    "spell_resistance": false,
+    "description": "Apri serrature, porte o casse non magiche fino a livello 1. Non funziona su oggetti magici.",
+    "short_description": "Apri serrature e porte non magiche.",
+    "effects": [
+      {
+        "effect_type": "utility",
+        "value": "knock",
+        "duration": "Instantaneous"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "protezione_dal_bene_male",
+    "name": "Protezione dal Bene/Male",
+    "school": "Abjuration",
+    "levels": {
+      "cleric": 1,
+      "paladin": 1
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S", "M"],
+    "material_components": "Acqua santa o polvere d'argento",
+    "range": "Touch",
+    "target": "Creatura toccata",
+    "duration": "1 min./level",
+    "saving_throw": "Will negates (harmless)",
+    "spell_resistance": false,
+    "description": "+2 bonus alla CA e ai tiri salvezza contro creature buone/male. Blocca possesso mentale e contatto fisico.",
+    "short_description": "+2 CA/salvezze vs bene/male, blocca possesso.",
+    "effects": [
+      {
+        "effect_type": "buff",
+        "value": "protection_from_good_evil",
+        "value_type": "deflection",
+        "duration": "1 min./level"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "purificare_cibo_e_bevande",
+    "name": "Purificare Cibo e Bevande",
+    "school": "Transmutation",
+    "levels": {
+      "cleric": 0,
+      "druid": 0,
+      "paladin": 1
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S"],
+    "range": "10 ft.",
+    "target": "1 piede cubo/livello di cibo e bevande",
+    "duration": "Instantaneous",
+    "saving_throw": "None",
+    "spell_resistance": false,
+    "description": "Rendi non contaminato e commestibile cibo e bevande. Rimuove veleni e malattie non magiche.",
+    "short_description": "Purifica cibo e bevande.",
+    "effects": [
+      {
+        "effect_type": "utility",
+        "value": "purify_food_drink",
+        "duration": "Instantaneous"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "rafforzare_legno",
+    "name": "Rafforzare Legno",
+    "school": "Transmutation",
+    "levels": {
+      "druid": 1
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S"],
+    "range": "Touch",
+    "target": "Un oggetto di legno di fino a 10 libbre/livello",
+    "duration": "1 hour/level",
+    "saving_throw": "Will negates (object)",
+    "spell_resistance": true,
+    "description": "Rendi il legno duro come la pietra. La Durezza aumenta di 5 e i PF raddoppiano.",
+    "short_description": "Rafforza oggetti di legno.",
+    "effects": [
+      {
+        "effect_type": "buff",
+        "value": "harden_wood",
+        "value_type": "enhancement",
+        "duration": "1 hour/level"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "rimuovere_paura",
+    "name": "Rimuovere Paura",
+    "school": "Abjuration",
+    "levels": {
+      "bard": 1,
+      "cleric": 1
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S"],
+    "range": "Close (25 ft. + 5 ft./2 levels)",
+    "target": "Una creatura",
+    "duration": "10 min./level",
+    "saving_throw": "Will negates (harmless)",
+    "spell_resistance": true,
+    "description": "Sopprime gli effetti della paura. Concede +4 bonus morale ai tiri salvezza contro la paura.",
+    "short_description": "+4 morale vs paura, rimuove effetti esistenti.",
+    "effects": [
+      {
+        "effect_type": "buff",
+        "value": "remove_fear",
+        "value_type": "morale",
+        "duration": "10 min./level"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "rinfrescare",
+    "name": "Rinfrescare",
+    "school": "Conjuration",
+    "subschool": "Healing",
+    "levels": {
+      "cleric": 1,
+      "druid": 1
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S"],
+    "range": "Touch",
+    "target": "Creatura toccata",
+    "duration": "Instantaneous",
+    "saving_throw": "Will half (harmless)",
+    "spell_resistance": true,
+    "description": "Cura 1d8+1 per livello punti ferita (massimo +5) a una creatura vivente. È più potente su creature acquatiche.",
+    "short_description": "Cura 1d8+1/level PF, bonus per acquatici.",
+    "effects": [
+      {
+        "effect_type": "heal",
+        "value": "1d8+1",
+        "duration": "Instantaneous",
+        "applies_to": "ally"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "santuario",
+    "name": "Santuario",
+    "school": "Abjuration",
+    "levels": {
+      "cleric": 1,
+      "paladin": 1
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S", "D"],
+    "divine_focus": true,
+    "range": "Touch",
+    "target": "Creatura toccata",
+    "duration": "1 round/level",
+    "saving_throw": "Will negates",
+    "spell_resistance": true,
+    "description": "Nessuno può attaccare il bersaglio senza prima superare un tiro salvezza. Se il bersaglio attacca, l'incantesimo termina.",
+    "short_description": "Impedisce attacchi al bersaglio.",
+    "effects": [
+      {
+        "effect_type": "condition",
+        "value": "sanctuary",
+        "duration": "1 round/level",
+        "applies_to": "ally"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "scudo_di_fede",
+    "name": "Scudo di Fede",
+    "school": "Abjuration",
+    "levels": {
+      "cleric": 1,
+      "paladin": 1
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S", "M"],
+    "material_components": "Un pezzo di pergamena con scritto un simbolo sacro",
+    "range": "Touch",
+    "target": "Creatura toccata",
+    "duration": "1 min./level",
+    "saving_throw": "Will negates (harmless)",
+    "spell_resistance": true,
+    "description": "Un campo di forza scintillante fornisce bonus alla CA pari a +2, più 1 ogni 6 livelli (massimo +5).",
+    "short_description": "+2 CA, +1 ogni 6 livelli (max +5).",
+    "effects": [
+      {
+        "effect_type": "buff",
+        "value": "shield_of_faith",
+        "value_type": "deflection",
+        "duration": "1 min./level"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "silenzio",
+    "name": "Silenzio",
+    "school": "Illusion",
+    "subschool": "Glamer",
+    "levels": {
+      "bard": 2,
+      "cleric": 2
+    },
+    "casting_time": "1 round",
+    "components": ["V", "S"],
+    "range": "Long (400 ft. + 40 ft./level)",
+    "area_type": "emanation",
+    "area_size": "20-ft.-radius emanation",
+    "duration": "1 round/level",
+    "saving_throw": "Will negates",
+    "spell_resistance": true,
+    "description": "Crea un'area di silenzio assoluto. Nessun suono può entrare o uscire. Blocca incantesimi con componente verbale.",
+    "short_description": "Crea area di silenzio assoluto.",
+    "effects": [
+      {
+        "effect_type": "utility",
+        "value": "silence",
+        "duration": "1 round/level"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "soffocamento",
+    "name": "Soffocamento",
+    "school": "Necromancy",
+    "levels": {
+      "sorcerer/wizard": 1
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S", "M"],
+    "material_components": "Una manciata di polvere",
+    "range": "Close (25 ft. + 5 ft./2 levels)",
+    "target": "Una creatura vivente",
+    "duration": "1 round/level",
+    "saving_throw": "Fortitude negates",
+    "spell_resistance": true,
+    "description": "Il bersaglio ha difficoltà a respirare. Subisce 1d4 danni non letali per round e è affaticato.",
+    "short_description": "1d4 danni non letali/round + affaticamento.",
+    "effects": [
+      {
+        "effect_type": "damage",
+        "value": "1d4_nonlethal",
+        "value_type": "untyped",
+        "duration": "1 round/level",
+        "applies_to": "enemy"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "suggestione",
+    "name": "Suggestione",
+    "school": "Enchantment",
+    "subschool": "Compulsion",
+    "descriptors": ["Mind-Affecting", "Language-Dependent"],
+    "levels": {
+      "bard": 2,
+      "sorcerer/wizard": 3
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "M"],
+    "material_components": "Una linguetta di serpente",
+    "range": "Close (25 ft. + 5 ft./2 levels)",
+    "target": "Una creatura",
+    "duration": "1 hour/level",
+    "saving_throw": "Will negates",
+    "spell_resistance": true,
+    "description": "Influenzi il bersaglio con una suggestione ragionevole. Deve essere eseguita entro la durata.",
+    "short_description": "Influenzi una creatura con una suggestione.",
+    "effects": [
+      {
+        "effect_type": "condition",
+        "value": "suggested",
+        "duration": "1 hour/level",
+        "applies_to": "enemy"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "tocco_paralizzante",
+    "name": "Tocco Paralizzante",
+    "school": "Necromancy",
+    "levels": {
+      "sorcerer/wizard": 1
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S"],
+    "range": "Touch",
+    "target": "Creatura vivente toccata",
+    "duration": "1 round/level",
+    "saving_throw": "Fortitude negates",
+    "spell_resistance": true,
+    "description": "Il tuo tocco può paralizzare una creatura vivente per 1 round per livello.",
+    "short_description": "Paralizza creatura al tocco.",
+    "effects": [
+      {
+        "effect_type": "condition",
+        "value": "paralyzed",
+        "duration": "1 round/level",
+        "applies_to": "enemy"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "visione_crepuscolare",
+    "name": "Visione Crepuscolare",
+    "school": "Transmutation",
+    "levels": {
+      "druid": 1,
+      "ranger": 1,
+      "sorcerer/wizard": 1
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S", "M"],
+    "material_components": "Una carota",
+    "range": "Touch",
+    "target": "Creatura toccata",
+    "duration": "1 hour/level",
+    "saving_throw": "Will negates (harmless)",
+    "spell_resistance": true,
+    "description": "Il bersaglio vede due volte più lontano con poca luce. Vede al chiaro di luna come in pieno giorno.",
+    "short_description": "Visione crepuscolare migliorata.",
+    "effects": [
+      {
+        "effect_type": "buff",
+        "value": "low_light_vision_enhanced",
+        "value_type": "enhancement",
+        "duration": "1 hour/level"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "vortice_vitale",
+    "name": "Vortice Vitale",
+    "school": "Necromancy",
+    "levels": {
+      "cleric": 1
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S"],
+    "range": "Touch",
+    "target": "Creatura non morta toccata",
+    "duration": "Instantaneous",
+    "saving_throw": "Will half",
+    "spell_resistance": true,
+    "description": "Infliggi 1d8 danni positivi per due livelli (massimo 5d8) a una creatura non morta.",
+    "short_description": "1d8/2 levels danni a non morti.",
+    "effects": [
+      {
+        "effect_type": "damage",
+        "value": "1d8_per_2_levels",
+        "value_type": "positive",
+        "duration": "Instantaneous",
+        "applies_to": "enemy"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "zona_di_verita",
+    "name": "Zona di Verità",
+    "school": "Enchantment",
+    "subschool": "Compulsion",
+    "descriptors": ["Mind-Affecting"],
+    "levels": {
+      "cleric": 2,
+      "paladin": 2
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S", "D"],
+    "divine_focus": true,
+    "range": "Close (25 ft. + 5 ft./2 levels)",
+    "area_type": "emanation",
+    "area_size": "20-ft.-radius emanation",
+    "duration": "1 min./level",
+    "saving_throw": "Will negates",
+    "spell_resistance": true,
+    "description": "Le creature nell'area non possono mentire consapevolmente. Possono rimanere in silenzio o rispondere evasivamente.",
+    "short_description": "Impedisce di mentire nell'area.",
+    "effects": [
+      {
+        "effect_type": "condition",
+        "value": "zone_of_truth",
+        "duration": "1 min./level"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+
+  // ================== LIVELLO 2 ==================
+  {
+    "id": "accecamento_sordita",
+    "name": "Accecamento/Sordità",
+    "school": "Necromancy",
+    "levels": {
+      "bard": 2,
+      "cleric": 3,
+      "sorcerer/wizard": 2
+    },
+    "casting_time": "1 standard action",
+    "components": ["V"],
+    "range": "Medium (100 ft. + 10 ft./level)",
+    "target": "Una creatura",
+    "duration": "Permanent",
+    "saving_throw": "Fortitude negates",
+    "spell_resistance": true,
+    "description": "Infliggi cecità o sordità permanente a una creatura. Può essere curata con magia.",
+    "short_description": "Infliggi cecità o sordità permanente.",
+    "effects": [
+      {
+        "effect_type": "condition",
+        "value": "blind_deaf",
+        "duration": "Permanent",
+        "applies_to": "enemy"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "ammaliare_piante",
+    "name": "Ammaliare Piante",
+    "school": "Transmutation",
+    "levels": {
+      "druid": 2,
+      "ranger": 2
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S", "D"],
+    "divine_focus": true,
+    "range": "Close (25 ft. + 5 ft./2 levels)",
+    "target": "Piante in 30-ft. radius",
+    "duration": "1 day/level",
+    "saving_throw": "Will negates",
+    "spell_resistance": true,
+    "description": "Influenzi piante e funghi in un'ampia area. Puoi farle crescere, appassire, o muoversi lentamente.",
+    "short_description": "Controlli piante in un'area ampia.",
+    "effects": [
+      {
+        "effect_type": "utility",
+        "value": "charm_plants",
+        "duration": "1 day/level"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "ammutolire",
+    "name": "Ammutolire",
+    "school": "Illusion",
+    "subschool": "Glamer",
+    "levels": {
+      "bard": 2,
+      "sorcerer/wizard": 2
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S"],
+    "range": "Close (25 ft. + 5 ft./2 levels)",
+    "target": "Una creatura",
+    "duration": "1 round/level",
+    "saving_throw": "Will negates",
+    "spell_resistance": true,
+    "description": "Il bersaglio non può parlare o emettere suoni vocali. Non può lanciare incantesimi con componente verbale.",
+    "short_description": "Impedisce a una creatura di parlare.",
+    "effects": [
+      {
+        "effect_type": "condition",
+        "value": "silenced",
+        "duration": "1 round/level",
+        "applies_to": "enemy"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "annebbiare_la_mente",
+    "name": "Annebbiare la Mente",
+    "school": "Enchantment",
+    "subschool": "Compulsion",
+    "descriptors": ["Mind-Affecting"],
+    "levels": {
+      "bard": 2,
+      "sorcerer/wizard": 2
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S"],
+    "range": "Medium (100 ft. + 10 ft./level)",
+    "target": "Una creatura",
+    "duration": "1 min./level",
+    "saving_throw": "Will negates",
+    "spell_resistance": true,
+    "description": "Il bersaglio diventa confuso e incapace di pensare chiaramente. -4 a prove di Intelligenza e Saggezza.",
+    "short_description": "-4 a Int e Sag, confusione mentale.",
+    "effects": [
+      {
+        "effect_type": "debuff",
+        "value": "-4_int_wis",
+        "value_type": "penalty",
+        "duration": "1 min./level",
+        "applies_to": "enemy"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "assorbire_elemento",
+    "name": "Assorbire Elemento",
+    "school": "Abjuration",
+    "levels": {
+      "druid": 2,
+      "sorcerer/wizard": 2
+    },
+    "casting_time": "1 immediate action",
+    "components": ["V", "S"],
+    "range": "Personal",
+    "target": "Te stesso",
+    "duration": "1 round/level or until discharged",
+    "saving_throw": "None",
+    "spell_resistance": false,
+    "description": "Quando subisci danni da energia (fuoco, freddo, elettricità, acido), assorbi parte dell'energia e ottieni resistenza 10 a quel tipo.",
+    "short_description": "Assorbi danni energetici, ottieni resistenza 10.",
+    "effects": [
+      {
+        "effect_type": "buff",
+        "value": "energy_absorption",
+        "value_type": "abjuration",
+        "duration": "1 round/level"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "balzo",
+    "name": "Balzo",
+    "school": "Transmutation",
+    "levels": {
+      "druid": 1,
+      "ranger": 1,
+      "sorcerer/wizard": 1
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S", "M"],
+    "material_components": "Una zampa di grillo",
+    "range": "Touch",
+    "target": "Creatura toccata",
+    "duration": "1 min./level",
+    "saving_throw": "Will negates (harmless)",
+    "spell_resistance": true,
+    "description": "Il bersaglio può saltare come un grillo. Ottiene bonus +10 alle prove di Salto e può saltare senza prendere la rincorsa.",
+    "short_description": "+10 Salto, salta senza rincorsa.",
+    "effects": [
+      {
+        "effect_type": "buff",
+        "value": "+10_jump",
+        "value_type": "competence",
+        "duration": "1 min./level"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "barlume",
+    "name": "Barlume",
+    "school": "Illusion",
+    "subschool": "Figment",
+    "levels": {
+      "bard": 2,
+      "sorcerer/wizard": 2
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S"],
+    "range": "Long (400 ft. + 40 ft./level)",
+    "effect": "Quattro immagini",
+    "duration": "1 round/level",
+    "saving_throw": "Will disbelief",
+    "spell_resistance": false,
+    "description": "Crea immagini multiple di te stesso. Gli attacchi hanno il 20% di probabilità di colpire un'immagine invece di te.",
+    "short_description": "Crea immagini illusorie che deviano attacchi.",
+    "effects": [
+      {
+        "effect_type": "buff",
+        "value": "mirror_image",
+        "value_type": "illusion",
+        "duration": "1 round/level"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "benedizione_delle_armi",
+    "name": "Benedizione delle Armi",
+    "school": "Evocation",
+    "levels": {
+      "cleric": 2,
+      "paladin": 1
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S", "M"],
+    "material_components": "Acqua santa",
+    "range": "Touch",
+    "target": "Arma toccata",
+    "duration": "1 round/level",
+    "saving_throw": "None",
+    "spell_resistance": true,
+    "description": "L'arma toccata diventa magica e infligge +1d6 danni da forza contro creature malvagie.",
+    "short_description": "Arma diventa magica, +1d6 danni vs male.",
+    "effects": [
+      {
+        "effect_type": "buff",
+        "value": "bless_weapon",
+        "value_type": "enhancement",
+        "duration": "1 round/level"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "blocco_scorciatoia",
+    "name": "Blocco Scorciatoia",
+    "school": "Abjuration",
+    "levels": {
+      "sorcerer/wizard": 2
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S", "M"],
+    "material_components": "Un pezzo di marmo",
+    "range": "Medium (100 ft. + 10 ft./level)",
+    "target": "Portale o passaggio",
+    "duration": "1 hour/level",
+    "saving_throw": "None",
+    "spell_resistance": false,
+    "description": "Blocca un passaggio, porta o portale. Nessuno può passare attraverso finché l'incantesimo dura.",
+    "short_description": "Blocca magicamente un passaggio.",
+    "effects": [
+      {
+        "effect_type": "utility",
+        "value": "lock_portal",
+        "duration": "1 hour/level"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "boato_sonico",
+    "name": "Boato Sonico",
+    "school": "Evocation",
+    "descriptors": ["Sonic"],
+    "levels": {
+      "bard": 2,
+      "sorcerer/wizard": 2
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S"],
+    "range": "Close (25 ft. + 5 ft./2 levels)",
+    "area_type": "cone",
+    "area_size": "Cone 30 ft.",
+    "duration": "Instantaneous",
+    "saving_throw": "Fortitude partial",
+    "spell_resistance": true,
+    "description": "Emetti un cono di suono distruttivo che infligge 1d8 danni sonori per livello (massimo 10d8) e stordisce per 1 round.",
+    "short_description": "1d8/level danni sonori + stordimento.",
+    "effects": [
+      {
+        "effect_type": "damage",
+        "value": "1d8_per_level",
+        "value_type": "sonic",
+        "duration": "Instantaneous",
+        "applies_to": "area"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "calmare_emozioni",
+    "name": "Calmare Emozioni",
+    "school": "Enchantment",
+    "subschool": "Compulsion",
+    "descriptors": ["Mind-Affecting"],
+    "levels": {
+      "bard": 2,
+      "cleric": 2
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S", "D"],
+    "divine_focus": true,
+    "range": "Medium (100 ft. + 10 ft./level)",
+    "area_type": "burst",
+    "area_size": "20-ft.-radius burst",
+    "duration": "Concentration, up to 1 round/level",
+    "saving_throw": "Will negates",
+    "spell_resistance": true,
+    "description": "Sopprime emozioni violente. Le creature non possono attaccare a meno che non siano attaccate.",
+    "short_description": "Sopprime rabbia e emozioni violente.",
+    "effects": [
+      {
+        "effect_type": "condition",
+        "value": "calm_emotions",
+        "duration": "Concentration"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "catena_di_fulmini",
+    "name": "Catena di Fulmini",
+    "school": "Evocation",
+    "descriptors": ["Electricity"],
+    "levels": {
+      "sorcerer/wizard": 3
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S", "F"],
+    "focus": "Una bacchetta d'ambra",
+    "range": "Long (400 ft. + 40 ft./level)",
+    "target": "Creature primarie e secondarie",
+    "duration": "Instantaneous",
+    "saving_throw": "Reflex half",
+    "spell_resistance": true,
+    "description": "Scagli un fulmine che salta da un bersaglio all'altro. Infligge 1d6 danni/level al primo bersaglio, dimezzati per ogni salto successivo.",
+    "short_description": "Fulmine che salta tra bersagli.",
+    "effects": [
+      {
+        "effect_type": "damage",
+        "value": "1d6_per_level_chain",
+        "value_type": "electricity",
+        "duration": "Instantaneous",
+        "applies_to": "multiple"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "cercare_tracce",
+    "name": "Cercare Tracce",
+    "school": "Divination",
+    "levels": {
+      "druid": 2,
+      "ranger": 2
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S", "M"],
+    "material_components": "Polvere di mica",
+    "range": "Personal",
+    "target": "Te stesso",
+    "duration": "1 hour/level",
+    "saving_throw": "None",
+    "spell_resistance": false,
+    "description": "Vedi le tracce delle creature che sono passate di recente. Ottieni +10 alle prove di Sopravvivenza per seguire tracce.",
+    "short_description": "+10 Sopravvivenza per seguire tracce.",
+    "effects": [
+      {
+        "effect_type": "buff",
+        "value": "+10_track",
+        "value_type": "competence",
+        "duration": "1 hour/level"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "chiave_incantata",
+    "name": "Chiave Incantata",
+    "school": "Transmutation",
+    "levels": {
+      "bard": 2,
+      "sorcerer/wizard": 2
+    },
+    "casting_time": "1 standard action",
+    "components": ["V"],
+    "range": "Touch",
+    "target": "Porta, cassa o serratura toccata",
+    "duration": "Instantaneous",
+    "saving_throw": "None",
+    "spell_resistance": false,
+    "description": "Apri serrature magiche di livello 2 o inferiore. Funziona anche su Porta Arcana.",
+    "short_description": "Apri serrature magiche di livello ≤2.",
+    "effects": [
+      {
+        "effect_type": "utility",
+        "value": "arcane_lock_open",
+        "duration": "Instantaneous"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "cinghia_di_acciaio",
+    "name": "Cinghia d'Acciaio",
+    "school": "Conjuration",
+    "subschool": "Creation",
+    "levels": {
+      "sorcerer/wizard": 2
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S"],
+    "range": "Medium (100 ft. + 10 ft./level)",
+    "effect": "Una cinghia d'acciaio lunga 10 piedi",
+    "duration": "1 round/level",
+    "saving_throw": "Reflex negates",
+    "spell_resistance": false,
+    "description": "Crei una cinghia d'acciaio che lega un bersaglio. Deve superare una prova di Scaltrezza o Forza per liberarsi.",
+    "short_description": "Leggi un bersaglio con una cinghia d'acciaio.",
+    "effects": [
+      {
+        "effect_type": "condition",
+        "value": "entangled",
+        "duration": "1 round/level",
+        "applies_to": "enemy"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "collana_di_proiettili",
+    "name": "Collana di Proiettili",
+    "school": "Conjuration",
+    "subschool": "Creation",
+    "levels": {
+      "cleric": 2
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S", "F"],
+    "focus": "Una pallottola di piombo",
+    "range": "Touch",
+    "target": "Munizioni toccate",
+    "duration": "10 min./level",
+    "saving_throw": "None",
+    "spell_resistance": false,
+    "description": "Trasformi munizioni normali in munizioni magiche +1. Fino a 50 proiettili.",
+    "short_description": "Trasforma munizioni in +1.",
+    "effects": [
+      {
+        "effect_type": "buff",
+        "value": "ammo_+1",
+        "value_type": "enhancement",
+        "duration": "10 min./level"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "commando_ombra",
+    "name": "Commando d'Ombra",
+    "school": "Illusion",
+    "subschool": "Figment",
+    "levels": {
+      "sorcerer/wizard": 2
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S"],
+    "range": "Touch",
+    "target": "Oggetto toccato",
+    "duration": "1 hour/level",
+    "saving_throw": "Will disbelief (if interacted with)",
+    "spell_resistance": false,
+    "description": "Crei un'illusione di un oggetto inanimato. Può essere di qualsiasi forma, ma non può muoversi.",
+    "short_description": "Crea illusione di oggetto inanimato.",
+    "effects": [
+      {
+        "effect_type": "utility",
+        "value": "silent_image_object",
+        "duration": "1 hour/level"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "cono_di_silenzio",
+    "name": "Cono di Silenzio",
+    "school": "Illusion",
+    "subschool": "Glamer",
+    "levels": {
+      "bard": 2,
+      "sorcerer/wizard": 2
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S"],
+    "range": "Personal",
+    "area_type": "cone",
+    "area_size": "Cone 15 ft.",
+    "duration": "1 round/level",
+    "saving_throw": "None",
+    "spell_resistance": false,
+    "description": "Crea un cono di silenzio davanti a te. Nessun suono entra o esce dal cono.",
+    "short_description": "Crea cono di silenzio mobile.",
+    "effects": [
+      {
+        "effect_type": "utility",
+        "value": "cone_of_silence",
+        "duration": "1 round/level"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "controllo_temperatura",
+    "name": "Controllo Temperatura",
+    "school": "Transmutation",
+    "levels": {
+      "druid": 2,
+      "sorcerer/wizard": 2
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S", "M"],
+    "material_components": "Un termometro",
+    "range": "Close (25 ft. + 5 ft./2 levels)",
+    "area_type": "cylinder",
+    "area_size": "Cylinder 20 ft. radius, 40 ft. high",
+    "duration": "1 hour/level",
+    "saving_throw": "None",
+    "spell_resistance": false,
+    "description": "Modifichi la temperatura in un'area. Puoi aumentare o diminuire di 10°F per livello.",
+    "short_description": "Controlla la temperatura in un'area.",
+    "effects": [
+      {
+        "effect_type": "utility",
+        "value": "control_temperature",
+        "duration": "1 hour/level"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "cura_ferite_moderate",
+    "name": "Cura Ferite Moderate",
+    "school": "Conjuration",
+    "subschool": "Healing",
+    "levels": {
+      "bard": 2,
+      "cleric": 2,
+      "druid": 3,
+      "paladin": 3,
+      "ranger": 3
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S"],
+    "range": "Touch",
+    "target": "Creatura toccata",
+    "duration": "Instantaneous",
+    "saving_throw": "Will half (harmless)",
+    "spell_resistance": true,
+    "description": "Cura 2d8+1 per livello punti ferita (massimo +10).",
+    "short_description": "Cura 2d8+1/level PF (max +10).",
+    "effects": [
+      {
+        "effect_type": "heal",
+        "value": "2d8+1",
+        "duration": "Instantaneous",
+        "applies_to": "ally"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "dardo_velenoso",
+    "name": "Dardo Velenoso",
+    "school": "Necromancy",
+    "descriptors": ["Poison"],
+    "levels": {
+      "druid": 2,
+      "sorcerer/wizard": 2
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S"],
+    "range": "Close (25 ft. + 5 ft./2 levels)",
+    "effect": "Ray",
+    "duration": "Instantaneous",
+    "saving_throw": "Fortitude negates",
+    "spell_resistance": true,
+    "description": "Un dardo di energia velenosa infligge 1d6 danni da veleno e avvelena il bersaglio (1d4 danni Costituzione).",
+    "short_description": "1d6 danni veleno + avvelenamento.",
+    "effects": [
+      {
+        "effect_type": "damage",
+        "value": "1d6_plus_poison",
+        "value_type": "poison",
+        "duration": "Instantaneous",
+        "applies_to": "enemy"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "decurtazione",
+    "name": "Decurtazione",
+    "school": "Transmutation",
+    "levels": {
+      "sorcerer/wizard": 2
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S", "M"],
+    "material_components": "Una forbice",
+    "range": "Touch",
+    "target": "Oggetto toccato di fino a 1 piede cubo/livello",
+    "duration": "1 hour/level",
+    "saving_throw": "Will negates (object)",
+    "spell_resistance": true,
+    "description": "Riduci un oggetto inanimato a 1/16 delle sue dimensioni originali. Il peso si riduce di conseguenza.",
+    "short_description": "Riduci oggetti inanimati.",
+    "effects": [
+      {
+        "effect_type": "utility",
+        "value": "shrink_object",
+        "duration": "1 hour/level"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "difesa_psichica",
+    "name": "Difesa Psichica",
+    "school": "Abjuration",
+    "levels": {
+      "sorcerer/wizard": 2
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S"],
+    "range": "Personal",
+    "target": "Te stesso",
+    "duration": "10 min./level",
+    "saving_throw": "None",
+    "spell_resistance": false,
+    "description": "+4 bonus ai tiri salvezza contro incantesimi ed effetti di ammaestramento e illusione.",
+    "short_description": "+4 salvezze vs ammaestramento e illusione.",
+    "effects": [
+      {
+        "effect_type": "buff",
+        "value": "+4_saves_enchant_illusion",
+        "value_type": "resistance",
+        "duration": "10 min./level"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "dissolvi_veleno",
+    "name": "Dissolvi Veleno",
+    "school": "Conjuration",
+    "subschool": "Healing",
+    "levels": {
+      "cleric": 3,
+      "druid": 3,
+      "paladin": 3,
+      "ranger": 3
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S"],
+    "range": "Touch",
+    "target": "Creatura toccata",
+    "duration": "Instantaneous",
+    "saving_throw": "Fortitude negates (harmless)",
+    "spell_resistance": true,
+    "description": "Neutralizza un veleno in una creatura o in un oggetto. Può rimuovere anche effetti di veleni magici.",
+    "short_description": "Neutralizza veleni.",
+    "effects": [
+      {
+        "effect_type": "heal",
+        "value": "neutralize_poison",
+        "duration": "Instantaneous",
+        "applies_to": "ally"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "distorcere_spazio",
+    "name": "Distorcere Spazio",
+    "school": "Transmutation",
+    "levels": {
+      "sorcerer/wizard": 2
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S"],
+    "range": "Close (25 ft. + 5 ft./2 levels)",
+    "target": "Una creatura",
+    "duration": "1 round/level",
+    "saving_throw": "Will negates",
+    "spell_resistance": true,
+    "description": "Fai sembrare il bersaglio più lontano o più vicino di quanto non sia realmente. -2 ai tiri per colpire contro di lui.",
+    "short_description": "-2 ai tiri per colpire contro il bersaglio.",
+    "effects": [
+      {
+        "effect_type": "debuff",
+        "value": "-2_attack_vs_target",
+        "value_type": "penalty",
+        "duration": "1 round/level",
+        "applies_to": "enemy"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "esplosione_congelante",
+    "name": "Esplosione Congelante",
+    "school": "Evocation",
+    "descriptors": ["Cold"],
+    "levels": {
+      "sorcerer/wizard": 2
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S"],
+    "range": "Medium (100 ft. + 10 ft./level)",
+    "area_type": "burst",
+    "area_size": "10-ft.-radius burst",
+    "duration": "Instantaneous",
+    "saving_throw": "Reflex half",
+    "spell_resistance": true,
+    "description": "Un'esplosione di freddo intenso infligge 1d6 danni da freddo per livello (massimo 10d6).",
+    "short_description": "1d6/level danni da freddo in area.",
+    "effects": [
+      {
+        "effect_type": "damage",
+        "value": "1d6_per_level",
+        "value_type": "cold",
+        "duration": "Instantaneous",
+        "applies_to": "area"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "evocare_fulmine",
+    "name": "Evocare Fulmine",
+    "school": "Evocation",
+    "descriptors": ["Electricity"],
+    "levels": {
+      "druid": 3,
+      "sorcerer/wizard": 3
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S"],
+    "range": "Long (400 ft. + 40 ft./level)",
+    "effect": "Un fulmine che colpisce dal cielo",
+    "duration": "Instantaneous",
+    "saving_throw": "Reflex half",
+    "spell_resistance": true,
+    "description": "Chiami un fulmine dal cielo che infligge 1d10 danni da elettricità per livello (massimo 10d10).",
+    "short_description": "1d10/level danni elettrici da fulmine.",
+    "effects": [
+      {
+        "effect_type": "damage",
+        "value": "1d10_per_level",
+        "value_type": "electricity",
+        "duration": "Instantaneous",
+        "applies_to": "enemy"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "fiamma_eterna",
+    "name": "Fiamma Eterna",
+    "school": "Evocation",
+    "descriptors": ["Fire"],
+    "levels": {
+      "cleric": 2
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S", "M"],
+    "material_components": "Polvere di rubino (50 mo)",
+    "range": "Touch",
+    "target": "Oggetto toccato",
+    "duration": "Permanent",
+    "saving_throw": "None",
+    "spell_resistance": false,
+    "description": "Crei una fiamma magica che brucia senza combustibile. Produce luce come una torcia.",
+    "short_description": "Crea fiamma magica permanente.",
+    "effects": [
+      {
+        "effect_type": "utility",
+        "value": "continual_flame",
+        "duration": "Permanent"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "frantumare",
+    "name": "Frantumare",
+    "school": "Evocation",
+    "descriptors": ["Sonic"],
+    "levels": {
+      "bard": 2,
+      "sorcerer/wizard": 2
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S", "F"],
+    "focus": "Un cristallo",
+    "range": "Close (25 ft. + 5 ft./2 levels)",
+    "target": "Un oggetto di cristallo, ceramica, porcellana o pietra",
+    "duration": "Instantaneous",
+    "saving_throw": "Fortitude negates (object)",
+    "spell_resistance": true,
+    "description": "Frantumi un oggetto fragile. Se usato contro una creatura di cristallo, infligge 1d6 danni sonori per livello.",
+    "short_description": "Frantuma oggetti fragili o creature di cristallo.",
+    "effects": [
+      {
+        "effect_type": "damage",
+        "value": "1d6_per_level",
+        "value_type": "sonic",
+        "duration": "Instantaneous",
+        "applies_to": "enemy"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "garrote_ombra",
+    "name": "Garrote d'Ombra",
+    "school": "Illusion",
+    "subschool": "Shadow",
+    "levels": {
+      "sorcerer/wizard": 2
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S"],
+    "range": "Close (25 ft. + 5 ft./2 levels)",
+    "effect": "Un garrote d'ombra",
+    "duration": "1 round/level",
+    "saving_throw": "Reflex negates",
+    "spell_resistance": true,
+    "description": "Crei un garrote d'ombra che strozza il bersaglio. Infligge 1d6 danni per round e impedisce parlare/incantare.",
+    "short_description": "Garrote d'ombra che infligge 1d6/round.",
+    "effects": [
+      {
+        "effect_type": "damage",
+        "value": "1d6_per_round",
+        "value_type": "untyped",
+        "duration": "1 round/level",
+        "applies_to": "enemy"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "gelo_penetrante",
+    "name": "Gelo Penetrante",
+    "school": "Evocation",
+    "descriptors": ["Cold"],
+    "levels": {
+      "sorcerer/wizard": 2
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S"],
+    "range": "Medium (100 ft. + 10 ft./level)",
+    "effect": "Ray",
+    "duration": "Instantaneous",
+    "saving_throw": "None",
+    "spell_resistance": true,
+    "description": "Un raggio di freddo intenso infligge 1d6 danni da freddo per livello (massimo 10d6) e riduce la velocità di 10 piedi per 1 round.",
+    "short_description": "1d6/level danni freddo + rallentamento.",
+    "effects": [
+      {
+        "effect_type": "damage",
+        "value": "1d6_per_level",
+        "value_type": "cold",
+        "duration": "Instantaneous",
+        "applies_to": "enemy"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "gesto_ipnotico",
+    "name": "Gesto Ipnotico",
+    "school": "Enchantment",
+    "subschool": "Compulsion",
+    "descriptors": ["Mind-Affecting"],
+    "levels": {
+      "bard": 2,
+      "sorcerer/wizard": 2
+    },
+    "casting_time": "1 standard action",
+    "components": ["S"],
+    "range": "Close (25 ft. + 5 ft./2 levels)",
+    "target": "Una creatura",
+    "duration": "1 round/level",
+    "saving_throw": "Will negates",
+    "spell_resistance": true,
+    "description": "Con un gesto della mano, ipnotizzi una creatura. Rimane inebetita, incapace di agire.",
+    "short_description": "Ipotizza una creatura con un gesto.",
+    "effects": [
+      {
+        "effect_type": "condition",
+        "value": "fascinated",
+        "duration": "1 round/level",
+        "applies_to": "enemy"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "globo_di_invulnerabilita_minore",
+    "name": "Globo d'Invulnerabilità Minore",
+    "school": "Abjuration",
+    "levels": {
+      "sorcerer/wizard": 4
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S", "M"],
+    "material_components": "Una sfera di vetro",
+    "range": "10 ft.",
+    "area_type": "emanation",
+    "area_size": "10-ft.-radius emanation",
+    "duration": "1 round/level",
+    "saving_throw": "None",
+    "spell_resistance": false,
+    "description": "Crea una barriera che blocca gli incantesimi di livello 1-3. Gli incantesimi di livello superiore penetrano normalmente.",
+    "short_description": "Blocca incantesimi di livello 1-3.",
+    "effects": [
+      {
+        "effect_type": "buff",
+        "value": "globe_invuln_minor",
+        "value_type": "abjuration",
+        "duration": "1 round/level"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "grappolo_di_saette",
+    "name": "Grappolo di Saette",
+    "school": "Evocation",
+    "descriptors": ["Electricity"],
+    "levels": {
+      "sorcerer/wizard": 2
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S"],
+    "range": "Medium (100 ft. + 10 ft./level)",
+    "target": "Fino a cinque creature",
+    "duration": "Instantaneous",
+    "saving_throw": "Reflex half",
+    "spell_resistance": true,
+    "description": "Scagli più saette che infliggono 1d6 danni da elettricità ciascuna. Una saette per due livelli (massimo 5).",
+    "short_description": "1d6 danni elettrici per saetta.",
+    "effects": [
+      {
+        "effect_type": "damage",
+        "value": "1d6_per_bolt",
+        "value_type": "electricity",
+        "duration": "Instantaneous",
+        "applies_to": "multiple"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "illusione_sonora",
+    "name": "Illusione Sonora",
+    "school": "Illusion",
+    "subschool": "Figment",
+    "levels": {
+      "bard": 2,
+      "sorcerer/wizard": 2
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S"],
+    "range": "Long (400 ft. + 40 ft./level)",
+    "effect": "Suoni illusori in un cubo di 10 piedi",
+    "duration": "1 round/level",
+    "saving_throw": "Will disbelief",
+    "spell_resistance": false,
+    "description": "Crei suoni illusori complessi come voci, musica o rumori di battaglia. Puoi modificarli concentrandoti.",
+    "short_description": "Crea suoni illusori complessi.",
+    "effects": [
+      {
+        "effect_type": "utility",
+        "value": "sound_illusion",
+        "duration": "1 round/level"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "immobilizzare_persona",
+    "name": "Immobilizzare Persona",
+    "school": "Enchantment",
+    "subschool": "Compulsion",
+    "descriptors": ["Mind-Affecting"],
+    "levels": {
+      "bard": 2,
+      "cleric": 2,
+      "sorcerer/wizard": 2
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S", "M"],
+    "material_components": "Un piccolo pezzo di ferro",
+    "range": "Close (25 ft. + 5 ft./2 levels)",
+    "target": "Una creatura umanoide",
+    "duration": "1 round/level",
+    "saving_throw": "Will negates",
+    "spell_resistance": true,
+    "description": "Paralizzi una creatura umanoide. Rimane immobile ma consapevole.",
+    "short_description": "Paralizza un umanoide.",
+    "effects": [
+      {
+        "effect_type": "condition",
+        "value": "paralyzed_humanoid",
+        "duration": "1 round/level",
+        "applies_to": "enemy"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "incatenare",
+    "name": "Incatenare",
+    "school": "Evocation",
+    "levels": {
+      "sorcerer/wizard": 2
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S"],
+    "range": "Medium (100 ft. + 10 ft./level)",
+    "effect": "Catene di energia",
+    "duration": "1 round/level",
+    "saving_throw": "Reflex negates",
+    "spell_resistance": true,
+    "description": "Crei catene di energia che legano il bersaglio. Deve superare una prova di Scaltrezza per liberarsi.",
+    "short_description": "Leggi un bersaglio con catene d'energia.",
+    "effects": [
+      {
+        "effect_type": "condition",
+        "value": "entangled_energy",
+        "duration": "1 round/level",
+        "applies_to": "enemy"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "invisibilita_di_gruppo",
+    "name": "Invisibilità di Gruppo",
+    "school": "Illusion",
+    "subschool": "Glamer",
+    "levels": {
+      "bard": 3,
+      "sorcerer/wizard": 3
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S", "M"],
+    "material_components": "Una ciglia per bersaglio",
+    "range": "Long (400 ft. + 40 ft./level)",
+    "target": "Una creatura/livello",
+    "duration": "1 min./level",
+    "saving_throw": "Will negates (harmless)",
+    "spell_resistance": true,
+    "description": "Rendi invisibile un intero gruppo. Se un membro attacca, l'incantesimo termina solo per lui.",
+    "short_description": "Rendi invisibile un gruppo.",
+    "effects": [
+      {
+        "effect_type": "condition",
+        "value": "invisible_group",
+        "duration": "1 min./level"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "lanterna_fatata",
+    "name": "Lanterna Fatata",
+    "school": "Evocation",
+    "levels": {
+      "bard": 2,
+      "sorcerer/wizard": 2
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S", "M"],
+    "material_components": "Una lucciola",
+    "range": "Close (25 ft. + 5 ft./2 levels)",
+    "effect": "Sfera di luce mobile",
+    "duration": "1 min./level",
+    "saving_throw": "None",
+    "spell_resistance": false,
+    "description": "Crei una sfera di luce che puoi muovere a distanza. Illumina come una torcia e può seguirti.",
+    "short_description": "Crea luce mobile controllabile.",
+    "effects": [
+      {
+        "effect_type": "utility",
+        "value": "dancing_lights",
+        "duration": "1 min./level"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "legame_animale",
+    "name": "Legame Animale",
+    "school": "Enchantment",
+    "subschool": "Charm",
+    "descriptors": ["Mind-Affecting"],
+    "levels": {
+      "druid": 1,
+      "ranger": 1
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S"],
+    "range": "Close (25 ft. + 5 ft./2 levels)",
+    "target": "Un animale di taglia Piccola o Media",
+    "duration": "1 hour/level",
+    "saving_throw": "Will negates",
+    "spell_resistance": true,
+    "description": "Rendi un animale amichevole e obbediente. Puoi dargli ordini semplici.",
+    "short_description": "Controlli un animale.",
+    "effects": [
+      {
+        "effect_type": "condition",
+        "value": "animal_charm",
+        "duration": "1 hour/level",
+        "applies_to": "enemy"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "localizzare_creatura",
+    "name": "Localizzare Creatura",
+    "school": "Divination",
+    "levels": {
+      "bard": 4,
+      "cleric": 4,
+      "druid": 4,
+      "sorcerer/wizard": 4
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S", "M"],
+    "material_components": "Peli o penne della creatura cercata",
+    "range": "Long (400 ft. + 40 ft./level)",
+    "area_type": "circle",
+    "area_size": "Circle, centered on you, with a radius of 400 ft. + 40 ft./level",
+    "duration": "10 min./level",
+    "saving_throw": "None",
+    "spell_resistance": false,
+    "description": "Senti la direzione di una creatura specifica nota. Deve essere dello stesso tipo di creatura del campione.",
+    "short_description": "Trova una creatura specifica.",
+    "effects": [
+      {
+        "effect_type": "utility",
+        "value": "locate_creature",
+        "duration": "10 min./level"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "manto_di_spine",
+    "name": "Manto di Spine",
+    "school": "Conjuration",
+    "subschool": "Creation",
+    "levels": {
+      "druid": 2
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S", "M"],
+    "material_components": "Una manciata di spine",
+    "range": "Touch",
+    "target": "Creatura toccata",
+    "duration": "1 min./level",
+    "saving_throw": "Fortitude negates (harmless)",
+    "spell_resistance": true,
+    "description": "Rivesti il bersaglio di spine affilate. Gli attaccanti in mischia subiscono 1d6 danni perforanti.",
+    "short_description": "Spine infliggono 1d6 danni agli attaccanti.",
+    "effects": [
+      {
+        "effect_type": "buff",
+        "value": "retributive_damage",
+        "value_type": "piercing",
+        "duration": "1 min./level"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "morso_del_serpente",
+    "name": "Morso del Serpente",
+    "school": "Necromancy",
+    "descriptors": ["Poison"],
+    "levels": {
+      "druid": 2,
+      "ranger": 2
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S"],
+    "range": "Touch",
+    "target": "Creatura toccata",
+    "duration": "Instantaneous",
+    "saving_throw": "Fortitude negates",
+    "spell_resistance": true,
+    "description": "Il tuo tocco infligge 1d8 danni da veleno e avvelena il bersaglio (1d4 danni Forza).",
+    "short_description": "1d8 danni veleno + avvelenamento.",
+    "effects": [
+      {
+        "effect_type": "damage",
+        "value": "1d8_plus_poison",
+        "value_type": "poison",
+        "duration": "Instantaneous",
+        "applies_to": "enemy"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "nebbia_acida",
+    "name": "Nebbia Acida",
+    "school": "Conjuration",
+    "subschool": "Creation",
+    "descriptors": ["Acid"],
+    "levels": {
+      "sorcerer/wizard": 2
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S", "M"],
+    "material_components": "Aceto e una perla nera",
+    "range": "Medium (100 ft. + 10 ft./level)",
+    "effect": "Nebbia in un cubo di 20 piedi",
+    "duration": "1 round/level",
+    "saving_throw": "None",
+    "spell_resistance": false,
+    "description": "Crea una nebbia di vapori acidi che infligge 1d6 danni da acido per round alle creature all'interno.",
+    "short_description": "Nebbia acida infligge 1d6 danni/round.",
+    "effects": [
+      {
+        "effect_type": "damage",
+        "value": "1d6",
+        "value_type": "acid",
+        "duration": "1 round/level",
+        "applies_to": "area"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "occhio_invisibile",
+    "name": "Occhio Invisibile",
+    "school": "Divination",
+    "levels": {
+      "sorcerer/wizard": 2
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S", "M"],
+    "material_components": "Una palla di gomma",
+    "range": "Medium (100 ft. + 10 ft./level)",
+    "effect": "Occhio invisibile",
+    "duration": "1 hour/level",
+    "saving_throw": "None",
+    "spell_resistance": false,
+    "description": "Crei un occhio invisibile che puoi muovere a distanza. Puoi vedere attraverso di esso.",
+    "short_description": "Crea un occhio invisibile esploratore.",
+    "effects": [
+      {
+        "effect_type": "utility",
+        "value": "arcane_eye",
+        "duration": "1 hour/level"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "palla_acida",
+    "name": "Palla Acida",
+    "school": "Conjuration",
+    "subschool": "Creation",
+    "descriptors": ["Acid"],
+    "levels": {
+      "sorcerer/wizard": 2
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S", "M"],
+    "material_components": "Una pallina di acido gelatinoso",
+    "range": "Long (400 ft. + 40 ft./level)",
+    "area_type": "burst",
+    "area_size": "10-ft.-radius burst",
+    "duration": "Instantaneous",
+    "saving_throw": "Reflex half",
+    "spell_resistance": true,
+    "description": "Lanci una sfera di acido che esplode infliggendo 1d6 danni da acido per livello (massimo 10d6).",
+    "short_description": "1d6/level danni da acido in area.",
+    "effects": [
+      {
+        "effect_type": "damage",
+        "value": "1d6_per_level",
+        "value_type": "acid",
+        "duration": "Instantaneous",
+        "applies_to": "area"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "passo_del_vento",
+    "name": "Passo del Vento",
+    "school": "Transmutation",
+    "levels": {
+      "druid": 2,
+      "ranger": 2,
+      "sorcerer/wizard": 2
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S"],
+    "range": "Personal",
+    "target": "Te stesso",
+    "duration": "1 hour/level",
+    "saving_throw": "None",
+    "spell_resistance": false,
+    "description": "Cammini sul vento come se fosse terreno solido. Puoi camminare su aria, acqua, fango, neve, ecc.",
+    "short_description": "Cammini su superfici liquide o instabili.",
+    "effects": [
+      {
+        "effect_type": "buff",
+        "value": "air_walk",
+        "value_type": "transmutation",
+        "duration": "1 hour/level"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "pelle_di_ghisa",
+    "name": "Pelle di Ghisa",
+    "school": "Transmutation",
+    "levels": {
+      "sorcerer/wizard": 2
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S", "M"],
+    "material_components": "Una scaglia di ferro",
+    "range": "Touch",
+    "target": "Creatura toccata",
+    "duration": "10 min./level",
+    "saving_throw": "Will negates (harmless)",
+    "spell_resistance": true,
+    "description": "La pelle del bersaglio diventa dura come ghisa, concedendo +4 bonus naturale alla CA.",
+    "short_description": "+4 bonus naturale alla CA.",
+    "effects": [
+      {
+        "effect_type": "buff",
+        "value": "+4_natural_ac",
+        "value_type": "enhancement",
+        "duration": "10 min./level"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "pioggia_di_fiamme",
+    "name": "Pioggia di Fiamme",
+    "school": "Evocation",
+    "descriptors": ["Fire"],
+    "levels": {
+      "sorcerer/wizard": 2
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S"],
+    "range": "Medium (100 ft. + 10 ft./level)",
+    "area_type": "cylinder",
+    "area_size": "Cylinder 10 ft. radius, 40 ft. high",
+    "duration": "Instantaneous",
+    "saving_throw": "Reflex half",
+    "spell_resistance": true,
+    "description": "Fiamme cadono dal cielo infliggendo 1d6 danni da fuoco per livello (massimo 10d6).",
+    "short_description": "1d6/level danni da fuoco in area verticale.",
+    "effects": [
+      {
+        "effect_type": "damage",
+        "value": "1d6_per_level",
+        "value_type": "fire",
+        "duration": "Instantaneous",
+        "applies_to": "area"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "porta_arcana",
+    "name": "Porta Arcana",
+    "school": "Abjuration",
+    "levels": {
+      "sorcerer/wizard": 2
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S", "M"],
+    "material_components": "Polvere d'oro (25 mo)",
+    "range": "Touch",
+    "target": "Porta, finestra o passaggio toccato",
+    "duration": "Permanent",
+    "saving_throw": "None",
+    "spell_resistance": false,
+    "description": "Rendi una porta magica. Può essere aperta solo da te o con 'Chiave Incantata'.",
+    "short_description": "Rendi una porta magicamente bloccata.",
+    "effects": [
+      {
+        "effect_type": "utility",
+        "value": "arcane_lock",
+        "duration": "Permanent"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "pregare",
+    "name": "Pregare",
+    "school": "Enchantment",
+    "subschool": "Compulsion",
+    "descriptors": ["Mind-Affecting"],
+    "levels": {
+      "cleric": 2
+    },
+    "casting_time": "1 round",
+    "components": ["V", "S", "D"],
+    "divine_focus": true,
+    "range": "40 ft.",
+    "area_type": "emanation",
+    "area_size": "40-ft.-radius emanation",
+    "duration": "1 round/level",
+    "saving_throw": "None",
+    "spell_resistance": false,
+    "description": "I tuoi alleati ottengono +1 a tiri per colpire, danni, tiri salvezza e prove di abilità. I nemici subiscono -1.",
+    "short_description": "Alleati +1, nemici -1.",
+    "effects": [
+      {
+        "effect_type": "buff",
+        "value": "prayer",
+        "value_type": "luck",
+        "duration": "1 round/level"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "protezione_dalle_frecciate",
+    "name": "Protezione dalle Frecciate",
+    "school": "Abjuration",
+    "levels": {
+      "sorcerer/wizard": 1
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S"],
+    "range": "Touch",
+    "target": "Creatura toccata",
+    "duration": "10 min./level",
+    "saving_throw": "Will negates (harmless)",
+    "spell_resistance": true,
+    "description": "Il bersaglio ottiene DR 5/magico contro armi da lancio. Non si applica ad attacchi in mischia.",
+    "short_description": "DR 5/magico vs armi da lancio.",
+    "effects": [
+      {
+        "effect_type": "buff",
+        "value": "dr_5_magic_vs_ranged",
+        "value_type": "damage_reduction",
+        "duration": "10 min./level"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "raffica_di_ghiaccio",
+    "name": "Raffica di Ghiaccio",
+    "school": "Evocation",
+    "descriptors": ["Cold"],
+    "levels": {
+      "sorcerer/wizard": 2
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S"],
+    "range": "60 ft.",
+    "area_type": "cone",
+    "area_size": "Cone 60 ft.",
+    "duration": "Instantaneous",
+    "saving_throw": "Reflex half",
+    "spell_resistance": true,
+    "description": "Un cono di ghiaccio e vento gelido infligge 1d4 danni da freddo per livello (massimo 10d4).",
+    "short_description": "1d4/level danni da freddo in cono lungo.",
+    "effects": [
+      {
+        "effect_type": "damage",
+        "value": "1d4_per_level",
+        "value_type": "cold",
+        "duration": "Instantaneous",
+        "applies_to": "area"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "raggio_debolizzante",
+    "name": "Raggio Debolizzante",
+    "school": "Necromancy",
+    "levels": {
+      "sorcerer/wizard": 2
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S"],
+    "range": "Close (25 ft. + 5 ft./2 levels)",
+    "effect": "Ray",
+    "duration": "1 round/level",
+    "saving_throw": "Fortitude negates",
+    "spell_resistance": true,
+    "description": "Un raggio grigio infligge 1d4 danni di Forza temporanei. Recupera 1 punto per round dopo la fine.",
+    "short_description": "1d4 danni Forza temporanei.",
+    "effects": [
+      {
+        "effect_type": "damage",
+        "value": "1d4_strength",
+        "value_type": "ability_damage",
+        "duration": "Temporary",
+        "applies_to": "enemy"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "raggio_incandescente",
+    "name": "Raggio Incandescente",
+    "school": "Evocation",
+    "descriptors": ["Fire"],
+    "levels": {
+      "sorcerer/wizard": 2
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S", "M"],
+    "material_components": "Un pezzo di ambra",
+    "range": "Close (25 ft. + 5 ft./2 levels)",
+    "effect": "Ray",
+    "duration": "Instantaneous",
+    "saving_throw": "None",
+    "spell_resistance": true,
+    "description": "Un raggio di fuoco concentrato infligge 4d6 danni da fuoco. Il bersaglio può incendiarsi.",
+    "short_description": "4d6 danni da fuoco.",
+    "effects": [
+      {
+        "effect_type": "damage",
+        "value": "4d6",
+        "value_type": "fire",
+        "duration": "Instantaneous",
+        "applies_to": "enemy"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "resistenza_alle_energie_superiore",
+    "name": "Resistenza alle Energie Superiore",
+    "school": "Abjuration",
+    "levels": {
+      "cleric": 3,
+      "druid": 3,
+      "paladin": 3,
+      "sorcerer/wizard": 3
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S", "D"],
+    "divine_focus": true,
+    "range": "Touch",
+    "target": "Creatura toccata",
+    "duration": "10 min./level",
+    "saving_throw": "Will negates (harmless)",
+    "spell_resistance": true,
+    "description": "Conferisce resistenza 20 a un tipo di energia specificato (fuoco, freddo, elettricità, acido, sonoro).",
+    "short_description": "Resistenza 20 a un tipo di energia.",
+    "effects": [
+      {
+        "effect_type": "buff",
+        "value": "energy_resistance_20",
+        "value_type": "energy",
+        "duration": "10 min./level"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "respingere_metallo",
+    "name": "Respingere Metallo",
+    "school": "Abjuration",
+    "levels": {
+      "druid": 2
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S"],
+    "range": "60 ft.",
+    "area_type": "emanation",
+    "area_size": "60-ft.-radius emanation",
+    "duration": "1 round/level",
+    "saving_throw": "Will negates",
+    "spell_resistance": true,
+    "description": "Spingi via armi e armature metalliche. Le creature con armatura metallica sono rallentate.",
+    "short_description": "Respingi metallo, rallenta creature armate.",
+    "effects": [
+      {
+        "effect_type": "condition",
+        "value": "repel_metal",
+        "duration": "1 round/level"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "resurrezione_minore",
+    "name": "Resurrezione Minore",
+    "school": "Conjuration",
+    "subschool": "Healing",
+    "levels": {
+      "cleric": 4,
+      "paladin": 4
+    },
+    "casting_time": "1 minute",
+    "components": ["V", "S", "M"],
+    "material_components": "Diamante del valore di 500 mo",
+    "range": "Touch",
+    "target": "Creatura morta toccata",
+    "duration": "Instantaneous",
+    "saving_throw": "None, see text",
+    "spell_resistance": true,
+    "description": "Rianimi una creatura morta da non più di 1 giorno per livello. Perde 1 punto di Costituzione permanentemente.",
+    "short_description": "Rianima morto recente, -1 Cost permanente.",
+    "effects": [
+      {
+        "effect_type": "heal",
+        "value": "resurrect",
+        "duration": "Instantaneous"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "richiamo_elementale_minore",
+    "name": "Richiamo Elementale Minore",
+    "school": "Conjuration",
+    "subschool": "Summoning",
+    "levels": {
+      "druid": 2,
+      "sorcerer/wizard": 2
+    },
+    "casting_time": "1 round",
+    "components": ["V", "S", "F"],
+    "focus": "Un elemento appropriato",
+    "range": "Close (25 ft. + 5 ft./2 levels)",
+    "effect": "Un elementale",
+    "duration": "1 round/level",
+    "saving_throw": "None",
+    "spell_resistance": false,
+    "description": "Evochi un elementale minore (aria, terra, fuoco, acqua) per combattere per te.",
+    "short_description": "Evoca un elementale minore.",
+    "effects": [
+      {
+        "effect_type": "summon",
+        "value": "lesser_elemental",
+        "duration": "1 round/level"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "rinforzare_costruzione",
+    "name": "Rinforzare Costruzione",
+    "school": "Transmutation",
+    "levels": {
+      "cleric": 2,
+      "sorcerer/wizard": 2
+    },
+    "casting_time": "10 minutes",
+    "components": ["V", "S"],
+    "range": "Touch",
+    "target": "Costruzione toccata di 250 piedi quadri",
+    "duration": "1 day/level",
+    "saving_throw": "None",
+    "spell_resistance": false,
+    "description": "Rafforzi una struttura contro danni fisici. La durezza raddoppia e i PF aumentano del 50%.",
+    "short_description": "Rafforza edifici e strutture.",
+    "effects": [
+      {
+        "effect_type": "buff",
+        "value": "fortify_structure",
+        "value_type": "enhancement",
+        "duration": "1 day/level"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "scacciare_insetti",
+    "name": "Scacciare Insetti",
+    "school": "Abjuration",
+    "levels": {
+      "druid": 2,
+      "ranger": 2
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S", "M"],
+    "material_components": "Un pizzico di pepe",
+    "range": "10 ft.",
+    "area_type": "emanation",
+    "area_size": "10-ft.-radius emanation",
+    "duration": "10 min./level",
+    "saving_throw": "None",
+    "spell_resistance": false,
+    "description": "Insetti e aracnidi non possono avvicinarsi. Quelli già presenti fuggono.",
+    "short_description": "Tieni lontani insetti e aracnidi.",
+    "effects": [
+      {
+        "effect_type": "utility",
+        "value": "repel_vermin",
+        "duration": "10 min./level"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "scudo_elementale",
+    "name": "Scudo Elementale",
+    "school": "Abjuration",
+    "levels": {
+      "druid": 3,
+      "sorcerer/wizard": 3
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S"],
+    "range": "Personal",
+    "target": "Te stesso",
+    "duration": "1 min./level",
+    "saving_throw": "None",
+    "spell_resistance": false,
+    "description": "Ottieni resistenza 10 a due tipi di energia (fuoco/freddo/elettricità/acido) e immunità a veleni.",
+    "short_description": "Resistenza 10 a due energie + immunità veleni.",
+    "effects": [
+      {
+        "effect_type": "buff",
+        "value": "elemental_shield",
+        "value_type": "abjuration",
+        "duration": "1 min./level"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "sentire_i_pensieri",
+    "name": "Sentire i Pensieri",
+    "school": "Divination",
+    "descriptors": ["Mind-Affecting"],
+    "levels": {
+      "sorcerer/wizard": 2
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S", "M"],
+    "material_components": "Una moneta di rame",
+    "range": "60 ft.",
+    "area_type": "cone",
+    "area_size": "Cone 60 ft.",
+    "duration": "Concentration, up to 1 min./level",
+    "saving_throw": "Will negates",
+    "spell_resistance": true,
+    "description": "Senti i pensieri superficiali delle creature nell'area. Puoi cercare pensieri specifici.",
+    "short_description": "Senti pensieri nell'area.",
+    "effects": [
+      {
+        "effect_type": "utility",
+        "value": "detect_thoughts_area",
+        "duration": "Concentration"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "soffio_velenoso",
+    "name": "Soffio Velenoso",
+    "school": "Conjuration",
+    "subschool": "Creation",
+    "descriptors": ["Poison"],
+    "levels": {
+      "druid": 2,
+      "sorcerer/wizard": 2
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S"],
+    "range": "15 ft.",
+    "area_type": "cone",
+    "area_size": "Cone 15 ft.",
+    "duration": "Instantaneous",
+    "saving_throw": "Fortitude negates",
+    "spell_resistance": true,
+    "description": "Emetti un cono di vapori velenosi. Le creature subiscono 1d4 danni Costituzione e sono nauseate per 1 round.",
+    "short_description": "1d4 danni Cost + nausea.",
+    "effects": [
+      {
+        "effect_type": "damage",
+        "value": "1d4_constitution",
+        "value_type": "poison",
+        "duration": "Instantaneous",
+        "applies_to": "area"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "sovraccaricare",
+    "name": "Sovraccaricare",
+    "school": "Transmutation",
+    "levels": {
+      "sorcerer/wizard": 2
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S"],
+    "range": "Touch",
+    "target": "Arma toccata",
+    "duration": "1 round/level",
+    "saving_throw": "None",
+    "spell_resistance": false,
+    "description": "L'arma infligge +1d6 danni da elettricità per colpo. Dopo l'ultimo colpo, esplode per 1d6 danni/level nell'area.",
+    "short_description": "Arma +1d6 elettricità, esplode alla fine.",
+    "effects": [
+      {
+        "effect_type": "buff",
+        "value": "overload_weapon",
+        "value_type": "enhancement",
+        "duration": "1 round/level"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "spada_fiammeggiante",
+    "name": "Spada Fiammeggiante",
+    "school": "Evocation",
+    "descriptors": ["Fire"],
+    "levels": {
+      "sorcerer/wizard": 2
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S", "F"],
+    "focus": "Una lama di metallo",
+    "range": "0 ft.",
+    "effect": "Spada di fuoco",
+    "duration": "1 round/level",
+    "saving_throw": "None",
+    "spell_resistance": false,
+    "description": "Crei una spada di fuoco che infligge 1d8+1 danni da fuoco per due livelli. Puoi brandirla come un'arma normale.",
+    "short_description": "Spada di fuoco infligge 1d8+1/2 levels.",
+    "effects": [
+      {
+        "effect_type": "damage",
+        "value": "1d8+1_per_2_levels",
+        "value_type": "fire",
+        "duration": "1 round/level",
+        "applies_to": "enemy"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "sprofondare",
+    "name": "Sprofondare",
+    "school": "Transmutation",
+    "levels": {
+      "druid": 2,
+      "sorcerer/wizard": 2
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S", "M"],
+    "material_components": "Una manciata di terra",
+    "range": "Medium (100 ft. + 10 ft./level)",
+    "target": "Una creatura",
+    "duration": "1 round/level",
+    "saving_throw": "Reflex negates",
+    "spell_resistance": true,
+    "description": "Il bersaglio sprofonda nel terreno fino alla vita. È immobilizzato e soffoca se completamente coperto.",
+    "short_description": "Intrappola creatura nel terreno.",
+    "effects": [
+      {
+        "effect_type": "condition",
+        "value": "buried",
+        "duration": "1 round/level",
+        "applies_to": "enemy"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "tempesta_di_neve",
+    "name": "Tempesta di Neve",
+    "school": "Evocation",
+    "descriptors": ["Cold"],
+    "levels": {
+      "druid": 2,
+      "sorcerer/wizard": 2
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S", "M"],
+    "material_components": "Un cristallo di ghiaccio",
+    "range": "Long (400 ft. + 40 ft./level)",
+    "area_type": "cylinder",
+    "area_size": "Cylinder 20 ft. radius, 40 ft. high",
+    "duration": "1 round/level",
+    "saving_throw": "None",
+    "spell_resistance": false,
+    "description": "Crei una tempesta di neve che riduce la visibilità e infligge 1d6 danni da freddo per round.",
+    "short_description": "Tempesta di neve: visibilità ridotta + 1d6 freddo/round.",
+    "effects": [
+      {
+        "effect_type": "damage",
+        "value": "1d6",
+        "value_type": "cold",
+        "duration": "1 round/level",
+        "applies_to": "area"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "terreno_scivoloso",
+    "name": "Terreno Scivoloso",
+    "school": "Transmutation",
+    "levels": {
+      "druid": 2,
+      "sorcerer/wizard": 2
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S", "M"],
+    "material_components": "Una manciata di grasso",
+    "range": "Medium (100 ft. + 10 ft./level)",
+    "area_type": "burst",
+    "area_size": "10-ft.-radius burst",
+    "duration": "1 round/level",
+    "saving_throw": "Reflex negates",
+    "spell_resistance": false,
+    "description": "Rendi il terreno estremamente scivoloso. Le creature devono superare prove di Acrobazia per muoversi.",
+    "short_description": "Rendi terreno scivoloso.",
+    "effects": [
+      {
+        "effect_type": "condition",
+        "value": "grease_area",
+        "duration": "1 round/level"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "tocco_di_fatigue",
+    "name": "Tocco di Fatica",
+    "school": "Necromancy",
+    "levels": {
+      "cleric": 2,
+      "sorcerer/wizard": 2
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S"],
+    "range": "Touch",
+    "target": "Creatura toccata",
+    "duration": "1 round/level",
+    "saving_throw": "Fortitude negates",
+    "spell_resistance": true,
+    "description": "Il tuo tocco affatica il bersaglio. Se già affaticato, diventa esausto.",
+    "short_description": "Affatica o esausta una creatura.",
+    "effects": [
+      {
+        "effect_type": "condition",
+        "value": "fatigue_exhaust",
+        "duration": "1 round/level",
+        "applies_to": "enemy"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "torre_d'avorio",
+    "name": "Torre d'Avorio",
+    "school": "Conjuration",
+    "subschool": "Creation",
+    "levels": {
+      "sorcerer/wizard": 2
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S", "F"],
+    "focus": "Un piccolo blocco di marmo",
+    "range": "Close (25 ft. + 5 ft./2 levels)",
+    "effect": "Torre di 5 piedi di diametro, 10 piedi alta",
+    "duration": "10 min./level",
+    "saving_throw": "None",
+    "spell_resistance": false,
+    "description": "Crei una torre di pietra che fornisce copertura. Puoi salire sopra per vantaggio tattico.",
+    "short_description": "Crea torre di pietra per copertura.",
+    "effects": [
+      {
+        "effect_type": "utility",
+        "value": "stone_tower",
+        "duration": "10 min./level"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "trasformare_acqua_in_vino",
+    "name": "Trasformare Acqua in Vino",
+    "school": "Transmutation",
+    "levels": {
+      "bard": 2,
+      "cleric": 2
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S", "M"],
+    "material_components": "Un grappolo d'uva",
+    "range": "Touch",
+    "target": "Fino a 1 gallone d'acqua/livello",
+    "duration": "Permanent",
+    "saving_throw": "None",
+    "spell_resistance": false,
+    "description": "Trasformi acqua in vino di qualità media. Non ha proprietà magiche speciali.",
+    "short_description": "Trasforma acqua in vino.",
+    "effects": [
+      {
+        "effect_type": "utility",
+        "value": "water_to_wine",
+        "duration": "Permanent"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "vapore_soffocante",
+    "name": "Vapore Soffocante",
+    "school": "Conjuration",
+    "subschool": "Creation",
+    "levels": {
+      "druid": 2,
+      "sorcerer/wizard": 2
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S"],
+    "range": "Medium (100 ft. + 10 ft./level)",
+    "effect": "Nebbia in un cubo di 20 piedi",
+    "duration": "1 round/level",
+    "saving_throw": "Fortitude partial",
+    "spell_resistance": false,
+    "description": "Crea una nebbia soffocante. Le creature all'interno devono superare prove di Costituzione ogni round o essere nauseate.",
+    "short_description": "Nebbia soffocante nausea le creature.",
+    "effects": [
+      {
+        "effect_type": "condition",
+        "value": "sickened",
+        "duration": "1 round/level",
+        "applies_to": "area"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "velocita",
+    "name": "Velocità",
+    "school": "Transmutation",
+    "levels": {
+      "sorcerer/wizard": 2,
+      "bard": 2
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S", "M"],
+    "material_components": "Una goccia di miele",
+    "range": "Touch",
+    "target": "Creatura toccata",
+    "duration": "1 round/level",
+    "saving_throw": "Will negates (harmless)",
+    "spell_resistance": true,
+    "description": "Il bersaglio si muove e agisce più velocemente. Ottiene un'azione extra per round (solo movimento o attacco).",
+    "short_description": "Concede un'azione extra per round.",
+    "effects": [
+      {
+        "effect_type": "buff",
+        "value": "haste",
+        "value_type": "enhancement",
+        "duration": "1 round/level"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "ventaglio_di_fiamme",
+    "name": "Ventaglio di Fiamme",
+    "school": "Evocation",
+    "descriptors": ["Fire"],
+    "levels": {
+      "sorcerer/wizard": 2
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S"],
+    "range": "15 ft.",
+    "area_type": "cone",
+    "area_size": "Cone 15 ft.",
+    "duration": "Instantaneous",
+    "saving_throw": "Reflex half",
+    "spell_resistance": true,
+    "description": "Un ventaglio di fiamme infligge 1d6 danni da fuoco per livello (massimo 10d6).",
+    "short_description": "1d6/level danni da fuoco in cono.",
+    "effects": [
+      {
+        "effect_type": "damage",
+        "value": "1d6_per_level",
+        "value_type": "fire",
+        "duration": "Instantaneous",
+        "applies_to": "area"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "visione_dell'aquila",
+    "name": "Visione dell'Aquila",
+    "school": "Divination",
+    "levels": {
+      "druid": 2,
+      "ranger": 2
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S", "M"],
+    "material_components": "Una piuma d'aquila",
+    "range": "Personal",
+    "target": "Te stesso",
+    "duration": "1 hour/level",
+    "saving_throw": "None",
+    "spell_resistance": false,
+    "description": "La tua vista si acuisce. Ottieni +5 alle prove di Percezione e puoi vedere dettagli a grande distanza.",
+    "short_description": "+5 Percezione, vista a lunga distanza.",
+    "effects": [
+      {
+        "effect_type": "buff",
+        "value": "+5_perception",
+        "value_type": "competence",
+        "duration": "1 hour/level"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "visione_termica",
+    "name": "Visione Termica",
+    "school": "Divination",
+    "levels": {
+      "sorcerer/wizard": 2
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S"],
+    "range": "Touch",
+    "target": "Creatura toccata",
+    "duration": "1 hour/level",
+    "saving_throw": "Will negates (harmless)",
+    "spell_resistance": true,
+    "description": "Il bersaglio vede le fonti di calore. Può individuare creature viventi attraverso nebbia, fumo o oscurità.",
+    "short_description": "Vedi fonti di calore come visione a infrarossi.",
+    "effects": [
+      {
+        "effect_type": "buff",
+        "value": "thermal_vision",
+        "value_type": "divination",
+        "duration": "1 hour/level"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "vitalita_naturale",
+    "name": "Vitalità Naturale",
+    "school": "Transmutation",
+    "levels": {
+      "druid": 2
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S"],
+    "range": "Touch",
+    "target": "Creatura toccata",
+    "duration": "1 hour/level",
+    "saving_throw": "Will negates (harmless)",
+    "spell_resistance": true,
+    "description": "Il bersaglio guadagna rapidità naturale. +10 piedi a tutte le velocità di movimento.",
+    "short_description": "+10 piedi a tutte le velocità.",
+    "effects": [
+      {
+        "effect_type": "buff",
+        "value": "+10_speed",
+        "value_type": "enhancement",
+        "duration": "1 hour/level"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "lingua_di_fuoco",
+    "name": "Lingua di Fuoco",
+    "school": "Evocation",
+    "descriptors": ["Fire"],
+    "levels": {
+      "sorcerer/wizard": 3,
+      "cleric": 3
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S", "M"],
+    "material_components": "Una manciata di zolfo",
+    "range": "40 ft.",
+    "area_type": "line",
+    "area_size": "Line 40 ft. long",
+    "duration": "Instantaneous",
+    "saving_throw": "Reflex half",
+    "spell_resistance": true,
+    "description": "Scagli un flusso di fuoco in una linea che infligge 1d6 danni da fuoco per livello (massimo 10d6).",
+    "short_description": "1d6/level danni fuoco in linea.",
+    "effects": [
+      {
+        "effect_type": "damage",
+        "value": "1d6_per_level",
+        "value_type": "fire",
+        "duration": "Instantaneous",
+        "applies_to": "area"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "pelle_di_acciaio",
+    "name": "Pelle d'Acciaio",
+    "school": "Transmutation",
+    "levels": {
+      "sorcerer/wizard": 3,
+      "cleric": 3
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S", "M"],
+    "material_components": "Una scaglia di ferro",
+    "range": "Touch",
+    "target": "Creatura toccata",
+    "duration": "10 min./level",
+    "saving_throw": "Will negates (harmless)",
+    "spell_resistance": true,
+    "description": "La pelle diventa dura come acciaio. +5 bonus naturale alla CA.",
+    "short_description": "+5 bonus naturale alla CA.",
+    "effects": [
+      {
+        "effect_type": "buff",
+        "value": "+5_natural_ac",
+        "value_type": "enhancement",
+        "duration": "10 min./level"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "richiamo_elementale",
+    "name": "Richiamo Elementale",
+    "school": "Conjuration",
+    "subschool": "Summoning",
+    "levels": {
+      "druid": 4,
+      "sorcerer/wizard": 4
+    },
+    "casting_time": "1 round",
+    "components": ["V", "S", "F"],
+    "focus": "Elemento appropriato",
+    "range": "Medium (100 ft. + 10 ft./level)",
+    "effect": "Un elementale",
+    "duration": "1 round/level",
+    "saving_throw": "None",
+    "spell_resistance": false,
+    "description": "Evochi un elementale potente per combattere per te.",
+    "short_description": "Evoca un elementale potente.",
+    "effects": [
+      {
+        "effect_type": "summon",
+        "value": "elemental",
+        "duration": "1 round/level"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "muro_di_fuoco",
+    "name": "Muro di Fuoco",
+    "school": "Evocation",
+    "descriptors": ["Fire"],
+    "levels": {
+      "sorcerer/wizard": 4,
+      "druid": 5
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S", "M"],
+    "material_components": "Un piccolo pezzo di fosforo",
+    "range": "Medium (100 ft. + 10 ft./level)",
+    "effect": "Muro di fuoco fino a 20 ft./level",
+    "duration": "Concentration + 1 round/level",
+    "saving_throw": "Reflex half",
+    "spell_resistance": true,
+    "description": "Crei un muro di fuoco che infligge 2d6 danni da fuoco a chi lo attraversa.",
+    "short_description": "Muro infligge 2d6 danni fuoco.",
+    "effects": [
+      {
+        "effect_type": "damage",
+        "value": "2d6",
+        "value_type": "fire",
+        "duration": "Concentration + 1 round/level",
+        "applies_to": "area"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "teletrasporto_di_gruppo",
+    "name": "Teletrasporto di Gruppo",
+    "school": "Conjuration",
+    "subschool": "Teleportation",
+    "levels": {
+      "bard": 5,
+      "sorcerer/wizard": 5
+    },
+    "casting_time": "1 standard action",
+    "components": ["V"],
+    "range": "Touch",
+    "target": "Te stesso e oggetti/creature toccate",
+    "duration": "Instantaneous",
+    "saving_throw": "Will negates (harmless)",
+    "spell_resistance": true,
+    "description": "Teletrasporti te stesso e altre creature in un luogo familiare.",
+    "short_description": "Teletrasporto di gruppo.",
+    "effects": [
+      {
+        "effect_type": "utility",
+        "value": "teleport_group",
+        "duration": "Instantaneous"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "paralisi_di_gruppo",
+    "name": "Paralisi di Gruppo",
+    "school": "Enchantment",
+    "subschool": "Compulsion",
+    "descriptors": ["Mind-Affecting"],
+    "levels": {
+      "sorcerer/wizard": 4
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S"],
+    "range": "Medium (100 ft. + 10 ft./level)",
+    "area_type": "burst",
+    "area_size": "30-ft.-radius burst",
+    "duration": "1 round/level",
+    "saving_throw": "Will negates",
+    "spell_resistance": true,
+    "description": "Paralizzi tutte le creature nell'area che falliscono il tiro salvezza.",
+    "short_description": "Paralisi in area.",
+    "effects": [
+      {
+        "effect_type": "condition",
+        "value": "paralyzed",
+        "duration": "1 round/level",
+        "applies_to": "enemy"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "scudo_elementale_maggiore",
+    "name": "Scudo Elementale Maggiore",
+    "school": "Abjuration",
+    "levels": {
+      "druid": 5,
+      "sorcerer/wizard": 5
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S"],
+    "range": "Personal",
+    "target": "Te stesso",
+    "duration": "10 min./level",
+    "saving_throw": "None",
+    "spell_resistance": false,
+    "description": "Resistenza 30 a tutti i tipi di energia (fuoco, freddo, elettricità, acido).",
+    "short_description": "Resistenza 30 a tutte le energie.",
+    "effects": [
+      {
+        "effect_type": "buff",
+        "value": "energy_resistance_30_all",
+        "value_type": "abjuration",
+        "duration": "10 min./level"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "vista_del_vampiro",
+    "name": "Vista del Vampiro",
+    "school": "Divination",
+    "levels": {
+      "sorcerer/wizard": 3
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S", "M"],
+    "material_components": "Una goccia di sangue",
+    "range": "Personal",
+    "target": "Te stesso",
+    "duration": "1 hour/level",
+    "saving_throw": "None",
+    "spell_resistance": false,
+    "description": "Vedi le auree vitali delle creature. +10 alle prove di Percezione per individuare creature viventi.",
+    "short_description": "Vedi auree vitali, +10 Percezione vs viventi.",
+    "effects": [
+      {
+        "effect_type": "buff",
+        "value": "+10_perception_living",
+        "value_type": "competence",
+        "duration": "1 hour/level"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "benedizione_di_guerra",
+    "name": "Benedizione di Guerra",
+    "school": "Enchantment",
+    "subschool": "Compulsion",
+    "descriptors": ["Mind-Affecting"],
+    "levels": {
+      "cleric": 4,
+      "paladin": 4
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S", "D"],
+    "divine_focus": true,
+    "range": "50 ft.",
+    "area_type": "burst",
+    "area_size": "50-ft.-radius burst",
+    "duration": "1 round/level",
+    "saving_throw": "Will negates (harmless)",
+    "spell_resistance": true,
+    "description": "Alleati ottengono +2 morale ad attacchi, danni e tiri salvezza.",
+    "short_description": "+2 morale ad attacchi, danni, salvezze.",
+    "effects": [
+      {
+        "effect_type": "buff",
+        "value": "+2_morale_all",
+        "value_type": "morale",
+        "duration": "1 round/level"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "controllo_del_tempo",
+    "name": "Controllo del Tempo",
+    "school": "Transmutation",
+    "levels": {
+      "druid": 5,
+      "sorcerer/wizard": 5
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S"],
+    "range": "2 miles",
+    "area_type": "cylinder",
+    "area_size": "Cylinder 2-mile radius, 1,000 ft. high",
+    "duration": "4d12 hours",
+    "saving_throw": "None",
+    "spell_resistance": false,
+    "description": "Modifichi le condizioni atmosferiche nell'area. Puoi creare pioggia, neve, nebbia, etc.",
+    "short_description": "Controlla il meteo su area vasta.",
+    "effects": [
+      {
+        "effect_type": "utility",
+        "value": "control_weather",
+        "duration": "4d12 hours"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "legame_di_sangue",
+    "name": "Legame di Sangue",
+    "school": "Necromancy",
+    "levels": {
+      "sorcerer/wizard": 4
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S", "M"],
+    "material_components": "Una goccia del tuo sangue",
+    "range": "Touch",
+    "target": "Creatura vivente toccata",
+    "duration": "1 hour/level",
+    "saving_throw": "Will negates",
+    "spell_resistance": true,
+    "description": "Colleghi la tua vitalità a quella del bersaglio. Se subisci danni, lui ne subisce la metà.",
+    "short_description": "Condividi danni con il bersaglio.",
+    "effects": [
+      {
+        "effect_type": "condition",
+        "value": "blood_bond",
+        "duration": "1 hour/level",
+        "applies_to": "enemy"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "portale_dimensionale",
+    "name": "Portale Dimensionale",
+    "school": "Conjuration",
+    "subschool": "Creation",
+    "levels": {
+      "sorcerer/wizard": 5
+    },
+    "casting_time": "10 minutes",
+    "components": ["V", "S", "M"],
+    "material_components": "Polvere di diamante (1,000 mo)",
+    "range": "Touch",
+    "effect": "Portale stabile di 5 ft. × 8 ft.",
+    "duration": "1 round/level",
+    "saving_throw": "None",
+    "spell_resistance": false,
+    "description": "Crei un portale magico tra due punti. Chiunque può attraversarlo.",
+    "short_description": "Crea portale tra due punti.",
+    "effects": [
+      {
+        "effect_type": "utility",
+        "value": "gate_portal",
+        "duration": "1 round/level"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "visione_del_futuro",
+    "name": "Visione del Futuro",
+    "school": "Divination",
+    "levels": {
+      "cleric": 5,
+      "sorcerer/wizard": 5
+    },
+    "casting_time": "1 minute",
+    "components": ["V", "S", "M"],
+    "material_components": "Olio speciale (250 mo)",
+    "range": "Personal",
+    "target": "Te stesso",
+    "duration": "Instantaneous",
+    "saving_throw": "None",
+    "spell_resistance": false,
+    "description": "Ottieni informazioni su un evento futuro specifico. Il GM fornisce una visione utile.",
+    "short_description": "Visione di un evento futuro.",
+    "effects": [
+      {
+        "effect_type": "utility",
+        "value": "divination",
+        "duration": "Instantaneous"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "tempesta_di_fulmini",
+    "name": "Tempesta di Fulmini",
+    "school": "Evocation",
+    "descriptors": ["Electricity"],
+    "levels": {
+      "druid": 5,
+      "sorcerer/wizard": 5
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S", "M"],
+    "material_components": "Un pezzo di ambra",
+    "range": "Long (400 ft. + 40 ft./level)",
+    "area_type": "cylinder",
+    "area_size": "Cylinder 40 ft. radius, 80 ft. high",
+    "duration": "1 round/level",
+    "saving_throw": "Reflex half",
+    "spell_resistance": true,
+    "description": "Fulmini cadono casualmente nell'area, infliggendo 3d6 danni elettrici per round.",
+    "short_description": "3d6 danni elettrici/round in area.",
+    "effects": [
+      {
+        "effect_type": "damage",
+        "value": "3d6",
+        "value_type": "electricity",
+        "duration": "1 round/level",
+        "applies_to": "area"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "maledizione_della_debolezza",
+    "name": "Maledizione della Debolezza",
+    "school": "Necromancy",
+    "levels": {
+      "cleric": 4
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S"],
+    "range": "Close (25 ft. + 5 ft./2 levels)",
+    "target": "Una creatura",
+    "duration": "1 min./level",
+    "saving_throw": "Will negates",
+    "spell_resistance": true,
+    "description": "Il bersaglio subisce -6 penalità a Forza. Se Forza raggiunge 0, è paralizzato.",
+    "short_description": "-6 Forza, paralisi se Forza=0.",
+    "effects": [
+      {
+        "effect_type": "debuff",
+        "value": "-6_strength",
+        "value_type": "curse",
+        "duration": "1 min./level",
+        "applies_to": "enemy"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "curare_ferite_critiche",
+    "name": "Curare Ferite Critiche",
+    "school": "Conjuration",
+    "subschool": "Healing",
+    "levels": {
+      "cleric": 4,
+      "druid": 5
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S"],
+    "range": "Touch",
+    "target": "Creatura toccata",
+    "duration": "Instantaneous",
+    "saving_throw": "Will half (harmless)",
+    "spell_resistance": true,
+    "description": "Cura 4d8+1 per livello punti ferita (massimo +20).",
+    "short_description": "Cura 4d8+1/level PF (max +20).",
+    "effects": [
+      {
+        "effect_type": "heal",
+        "value": "4d8+1",
+        "duration": "Instantaneous",
+        "applies_to": "ally"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "mano_di_acciaio",
+    "name": "Mano d'Acciaio",
+    "school": "Evocation",
+    "levels": {
+      "sorcerer/wizard": 5
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S", "M"],
+    "material_components": "Un guanto di maglia",
+    "range": "Medium (100 ft. + 10 ft./level)",
+    "effect": "Mano di forza 10 ft.",
+    "duration": "1 round/level",
+    "saving_throw": "None",
+    "spell_resistance": false,
+    "description": "Crei una mano gigante di forza che può afferrare, spingere o sollevare oggetti.",
+    "short_description": "Mano di forza per manipolare oggetti.",
+    "effects": [
+      {
+        "effect_type": "utility",
+        "value": "bigbys_interposing_hand",
+        "duration": "1 round/level"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "illusione_programmata",
+    "name": "Illusione Programmata",
+    "school": "Illusion",
+    "subschool": "Figment",
+    "levels": {
+      "bard": 6,
+      "sorcerer/wizard": 6
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S", "M"],
+    "material_components": "Lana e polvere di perla",
+    "range": "Long (400 ft. + 40 ft./level)",
+    "effect": "Illusione visiva e uditiva",
+    "duration": "Permanent until triggered",
+    "saving_throw": "Will disbelief",
+    "spell_resistance": false,
+    "description": "Crei un'illusione che si attiva quando si verifica una condizione specifica.",
+    "short_description": "Illusione con trigger programmato.",
+    "effects": [
+      {
+        "effect_type": "utility",
+        "value": "programmed_image",
+        "duration": "Permanent"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "soffio_del_drago_superiore",
+    "name": "Soffio del Drago Superiore",
+    "school": "Evocation",
+    "levels": {
+      "sorcerer/wizard": 4
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S", "M"],
+    "material_components": "Una scaglia di drago antico",
+    "range": "30 ft.",
+    "area_type": "cone",
+    "area_size": "Cone 30 ft.",
+    "duration": "Instantaneous",
+    "saving_throw": "Reflex half",
+    "spell_resistance": true,
+    "description": "Cone di energia che infligge 1d8 danni per livello (massimo 15d8). Scegli tipo.",
+    "short_description": "1d8/level danni energia in cono grande.",
+    "effects": [
+      {
+        "effect_type": "damage",
+        "value": "1d8_per_level",
+        "value_type": "energy",
+        "duration": "Instantaneous",
+        "applies_to": "area"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "disintegrate",
+    "name": "Disintegra",
+    "school": "Transmutation",
+    "levels": {
+      "sorcerer/wizard": 6
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S", "M"],
+    "material_components": "Polvere di magnetite e glicerina",
+    "range": "Medium (100 ft. + 10 ft./level)",
+    "effect": "Ray",
+    "duration": "Instantaneous",
+    "saving_throw": "Fortitude partial",
+    "spell_resistance": true,
+    "description": "Un raggio verde disintegra una creatura o oggetto. Infligge 2d6 danni per livello (massimo 40d6). Se riduce a 0 HP, il bersaglio diventa polvere.",
+    "short_description": "Disintegra creatura/oggetto, 2d6/level danni.",
+    "effects": [
+      {
+        "effect_type": "damage",
+        "value": "2d6_per_level",
+        "value_type": "disintegration",
+        "duration": "Instantaneous",
+        "applies_to": "enemy"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "controllo_clima",
+    "name": "Controllo Clima",
+    "school": "Transmutation",
+    "levels": {
+      "cleric": 7,
+      "druid": 7
+    },
+    "casting_time": "10 minutes",
+    "components": ["V", "S"],
+    "range": "2 miles",
+    "area_type": "cylinder",
+    "area_size": "Cylinder 2-mile radius, 5,000 ft. high",
+    "duration": "4d12 hours",
+    "saving_throw": "None",
+    "spell_resistance": false,
+    "description": "Modifichi radicalmente il clima in un'area vasta. Puoi creare tempeste, tornado, siccità, etc.",
+    "short_description": "Controllo climatico su area continentale.",
+    "effects": [
+      {
+        "effect_type": "utility",
+        "value": "control_weather_greater",
+        "duration": "4d12 hours"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "tempesta_di_meteore",
+    "name": "Tempesta di Meteore",
+    "school": "Evocation",
+    "descriptors": ["Fire"],
+    "levels": {
+      "sorcerer/wizard": 9
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S"],
+    "range": "Long (400 ft. + 40 ft./level)",
+    "area_type": "four_40-ft.-radius bursts",
+    "area_size": "Four 40-ft.-radius bursts",
+    "duration": "Instantaneous",
+    "saving_throw": "Reflex half",
+    "spell_resistance": true,
+    "description": "Chiami quattro meteore che cadono dal cielo. Ogni meteora infligge 2d6 danni da fuoco e 2d6 danni contundenti.",
+    "short_description": "4 meteore: 2d6 fuoco + 2d6 contundenti ciascuna.",
+    "effects": [
+      {
+        "effect_type": "damage",
+        "value": "2d6_fire_2d6_bludgeoning",
+        "duration": "Instantaneous",
+        "applies_to": "area"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "ressurrezione",
+    "name": "Ressurrezione",
+    "school": "Conjuration",
+    "subschool": "Healing",
+    "levels": {
+      "cleric": 7
+    },
+    "casting_time": "1 minute",
+    "components": ["V", "S", "M"],
+    "material_components": "Diamante del valore di 10,000 mo",
+    "range": "Touch",
+    "target": "Creatura morta toccata",
+    "duration": "Instantaneous",
+    "saving_throw": "None, see text",
+    "spell_resistance": true,
+    "description": "Rianimi una creatura morta da non più di 10 anni per livello. Restituisce tutti gli arti e organi perduti.",
+    "short_description": "Rianima morto fino a 10 anni/level.",
+    "effects": [
+      {
+        "effect_type": "heal",
+        "value": "true_resurrection",
+        "duration": "Instantaneous"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "portale_permanente",
+    "name": "Portale Permanente",
+    "school": "Conjuration",
+    "subschool": "Creation",
+    "levels": {
+      "sorcerer/wizard": 9
+    },
+    "casting_time": "1 hour",
+    "components": ["V", "S", "M", "XP"],
+    "material_components": "Polvere di diamante (5,000 mo)",
+    "xp_cost": "1,000 XP",
+    "range": "Touch",
+    "effect": "Portale permanente di 5 ft. × 8 ft.",
+    "duration": "Permanent",
+    "saving_throw": "None",
+    "spell_resistance": false,
+    "description": "Crei un portale magico permanente tra due punti. Funziona per sempre.",
+    "short_description": "Portale magico permanente.",
+    "effects": [
+      {
+        "effect_type": "utility",
+        "value": "permanent_gate",
+        "duration": "Permanent"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "globo_invulnerabilita",
+    "name": "Globo d'Invulnerabilità",
+    "school": "Abjuration",
+    "levels": {
+      "sorcerer/wizard": 6
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S", "M"],
+    "material_components": "Una sfera di vetro con filamenti d'oro (500 mo)",
+    "range": "10 ft.",
+    "area_type": "sphere",
+    "area_size": "Sphere 10 ft. radius",
+    "duration": "1 round/level",
+    "saving_throw": "None",
+    "spell_resistance": false,
+    "description": "Crea una barriera che blocca tutti gli incantesimi di livello 4 e inferiore.",
+    "short_description": "Blocca incantesimi di livello ≤4.",
+    "effects": [
+      {
+        "effect_type": "buff",
+        "value": "spell_immunity_1-4",
+        "value_type": "abjuration",
+        "duration": "1 round/level"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "trasformazione_polimorfica",
+    "name": "Trasformazione Polimorfica",
+    "school": "Transmutation",
+    "levels": {
+      "sorcerer/wizard": 8,
+      "druid": 9
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S", "M"],
+    "material_components": "Una goccia di mercurio",
+    "range": "Touch",
+    "target": "Creatura toccata",
+    "duration": "1 min./level",
+    "saving_throw": "Fortitude negates",
+    "spell_resistance": true,
+    "description": "Trasformi una creatura in un'altra forma. Può essere usato per neutralizzare nemici o potenziare alleati.",
+    "short_description": "Polimorfismo potente e versatile.",
+    "effects": [
+      {
+        "effect_type": "condition",
+        "value": "polymorph_any",
+        "duration": "1 min./level",
+        "applies_to": "any"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "maledizione_totale",
+    "name": "Maledizione Totale",
+    "school": "Necromancy",
+    "levels": {
+      "cleric": 9
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S"],
+    "range": "Close (25 ft. + 5 ft./2 levels)",
+    "target": "Una creatura",
+    "duration": "Permanent",
+    "saving_throw": "Will negates",
+    "spell_resistance": true,
+    "description": "Infliggi una maledizione devastante: -8 a tutte le caratteristiche, tiri salvezza, attacchi e danni.",
+    "short_description": "-8 a tutto, maledizione permanente.",
+    "effects": [
+      {
+        "effect_type": "debuff",
+        "value": "-8_all",
+        "value_type": "curse",
+        "duration": "Permanent",
+        "applies_to": "enemy"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "muro_di_acciaio",
+    "name": "Muro d'Acciaio",
+    "school": "Conjuration",
+    "subschool": "Creation",
+    "levels": {
+      "sorcerer/wizard": 6
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S", "M"],
+    "material_components": "Una lamina di ferro",
+    "range": "Medium (100 ft. + 10 ft./level)",
+    "effect": "Muro di acciaio di 1 pollice/livello di spessore",
+    "duration": "Instantaneous",
+    "saving_throw": "See text",
+    "spell_resistance": false,
+    "description": "Crei un muro permanente di acciaio massiccio. Può essere di qualsiasi forma.",
+    "short_description": "Muro permanente di acciaio.",
+    "effects": [
+      {
+        "effect_type": "utility",
+        "value": "wall_of_iron",
+        "duration": "Permanent"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "controllo_tempo_superiore",
+    "name": "Controllo Tempo Superiore",
+    "school": "Transmutation",
+    "levels": {
+      "sorcerer/wizard": 7
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S", "M"],
+    "material_components": "Polvere di rubino (1,000 mo)",
+    "range": "Personal",
+    "target": "Te stesso",
+    "duration": "1 round/level",
+    "saving_throw": "None",
+    "spell_resistance": false,
+    "description": "Ottieni due azioni extra per round. In pratica, agisci tre volte ogni round.",
+    "short_description": "2 azioni extra per round.",
+    "effects": [
+      {
+        "effect_type": "buff",
+        "value": "time_stop",
+        "value_type": "temporal",
+        "duration": "1 round/level"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "benedizione_epica",
+    "name": "Benedizione Epica",
+    "school": "Enchantment",
+    "subschool": "Compulsion",
+    "descriptors": ["Mind-Affecting"],
+    "levels": {
+      "cleric": 9
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S", "D"],
+    "divine_focus": true,
+    "range": "300 ft.",
+    "area_type": "burst",
+    "area_size": "300-ft.-radius burst",
+    "duration": "1 round/level",
+    "saving_throw": "Will negates (harmless)",
+    "spell_resistance": true,
+    "description": "Alleati ottengono +4 morale ad attacchi, danni, tiri salvezza, prove di abilità e caratteristiche.",
+    "short_description": "+4 morale a tutto per gli alleati.",
+    "effects": [
+      {
+        "effect_type": "buff",
+        "value": "+4_morale_all_stats",
+        "value_type": "morale",
+        "duration": "1 round/level"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "teletrasporto_senza_errori",
+    "name": "Teletrasporto Senza Errori",
+    "school": "Conjuration",
+    "subschool": "Teleportation",
+    "levels": {
+      "sorcerer/wizard": 7
+    },
+    "casting_time": "1 standard action",
+    "components": ["V"],
+    "range": "Personal and touch",
+    "target": "Te stesso e oggetti/creature toccate",
+    "duration": "Instantaneous",
+    "saving_throw": "None",
+    "spell_resistance": false,
+    "description": "Teletrasporto preciso in qualsiasi luogo conosciuto o descritto. Nessun rischio di errore.",
+    "short_description": "Teletrasporto preciso e sicuro.",
+    "effects": [
+      {
+        "effect_type": "utility",
+        "value": "greater_teleport",
+        "duration": "Instantaneous"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "morso_del_vampiro_superiore",
+    "name": "Morso del Vampiro Superiore",
+    "school": "Necromancy",
+    "levels": {
+      "sorcerer/wizard": 7
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S"],
+    "range": "Touch",
+    "target": "Creatura vivente toccata",
+    "duration": "Instantaneous",
+    "saving_throw": "Will half",
+    "spell_resistance": true,
+    "description": "Infliggi 10d6 danni negativi e guadagni punti ferita temporanei pari ai danni inflitti.",
+    "short_description": "10d6 danni negativi, guarisci uguale.",
+    "effects": [
+      {
+        "effect_type": "damage",
+        "value": "10d6",
+        "value_type": "negative",
+        "duration": "Instantaneous",
+        "applies_to": "enemy"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "sfera_annichilente",
+    "name": "Sfera Annichilente",
+    "school": "Evocation",
+    "levels": {
+      "sorcerer/wizard": 9
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S", "M"],
+    "material_components": "Una sfera di vetro nero (5,000 mo)",
+    "range": "Medium (100 ft. + 10 ft./level)",
+    "effect": "Sfera di 1 ft. diameter",
+    "duration": "1 round/level",
+    "saving_throw": "Reflex negates",
+    "spell_resistance": false,
+    "description": "Crei una sfera di annichilimento che distrugge tutto ciò che tocca. Può essere diretta a distanza.",
+    "short_description": "Sfera che distrugge materia e magia.",
+    "effects": [
+      {
+        "effect_type": "damage",
+        "value": "annihilation",
+        "duration": "1 round/level",
+        "applies_to": "enemy"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "dominazione_completa",
+    "name": "Dominazione Completa",
+    "school": "Enchantment",
+    "subschool": "Compulsion",
+    "descriptors": ["Mind-Affecting"],
+    "levels": {
+      "sorcerer/wizard": 9
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S"],
+    "range": "Close (25 ft. + 5 ft./2 levels)",
+    "target": "Una creatura",
+    "duration": "1 day/level",
+    "saving_throw": "Will negates",
+    "spell_resistance": true,
+    "description": "Prendi controllo totale della mente del bersaglio. Puoi dargli qualsiasi ordine.",
+    "short_description": "Controllo mentale totale e duraturo.",
+    "effects": [
+      {
+        "effect_type": "condition",
+        "value": "dominate_monster",
+        "duration": "1 day/level",
+        "applies_to": "enemy"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "terremoto",
+    "name": "Terremoto",
+    "school": "Evocation",
+    "levels": {
+      "cleric": 8,
+      "druid": 8
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S", "M"],
+    "material_components": "Argilla, pietra e ferro",
+    "range": "Long (400 ft. + 40 ft./level)",
+    "area_type": "cylinder",
+    "area_size": "Cylinder 80 ft. radius, 80 ft. high",
+    "duration": "1 round",
+    "saving_throw": "See text",
+    "spell_resistance": false,
+    "description": "Scateni un terremoto devastante. Distrugge edifici, crea crepacci, e fa crollare tunnel.",
+    "short_description": "Terremoto distruttivo su area vasta.",
+    "effects": [
+      {
+        "effect_type": "damage",
+        "value": "earthquake",
+        "duration": "1 round",
+        "applies_to": "area"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "globo_invulnerabilita_superiore",
+    "name": "Globo d'Invulnerabilità Superiore",
+    "school": "Abjuration",
+    "levels": {
+      "sorcerer/wizard": 8
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S", "M"],
+    "material_components": "Una sfera di cristallo con filamenti di mithral (1,000 mo)",
+    "range": "10 ft.",
+    "area_type": "sphere",
+    "area_size": "Sphere 10 ft. radius",
+    "duration": "1 round/level",
+    "saving_throw": "None",
+    "spell_resistance": false,
+    "description": "Crea una barriera che blocca tutti gli incantesimi di livello 5 e inferiore.",
+    "short_description": "Blocca incantesimi di livello ≤5.",
+    "effects": [
+      {
+        "effect_type": "buff",
+        "value": "spell_immunity_1-5",
+        "value_type": "abjuration",
+        "duration": "1 round/level"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "richiamo_celestiale",
+    "name": "Richiamo Celestiale",
+    "school": "Conjuration",
+    "subschool": "Calling",
+    "levels": {
+      "cleric": 9
+    },
+    "casting_time": "10 minutes",
+    "components": ["V", "S"],
+    "range": "Close (25 ft. + 5 ft./2 levels)",
+    "effect": "Chiama una creatura celestiale",
+    "duration": "Instantaneous",
+    "saving_throw": "None",
+    "spell_resistance": false,
+    "description": "Chiami un potente essere celestiale che deve eseguire un compito per te.",
+    "short_description": "Chiama un essere celestiale potente.",
+    "effects": [
+      {
+        "effect_type": "summon",
+        "value": "celestial",
+        "duration": "Varies"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "maledizione_del_caos",
+    "name": "Maledizione del Caos",
+    "school": "Enchantment",
+    "subschool": "Compulsion",
+    "descriptors": ["Mind-Affecting", "Chaotic"],
+    "levels": {
+      "cleric": 7
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S"],
+    "range": "Medium (100 ft. + 10 ft./level)",
+    "target": "Una creatura",
+    "duration": "Permanent",
+    "saving_throw": "Will negates",
+    "spell_resistance": true,
+    "description": "Il bersaglio diventa caotico nell'allineamento. Perde capacità di classe legate alla legge.",
+    "short_description": "Cambia allineamento in caotico.",
+    "effects": [
+      {
+        "effect_type": "condition",
+        "value": "chaos_curse",
+        "duration": "Permanent",
+        "applies_to": "enemy"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "barriera_di_forza_sferica",
+    "name": "Barriera di Forza Sferica",
+    "school": "Evocation",
+    "levels": {
+      "sorcerer/wizard": 8
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S", "M"],
+    "material_components": "Una sfera di cristallo",
+    "range": "10 ft.",
+    "area_type": "sphere",
+    "area_size": "Sphere 10 ft. radius",
+    "duration": "1 round/level",
+    "saving_throw": "Reflex negates",
+    "spell_resistance": false,
+    "description": "Crei una sfera impenetrabile di forza che blocca tutto: materia, energia, magia.",
+    "short_description": "Sfera impenetrabile di forza.",
+    "effects": [
+      {
+        "effect_type": "buff",
+        "value": "forcecage",
+        "value_type": "force",
+        "duration": "1 round/level"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "legame_planare_superiore",
+    "name": "Legame Planare Superiore",
+    "school": "Conjuration",
+    "subschool": "Calling",
+    "levels": {
+      "cleric": 8,
+      "sorcerer/wizard": 8
+    },
+    "casting_time": "10 minutes",
+    "components": ["V", "S", "M", "F"],
+    "material_components": "Offerte del valore di 10,000 mo",
+    "focus": "Un sigillo d'oro del valore di 5,000 mo",
+    "range": "Close (25 ft. + 5 ft./2 levels)",
+    "effect": "Chiama una creatura extraplanare potente",
+    "duration": "Instantaneous",
+    "saving_throw": "None",
+    "spell_resistance": false,
+    "description": "Chiami una creatura extraplanare molto potente. Può rifiutarsi solo se il compito è suicida.",
+    "short_description": "Chiama creatura extraplanare potente.",
+    "effects": [
+      {
+        "effect_type": "utility",
+        "value": "greater_planar_binding",
+        "duration": "Varies"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "resurrezione_perfetta",
+    "name": "Resurrezione Perfetta",
+    "school": "Conjuration",
+    "subschool": "Healing",
+    "levels": {
+      "cleric": 9
+    },
+    "casting_time": "10 minutes",
+    "components": ["V", "S", "M", "XP"],
+    "material_components": "Diamante del valore di 25,000 mo",
+    "xp_cost": "5,000 XP",
+    "range": "Touch",
+    "target": "Creatura morta toccata",
+    "duration": "Instantaneous",
+    "saving_throw": "None, see text",
+    "spell_resistance": true,
+    "description": "Rianimi una creatura morta da qualsiasi tempo, anche se distrutta. Ricostruisce il corpo dal nulla.",
+    "short_description": "Rianima chiunque, anche senza corpo.",
+    "effects": [
+      {
+        "effect_type": "heal",
+        "value": "true_resurrection_full",
+        "duration": "Instantaneous"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "metamorfosi_universale",
+    "name": "Metamorfosi Universale",
+    "school": "Transmutation",
+    "levels": {
+      "sorcerer/wizard": 9
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S", "M"],
+    "material_components": "Una goccia di mercurio, una farfalla, e un po' di terra",
+    "range": "Close (25 ft. + 5 ft./2 levels)",
+    "target": "Una creatura",
+    "duration": "Permanent",
+    "saving_throw": "Fortitude negates",
+    "spell_resistance": true,
+    "description": "Trasformi permanentemente una creatura in un'altra forma. Può essere usato per pietrificare, trasformare in animale, etc.",
+    "short_description": "Trasformazione permanente di qualsiasi tipo.",
+    "effects": [
+      {
+        "effect_type": "condition",
+        "value": "polymorph_any_permanent",
+        "duration": "Permanent",
+        "applies_to": "any"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "visione_eterna",
+    "name": "Visione Eterna",
+    "school": "Divination",
+    "levels": {
+      "cleric": 8,
+      "sorcerer/wizard": 8
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S", "F"],
+    "focus": "Occhio di aquila mummificato",
+    "range": "Personal",
+    "target": "Te stesso",
+    "duration": "24 hours",
+    "saving_throw": "None",
+    "spell_resistance": false,
+    "description": "Vedi attraverso illusioni, metamorfosi, invisibilità, e nel piano etéreo. +30 a Percezione.",
+    "short_description": "Vedi tutto come è realmente, +30 Percezione.",
+    "effects": [
+      {
+        "effect_type": "buff",
+        "value": "true_seeing_greater",
+        "value_type": "divination",
+        "duration": "24 hours"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "sussurro_divino",
+    "name": "Sussurro Divino",
+    "school": "Divination",
+    "levels": {
+      "cleric": 7
+    },
+    "casting_time": "1 hour",
+    "components": ["V", "S", "M"],
+    "material_components": "Incenso sacro (500 mo)",
+    "range": "Personal",
+    "target": "Te stesso",
+    "duration": "Instantaneous",
+    "saving_throw": "None",
+    "spell_resistance": false,
+    "description": "Comunichi con la tua divinità. Ottieni risposte a tre domande con risposta 'sì', 'no' o 'forse'.",
+    "short_description": "Poni 3 domande alla tua divinità.",
+    "effects": [
+      {
+        "effect_type": "utility",
+        "value": "commune",
+        "duration": "Instantaneous"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "portale_interdimensionale",
+    "name": "Portale Interdimensionale",
+    "school": "Conjuration",
+    "subschool": "Creation",
+    "levels": {
+      "sorcerer/wizard": 9
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S", "M"],
+    "material_components": "Polvere di diamante (10,000 mo)",
+    "range": "Close (25 ft. + 5 ft./2 levels)",
+    "effect": "Portale a un altro piano",
+    "duration": "1 round/level",
+    "saving_throw": "None",
+    "spell_resistance": false,
+    "description": "Apri un portale verso un altro piano di esistenza. Puoi viaggiare in qualsiasi piano conosciuto.",
+    "short_description": "Portale verso altri piani.",
+    "effects": [
+      {
+        "effect_type": "utility",
+        "value": "gate",
+        "duration": "1 round/level"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "maledizione_della_morte",
+    "name": "Maledizione della Morte",
+    "school": "Necromancy",
+    "descriptors": ["Death"],
+    "levels": {
+      "cleric": 7,
+      "sorcerer/wizard": 7
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S"],
+    "range": "Close (25 ft. + 5 ft./2 levels)",
+    "target": "Una creatura vivente",
+    "duration": "Instantaneous",
+    "saving_throw": "Fortitude negates",
+    "spell_resistance": true,
+    "description": "Tenti di uccidere istantaneamente una creatura. Se il bersaglio fallisce il tiro salvezza, muore.",
+    "short_description": "Uccide istantaneamente una creatura.",
+    "effects": [
+      {
+        "effect_type": "damage",
+        "value": "instant_death",
+        "value_type": "death",
+        "duration": "Instantaneous",
+        "applies_to": "enemy"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "aura_di_invulnerabilita",
+    "name": "Aura d'Invulnerabilità",
+    "school": "Abjuration",
+    "levels": {
+      "sorcerer/wizard": 9
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S", "M"],
+    "material_components": "Polvere di diamante (5,000 mo)",
+    "range": "Personal",
+    "area_type": "emanation",
+    "area_size": "20-ft.-radius emanation",
+    "duration": "24 hours",
+    "saving_throw": "None",
+    "spell_resistance": false,
+    "description": "Crea un'aura che blocca tutti gli incantesimi di livello 8 e inferiore. Sei immune alla magia minore.",
+    "short_description": "Blocca incantesimi di livello ≤8.",
+    "effects": [
+      {
+        "effect_type": "buff",
+        "value": "spell_immunity_1-8",
+        "value_type": "abjuration",
+        "duration": "24 hours"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "richiamo_draconico",
+    "name": "Richiamo Draconico",
+    "school": "Conjuration",
+    "subschool": "Summoning",
+    "levels": {
+      "sorcerer/wizard": 9
+    },
+    "casting_time": "1 round",
+    "components": ["V", "S", "M"],
+    "material_components": "Una scaglia di drago antico",
+    "range": "Close (25 ft. + 5 ft./2 levels)",
+    "effect": "Un drago",
+    "duration": "1 round/level",
+    "saving_throw": "None",
+    "spell_resistance": false,
+    "description": "Evochi un drago potente per combattere per te. Il drago è sotto il tuo controllo completo.",
+    "short_description": "Evoca un drago.",
+    "effects": [
+      {
+        "effect_type": "summon",
+        "value": "dragon",
+        "duration": "1 round/level"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "tempesta_finale",
+    "name": "Tempesta Finale",
+    "school": "Evocation",
+    "levels": {
+      "druid": 9
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S"],
+    "range": "Long (400 ft. + 40 ft./level)",
+    "area_type": "cylinder",
+    "area_size": "Cylinder 100 ft. radius, 200 ft. high",
+    "duration": "1 round/level",
+    "saving_throw": "Reflex half and Fortitude partial",
+    "spell_resistance": true,
+    "description": "Scateni una tempesta apocalittica: fulmini, grandine, tornado e pioggia acida. 10d6 danni misti per round.",
+    "short_description": "Tempesta apocalittica: 10d6 danni misti/round.",
+    "effects": [
+      {
+        "effect_type": "damage",
+        "value": "10d6_mixed",
+        "duration": "1 round/level",
+        "applies_to": "area"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "sfera_di_annientamento",
+    "name": "Sfera d'Annientamento",
+    "school": "Evocation",
+    "levels": {
+      "sorcerer/wizard": 9
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S", "M"],
+    "material_components": "Una sfera di vetro nero e polvere di rubino (10,000 mo)",
+    "range": "Medium (100 ft. + 10 ft./level)",
+    "effect": "Sfera nera di 2 ft. diameter",
+    "duration": "1 round/level",
+    "saving_throw": "Reflex negates",
+    "spell_resistance": false,
+    "description": "Crei una sfera di annientamento che distrugge tutto ciò che tocca. Può essere diretta a distanza.",
+    "short_description": "Sfera nera che annienta materia ed energia.",
+    "effects": [
+      {
+        "effect_type": "damage",
+        "value": "annihilation_black",
+        "duration": "1 round/level",
+        "applies_to": "enemy"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "muro_di_energia",
+    "name": "Muro d'Energia",
+    "school": "Evocation",
+    "levels": {
+      "sorcerer/wizard": 7
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S", "M"],
+    "material_components": "Un pezzo di quarzo",
+    "range": "Medium (100 ft. + 10 ft./level)",
+    "effect": "Muro di energia di 20 ft./level",
+    "duration": "Concentration + 1 round/level",
+    "saving_throw": "Reflex half or negates",
+    "spell_resistance": true,
+    "description": "Crei un muro di energia pura che infligge 2d6 danni per tipo di energia scelto.",
+    "short_description": "Muro che infligge 2d6 danni energia.",
+    "effects": [
+      {
+        "effect_type": "damage",
+        "value": "2d6_energy",
+        "duration": "Concentration + 1 round/level",
+        "applies_to": "area"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "dominio_dello_spazio",
+    "name": "Dominio dello Spazio",
+    "school": "Transmutation",
+    "levels": {
+      "sorcerer/wizard": 9
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S"],
+    "range": "Personal",
+    "target": "Te stesso",
+    "duration": "1 round/level",
+    "saving_throw": "None",
+    "spell_resistance": false,
+    "description": "Controlli lo spazio intorno a te. Puoi teletrasportarti a volontà, creare portali, e distorcere le distanze.",
+    "short_description": "Controllo completo dello spazio locale.",
+    "effects": [
+      {
+        "effect_type": "buff",
+        "value": "space_mastery",
+        "value_type": "transmutation",
+        "duration": "1 round/level"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "soffio_dell'apocalisse",
+    "name": "Soffio dell'Apocalisse",
+    "school": "Evocation",
+    "levels": {
+      "sorcerer/wizard": 9
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S"],
+    "range": "60 ft.",
+    "area_type": "cone",
+    "area_size": "Cone 60 ft.",
+    "duration": "Instantaneous",
+    "saving_throw": "Fortitude half",
+    "spell_resistance": true,
+    "description": "Emetti un soffio di energia pura che infligge 1d6 danni per livello (massimo 25d6) di ogni tipo di energia.",
+    "short_description": "1d6/level di tutti i tipi di energia.",
+    "effects": [
+      {
+        "effect_type": "damage",
+        "value": "1d6_all_energy",
+        "duration": "Instantaneous",
+        "applies_to": "area"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "incantesimo_epico",
+    "name": "Incantesimo Epico",
+    "school": "Universal",
+    "levels": {
+      "sorcerer/wizard": 9
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S", "M"],
+    "material_components": "Polvere di diamante (25,000 mo)",
+    "range": "See text",
+    "target": "See text",
+    "duration": "See text",
+    "saving_throw": "See text",
+    "spell_resistance": "See text",
+    "description": "L'incantesimo definitivo. Puoi duplicare qualsiasi altro incantesimo di livello 8 o inferiore senza componenti materiali.",
+    "short_description": "Duplica qualsiasi incantesimo ≤8.",
+    "effects": [
+      {
+        "effect_type": "utility",
+        "value": "wish",
+        "duration": "Varies"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "barriera_cosmica",
+    "name": "Barriera Cosmica",
+    "school": "Abjuration",
+    "levels": {
+      "cleric": 9
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S", "D"],
+    "divine_focus": true,
+    "range": "Personal",
+    "area_type": "emanation",
+    "area_size": "30-ft.-radius emanation",
+    "duration": "10 min./level",
+    "saving_throw": "None",
+    "spell_resistance": false,
+    "description": "Crea un'area protetta che blocca tutti gli incantesimi ostili e gli effetti soprannaturali.",
+    "short_description": "Area di immunità magica completa.",
+    "effects": [
+      {
+        "effect_type": "buff",
+        "value": "antimagic_field_greater",
+        "value_type": "abjuration",
+        "duration": "10 min./level"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "occhio_onnisciente",
+    "name": "Occhio Onnisciente",
+    "school": "Divination",
+    "levels": {
+      "sorcerer/wizard": 9
+    },
+    "casting_time": "1 minute",
+    "components": ["V", "S", "F"],
+    "focus": "Uno specchio d'argento",
+    "range": "Unlimited",
+    "target": "Un luogo o creatura",
+    "duration": "1 min./level",
+    "saving_throw": "None",
+    "spell_resistance": false,
+    "description": "Vedi e senti qualsiasi luogo o creatura nell'universo. Nessun limite di distanza.",
+    "short_description": "Vedi qualsiasi cosa nell'universo.",
+    "effects": [
+      {
+        "effect_type": "utility",
+        "value": "vision",
+        "duration": "1 min./level"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "benedizione_divina",
+    "name": "Benedizione Divina",
+    "school": "Enchantment",
+    "subschool": "Compulsion",
+    "descriptors": ["Mind-Affecting"],
+    "levels": {
+      "cleric": 9
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S", "D"],
+    "divine_focus": true,
+    "range": "Touch",
+    "target": "Creatura toccata",
+    "duration": "1 hour/level",
+    "saving_throw": "Will negates (harmless)",
+    "spell_resistance": true,
+    "description": "Il bersaglio ottiene +8 morale a tutte le caratteristiche, attacchi, danni, tiri salvezza e prove di abilità.",
+    "short_description": "+8 morale a tutto.",
+    "effects": [
+      {
+        "effect_type": "buff",
+        "value": "+8_morale_all",
+        "value_type": "morale",
+        "duration": "1 hour/level"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "tempesta_di_lame",
+    "name": "Tempesta di Lame",
+    "school": "Evocation",
+    "levels": {
+      "sorcerer/wizard": 9
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S", "M"],
+    "material_components": "Una lama di rasoio",
+    "range": "Medium (100 ft. + 10 ft./level)",
+    "area_type": "cylinder",
+    "area_size": "Cylinder 30 ft. radius, 60 ft. high",
+    "duration": "1 round/level",
+    "saving_throw": "Reflex half",
+    "spell_resistance": true,
+    "description": "Lame di forza magica tagliano tutto nell'area. 5d6 danni da taglio per round.",
+    "short_description": "5d6 danni taglio/round in area.",
+    "effects": [
+      {
+        "effect_type": "damage",
+        "value": "5d6",
+        "value_type": "slashing",
+        "duration": "1 round/level",
+        "applies_to": "area"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "metamorfosi_draconica",
+    "name": "Metamorfosi Draconica",
+    "school": "Transmutation",
+    "levels": {
+      "sorcerer/wizard": 8
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S", "M"],
+    "material_components": "Una scaglia di drago",
+    "range": "Personal",
+    "target": "Te stesso",
+    "duration": "1 hour/level",
+    "saving_throw": "None",
+    "spell_resistance": false,
+    "description": "Ti trasformi in un drago. Ottieni le statistiche, attacchi e capacità di un drago adulto.",
+    "short_description": "Trasformati in drago.",
+    "effects": [
+      {
+        "effect_type": "buff",
+        "value": "form_of_the_dragon",
+        "value_type": "polymorph",
+        "duration": "1 hour/level"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "maledizione_dell'oblio",
+    "name": "Maledizione dell'Oblio",
+    "school": "Enchantment",
+    "subschool": "Compulsion",
+    "descriptors": ["Mind-Affecting"],
+    "levels": {
+      "sorcerer/wizard": 8
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S"],
+    "range": "Close (25 ft. + 5 ft./2 levels)",
+    "target": "Una creatura",
+    "duration": "Permanent",
+    "saving_throw": "Will negates",
+    "spell_resistance": true,
+    "description": "Cancelli la memoria del bersaglio. Perde tutti i ricordi, capacità e livelli di classe.",
+    "short_description": "Cancella memoria e abilità.",
+    "effects": [
+      {
+        "effect_type": "condition",
+        "value": "feeblemind_greater",
+        "duration": "Permanent",
+        "applies_to": "enemy"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "sfera_di_protezione_assoluta",
+    "name": "Sfera di Protezione Assoluta",
+    "school": "Abjuration",
+    "levels": {
+      "cleric": 9
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S", "D"],
+    "divine_focus": true,
+    "range": "10 ft.",
+    "area_type": "sphere",
+    "area_size": "Sphere 10 ft. radius",
+    "duration": "1 round/level",
+    "saving_throw": "None",
+    "spell_resistance": false,
+    "description": "Crea una sfera che blocca tutto: attacchi fisici, magia, energia, e persino il tempo.",
+    "short_description": "Immunità totale in una sfera.",
+    "effects": [
+      {
+        "effect_type": "buff",
+        "value": "prismatic_sphere",
+        "value_type": "abjuration",
+        "duration": "1 round/level"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "richiamo_infernale",
+    "name": "Richiamo Infernale",
+    "school": "Conjuration",
+    "subschool": "Calling",
+    "levels": {
+      "cleric": 9
+    },
+    "casting_time": "10 minutes",
+    "components": ["V", "S"],
+    "range": "Close (25 ft. + 5 ft./2 levels)",
+    "effect": "Chiama una creatura infernale",
+    "duration": "Instantaneous",
+    "saving_throw": "None",
+    "spell_resistance": false,
+    "description": "Chiami un potente demone o diavolo che deve eseguire un compito per te.",
+    "short_description": "Chiama un demone/diavolo potente.",
+    "effects": [
+      {
+        "effect_type": "summon",
+        "value": "fiend",
+        "duration": "Varies"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "tempesta_arcana",
+    "name": "Tempesta Arcana",
+    "school": "Evocation",
+    "levels": {
+      "sorcerer/wizard": 9
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S"],
+    "range": "300 ft.",
+    "area_type": "cylinder",
+    "area_size": "Cylinder 100 ft. radius, 200 ft. high",
+    "duration": "1 round/level",
+    "saving_throw": "Will partial",
+    "spell_resistance": true,
+    "description": "Scateni una tempesta di energia arcana che disperde la magia e infligge 6d6 danni di forza.",
+    "short_description": "Dispersione magica + 6d6 danni forza.",
+    "effects": [
+      {
+        "effect_type": "damage",
+        "value": "6d6_force",
+        "value_type": "force",
+        "duration": "1 round/level",
+        "applies_to": "area"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "occhio_della_verita",
+    "name": "Occhio della Verità",
+    "school": "Divination",
+    "levels": {
+      "cleric": 8,
+      "sorcerer/wizard": 8
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S", "F"],
+    "focus": "Una perla nera",
+    "range": "Personal",
+    "target": "Te stesso",
+    "duration": "1 hour/level",
+    "saving_throw": "None",
+    "spell_resistance": false,
+    "description": "Vedi attraverso tutte le menzogne e illusioni. Ottieni +20 a Individuare e Percezione.",
+    "short_description": "Vedi verità, +20 Individuare/Percezione.",
+    "effects": [
+      {
+        "effect_type": "buff",
+        "value": "discern_lies",
+        "value_type": "divination",
+        "duration": "1 hour/level"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "aura_della_vittoria",
+    "name": "Aura della Vittoria",
+    "school": "Enchantment",
+    "subschool": "Compulsion",
+    "descriptors": ["Mind-Affecting"],
+    "levels": {
+      "cleric": 9
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S", "D"],
+    "divine_focus": true,
+    "range": "Personal",
+    "area_type": "emanation",
+    "area_size": "100-ft.-radius emanation",
+    "duration": "1 round/level",
+    "saving_throw": "Will negates (harmless)",
+    "spell_resistance": true,
+    "description": "I tuoi alleati ottengono critici automatici, tiri salvezza automatici, e immunità alla paura.",
+    "short_description": "Alleati: critici automatici, salvezze automatiche.",
+    "effects": [
+      {
+        "effect_type": "buff",
+        "value": "aura_of_victory",
+        "value_type": "luck",
+        "duration": "1 round/level"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "dominio_del_tempo",
+    "name": "Dominio del Tempo",
+    "school": "Transmutation",
+    "levels": {
+      "sorcerer/wizard": 9
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S"],
+    "range": "Personal",
+    "target": "Te stesso",
+    "duration": "1 round/level",
+    "saving_throw": "None",
+    "spell_resistance": false,
+    "description": "Controlli il flusso temporale. Puoi fermare il tempo, tornare indietro di un round, o accelerare il tempo.",
+    "short_description": "Controllo completo del tempo locale.",
+    "effects": [
+      {
+        "effect_type": "buff",
+        "value": "time_mastery",
+        "value_type": "temporal",
+        "duration": "1 round/level"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "fiamma_eterna_superiore",
+    "name": "Fiamma Eterna Superiore",
+    "school": "Evocation",
+    "descriptors": ["Fire"],
+    "levels": {
+      "cleric": 8
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S", "M"],
+    "material_components": "Polvere di rubino (1,000 mo)",
+    "range": "Long (400 ft. + 40 ft./level)",
+    "effect": "Colonna di fuoco di 10 ft. radius, 40 ft. high",
+    "duration": "1 round/level",
+    "saving_throw": "Reflex half",
+    "spell_resistance": true,
+    "description": "Crei una colonna di fuoco divino che infligge 2d6 danni da fuoco per livello (massimo 20d6).",
+    "short_description": "2d6/level danni fuoco divino.",
+    "effects": [
+      {
+        "effect_type": "damage",
+        "value": "2d6_per_level",
+        "value_type": "fire",
+        "duration": "1 round/level",
+        "applies_to": "area"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "globo_di_immunita",
+    "name": "Globo d'Immunità",
+    "school": "Abjuration",
+    "levels": {
+      "sorcerer/wizard": 9
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S", "M"],
+    "material_components": "Una sfera di cristallo perfetto (10,000 mo)",
+    "range": "10 ft.",
+    "area_type": "sphere",
+    "area_size": "Sphere 10 ft. radius",
+    "duration": "1 round/level",
+    "saving_throw": "None",
+    "spell_resistance": false,
+    "description": "Crea una barriera che blocca tutti gli incantesimi di qualsiasi livello. Sei completamente immune alla magia.",
+    "short_description": "Immunità totale alla magia.",
+    "effects": [
+      {
+        "effect_type": "buff",
+        "value": "spell_immunity_all",
+        "value_type": "abjuration",
+        "duration": "1 round/level"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  },
+  {
+    "id": "soffio_della_creazione",
+    "name": "Soffio della Creazione",
+    "school": "Conjuration",
+    "subschool": "Creation",
+    "levels": {
+      "cleric": 9
+    },
+    "casting_time": "1 standard action",
+    "components": ["V", "S"],
+    "range": "Close (25 ft. + 5 ft./2 levels)",
+    "effect": "Creazione di materia",
+    "duration": "Instantaneous",
+    "saving_throw": "None",
+    "spell_resistance": false,
+    "description": "Crei materia dal nulla. Puoi creare oggetti permanenti di qualsiasi materiale nonmagico.",
+    "short_description": "Crea oggetti dal nulla.",
+    "effects": [
+      {
+        "effect_type": "utility",
+        "value": "create_matter",
+        "duration": "Instantaneous"
+      }
+    ],
+    "source": "SRD",
+    "verified": true
+  }
+]

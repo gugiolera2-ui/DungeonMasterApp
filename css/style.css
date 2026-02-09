@@ -1,0 +1,48 @@
+:root {
+    --bg: #121212;
+    --card: #1e1e1e;
+    --primary: #bb86fc;
+    --text: #e0e0e0;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: sans-serif;
+    margin: 0;
+    padding-bottom: 70px; /* Spazio per la nav bar */
+}
+
+header {
+    background-color: var(--card);
+    padding: 1rem;
+    text-align: center;
+    border-bottom: 2px solid var(--primary);
+}
+
+.card {
+    background: var(--card);
+    margin: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+}
+
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: var(--card);
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 0;
+    border-top: 1px solid #333;
+}
+
+button {
+    background: none;
+    border: none;
+    color: var(--primary);
+    font-weight: bold;
+    font-size: 1.1rem;
+}

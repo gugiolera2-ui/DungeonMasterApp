@@ -1,0 +1,1262 @@
+[
+  {
+    "name": "Orc Warrior",
+    "cr": 0.5,
+    "size": "medium",
+    "type": "humanoid",
+    "alignment": "chaotic evil",
+    "hp": 6,
+    "hd": "1d8+2",
+    "ac": 13,
+    "touch_ac": 10,
+    "flat_footed_ac": 13,
+    "abilities": {
+      "str": 15,
+      "dex": 10,
+      "con": 12,
+      "int": 8,
+      "wis": 7,
+      "cha": 6
+    },
+    "saves": {
+      "fort": 4,
+      "ref": 0,
+      "will": -2
+    },
+    "bab": 1,
+    "attacks": [
+      {
+        "name": "Falchion",
+        "damage": "2d4+3",
+        "type": "slashing",
+        "attack_bonus": 4,
+        "crit_range": [18, 20],
+        "crit_multiplier": 2
+      }
+    ],
+    "skills": ["Intimidate +2", "Listen +0", "Spot +0"],
+    "languages": ["Orc", "Common"],
+    "environment": "Temperate hills"
+  },
+  {
+    "name": "Skeleton Warrior",
+    "cr": 0.5,
+    "size": "medium",
+    "type": "undead",
+    "alignment": "neutral evil",
+    "hp": 6,
+    "hd": "1d12",
+    "ac": 15,
+    "touch_ac": 12,
+    "flat_footed_ac": 13,
+    "abilities": {
+      "str": 13,
+      "dex": 13,
+      "con": 0,
+      "int": 0,
+      "wis": 10,
+      "cha": 1
+    },
+    "saves": {
+      "fort": 0,
+      "ref": 4,
+      "will": 2
+    },
+    "bab": 0,
+    "damage_reduction": {
+      "amount": 5,
+      "bypass": ["blunt"]
+    },
+    "attacks": [
+      {
+        "name": "Longsword",
+        "damage": "1d8+1",
+        "type": "slashing",
+        "attack_bonus": 1,
+        "crit_range": [19, 20],
+        "crit_multiplier": 2
+      }
+    ],
+    "immunities": ["cold", "mind-affecting", "poison", "sleep", "paralysis", "stunning", "disease", "death effects"],
+    "environment": "Any"
+  },
+  {
+    "name": "Goblin Scout",
+    "cr": 0.25,
+    "size": "small",
+    "type": "humanoid",
+    "alignment": "neutral evil",
+    "hp": 5,
+    "hd": "1d6+2",
+    "ac": 14,
+    "touch_ac": 13,
+    "flat_footed_ac": 12,
+    "abilities": {
+      "str": 9,
+      "dex": 15,
+      "con": 12,
+      "int": 10,
+      "wis": 9,
+      "cha": 6
+    },
+    "saves": {
+      "fort": 3,
+      "ref": 4,
+      "will": -1
+    },
+    "bab": 0,
+    "attacks": [
+      {
+        "name": "Shortbow",
+        "damage": "1d4",
+        "type": "piercing",
+        "attack_bonus": 2,
+        "range": 60,
+        "crit_range": [20],
+        "crit_multiplier": 3
+      },
+      {
+        "name": "Dagger",
+        "damage": "1d3-1",
+        "type": "piercing or slashing",
+        "attack_bonus": 0,
+        "crit_range": [19, 20],
+        "crit_multiplier": 2
+      }
+    ],
+    "skills": ["Hide +6", "Move Silently +6", "Spot +3"],
+    "languages": ["Goblin", "Common"],
+    "environment": "Temperate forest"
+  },
+  {
+    "name": "Dire Rat",
+    "cr": 0.33,
+    "size": "small",
+    "type": "animal",
+    "alignment": "neutral",
+    "hp": 5,
+    "hd": "1d8+1",
+    "ac": 14,
+    "touch_ac": 13,
+    "flat_footed_ac": 12,
+    "abilities": {
+      "str": 8,
+      "dex": 15,
+      "con": 12,
+      "int": 2,
+      "wis": 12,
+      "cha": 4
+    },
+    "saves": {
+      "fort": 4,
+      "ref": 4,
+      "will": 1
+    },
+    "bab": 0,
+    "attacks": [
+      {
+        "name": "Bite",
+        "damage": "1d4",
+        "type": "piercing",
+        "attack_bonus": 1,
+        "crit_range": [20],
+        "crit_multiplier": 2
+      }
+    ],
+    "special_abilities": ["Disease: Filth Fever (DC 12)"],
+    "skills": ["Hide +10", "Move Silently +6", "Spot +5"],
+    "environment": "Any urban or underground"
+  },
+  {
+    "name": "Zombie",
+    "cr": 0.5,
+    "size": "medium",
+    "type": "undead",
+    "alignment": "neutral evil",
+    "hp": 12,
+    "hd": "2d12",
+    "ac": 11,
+    "touch_ac": 10,
+    "flat_footed_ac": 11,
+    "abilities": {
+      "str": 13,
+      "dex": 8,
+      "con": 0,
+      "int": 0,
+      "wis": 10,
+      "cha": 1
+    },
+    "saves": {
+      "fort": 0,
+      "ref": 0,
+      "will": 3
+    },
+    "bab": 1,
+    "attacks": [
+      {
+        "name": "Slam",
+        "damage": "1d6+1",
+        "type": "bludgeoning",
+        "attack_bonus": 2,
+        "crit_range": [20],
+        "crit_multiplier": 2
+      }
+    ],
+    "special_qualities": ["Single actions only", "Damage reduction 5/slashing"],
+    "immunities": ["mind-affecting", "poison", "sleep", "paralysis", "stunning", "disease", "death effects", "ability damage", "fatigue", "exhaustion"],
+    "environment": "Any"
+  },
+  {
+    "name": "Kobold Warrior",
+    "cr": 0.25,
+    "size": "small",
+    "type": "humanoid",
+    "alignment": "lawful evil",
+    "hp": 4,
+    "hd": "1d6+1",
+    "ac": 12,
+    "touch_ac": 12,
+    "flat_footed_ac": 11,
+    "abilities": {
+      "str": 9,
+      "dex": 13,
+      "con": 10,
+      "int": 10,
+      "wis": 9,
+      "cha": 8
+    },
+    "saves": {
+      "fort": 2,
+      "ref": 1,
+      "will": -1
+    },
+    "bab": 0,
+    "attacks": [
+      {
+        "name": "Spear",
+        "damage": "1d6-1",
+        "type": "piercing",
+        "attack_bonus": 0,
+        "crit_range": [20],
+        "crit_multiplier": 3
+      },
+      {
+        "name": "Sling",
+        "damage": "1d3-1",
+        "type": "bludgeoning",
+        "attack_bonus": 1,
+        "range": 50,
+        "crit_range": [20],
+        "crit_multiplier": 2
+      }
+    ],
+    "skills": ["Craft (trapmaking) +4", "Hide +5", "Search +2"],
+    "languages": ["Draconic", "Common"],
+    "environment": "Temperate underground"
+  },
+  {
+    "name": "Worg",
+    "cr": 2,
+    "size": "medium",
+    "type": "magical beast",
+    "alignment": "neutral evil",
+    "hp": 26,
+    "hd": "4d10+4",
+    "ac": 14,
+    "touch_ac": 12,
+    "flat_footed_ac": 12,
+    "abilities": {
+      "str": 16,
+      "dex": 13,
+      "con": 13,
+      "int": 6,
+      "wis": 12,
+      "cha": 8
+    },
+    "saves": {
+      "fort": 6,
+      "ref": 5,
+      "will": 2
+    },
+    "bab": 4,
+    "attacks": [
+      {
+        "name": "Bite",
+        "damage": "1d6+3",
+        "type": "piercing",
+        "attack_bonus": 6,
+        "crit_range": [20],
+        "crit_multiplier": 2
+      }
+    ],
+    "special_abilities": ["Trip", "Darkvision 60ft", "Low-light vision", "Scent"],
+    "skills": ["Hide +3", "Listen +7", "Move Silently +5", "Spot +7", "Survival +2"],
+    "languages": ["Goblin", "Worg"],
+    "environment": "Temperate forest"
+  },
+  {
+    "name": "Ragno Gigante",
+    "cr": 1,
+    "size": "medium",
+    "type": "vermin",
+    "alignment": "neutral",
+    "hp": 11,
+    "hd": "2d8+2",
+    "ac": 14,
+    "touch_ac": 12,
+    "flat_footed_ac": 12,
+    "abilities": {
+      "str": 12,
+      "dex": 15,
+      "con": 13,
+      "int": 0,
+      "wis": 10,
+      "cha": 2
+    },
+    "saves": {
+      "fort": 4,
+      "ref": 4,
+      "will": 0
+    },
+    "bab": 1,
+    "attacks": [
+      {
+        "name": "Morso",
+        "damage": "1d6+1",
+        "type": "piercing",
+        "attack_bonus": 3,
+        "crit_range": [20],
+        "crit_multiplier": 2,
+        "special": "Veleno (DC 13): 1d4 Forza/danno temporaneo"
+      }
+    ],
+    "special_abilities": ["Scavalcare pareti", "Telepatia limitata con ragni", "Tessitura ragnatele"],
+    "skills": ["Arrampicarsi +12", "Nascondersi +10", "Muoversi silenziosamente +10"],
+    "environment": "Temperate forest, underground"
+  },
+  {
+    "name": "Ghoul",
+    "cr": 1,
+    "size": "medium",
+    "type": "undead",
+    "alignment": "chaotic evil",
+    "hp": 13,
+    "hd": "2d12",
+    "ac": 14,
+    "touch_ac": 12,
+    "flat_footed_ac": 12,
+    "abilities": {
+      "str": 15,
+      "dex": 15,
+      "con": 0,
+      "int": 13,
+      "wis": 14,
+      "cha": 12
+    },
+    "saves": {
+      "fort": 0,
+      "ref": 4,
+      "will": 5
+    },
+    "bab": 1,
+    "attacks": [
+      {
+        "name": "Artiglio",
+        "damage": "1d6+2",
+        "type": "slashing",
+        "attack_bonus": 3,
+        "crit_range": [20],
+        "crit_multiplier": 2
+      },
+      {
+        "name": "Morso",
+        "damage": "1d6+1",
+        "type": "piercing",
+        "attack_bonus": 2,
+        "crit_range": [20],
+        "crit_multiplier": 2
+      }
+    ],
+    "special_abilities": ["Paralisi (DC 13)", "Immunità alla paralisi", "Creazione di spawn"],
+    "immunities": ["mind-affecting", "poison", "sleep", "paralysis", "stunning", "disease", "death effects", "exhaustion", "fatigue"],
+    "environment": "Any"
+  },
+  {
+    "name": "Arpia",
+    "cr": 4,
+    "size": "medium",
+    "type": "monstrous humanoid",
+    "alignment": "chaotic evil",
+    "hp": 38,
+    "hd": "7d8+7",
+    "ac": 13,
+    "touch_ac": 11,
+    "flat_footed_ac": 12,
+    "abilities": {
+      "str": 12,
+      "dex": 13,
+      "con": 12,
+      "int": 7,
+      "wis": 10,
+      "cha": 17
+    },
+    "saves": {
+      "fort": 3,
+      "ref": 5,
+      "will": 6
+    },
+    "bab": 7,
+    "attacks": [
+      {
+        "name": "Artiglio",
+        "damage": "1d4+1",
+        "type": "slashing",
+        "attack_bonus": 8,
+        "crit_range": [20],
+        "crit_multiplier": 2
+      }
+    ],
+    "special_abilities": ["Canto affascinante (DC 16)", "Volo (40 ft, media manovrabilità)"],
+    "skills": ["Intrattenere (canto) +12", "Ascoltare +10", "Nascondersi +9", "Osservare +10"],
+    "languages": ["Comune"],
+    "environment": "Temperate hills, mountains"
+  },
+  {
+    "name": "Minotauro",
+    "cr": 4,
+    "size": "large",
+    "type": "monstrous humanoid",
+    "alignment": "chaotic evil",
+    "hp": 45,
+    "hd": "6d10+12",
+    "ac": 14,
+    "touch_ac": 9,
+    "flat_footed_ac": 14,
+    "abilities": {
+      "str": 19,
+      "dex": 10,
+      "con": 15,
+      "int": 7,
+      "wis": 10,
+      "cha": 8
+    },
+    "saves": {
+      "fort": 6,
+      "ref": 5,
+      "will": 5
+    },
+    "bab": 6,
+    "attacks": [
+      {
+        "name": "Greataxe",
+        "damage": "3d6+6",
+        "type": "slashing",
+        "attack_bonus": 10,
+        "crit_range": [20],
+        "crit_multiplier": 3
+      },
+      {
+        "name": "Cornata",
+        "damage": "1d6+3",
+        "type": "piercing",
+        "attack_bonus": 5,
+        "crit_range": [20],
+        "crit_multiplier": 2
+      }
+    ],
+    "special_abilities": ["Memoria labirintica", "Scent", "Carica potente"],
+    "skills": ["Intimidire +8", "Ascoltare +9", "Cercare +5", "Osservare +9"],
+    "languages": ["Gigante"],
+    "environment": "Underground, labyrinths"
+  },
+  {
+    "name": "Ogre",
+    "cr": 3,
+    "size": "large",
+    "type": "giant",
+    "alignment": "chaotic evil",
+    "hp": 29,
+    "hd": "4d8+12",
+    "ac": 16,
+    "touch_ac": 9,
+    "flat_footed_ac": 16,
+    "abilities": {
+      "str": 21,
+      "dex": 8,
+      "con": 15,
+      "int": 6,
+      "wis": 10,
+      "cha": 7
+    },
+    "saves": {
+      "fort": 6,
+      "ref": 1,
+      "will": 1
+    },
+    "bab": 3,
+    "attacks": [
+      {
+        "name": "Grande clava",
+        "damage": "2d8+7",
+        "type": "bludgeoning",
+        "attack_bonus": 8,
+        "crit_range": [20],
+        "crit_multiplier": 2
+      }
+    ],
+    "skills": ["Ascoltare +2", "Osservare +2"],
+    "languages": ["Gigante", "Comune"],
+    "environment": "Temperate hills, mountains"
+  },
+  {
+    "name": "Gargoyle",
+    "cr": 4,
+    "size": "medium",
+    "type": "monstrous humanoid",
+    "alignment": "chaotic evil",
+    "hp": 42,
+    "hd": "6d8+18",
+    "ac": 16,
+    "touch_ac": 12,
+    "flat_footed_ac": 13,
+    "abilities": {
+      "str": 17,
+      "dex": 14,
+      "con": 16,
+      "int": 6,
+      "wis": 11,
+      "cha": 7
+    },
+    "saves": {
+      "fort": 8,
+      "ref": 6,
+      "will": 3
+    },
+    "bab": 6,
+    "damage_reduction": {
+      "amount": 10,
+      "bypass": ["magic"]
+    },
+    "attacks": [
+      {
+        "name": "Artiglio",
+        "damage": "1d4+3",
+        "type": "slashing",
+        "attack_bonus": 9,
+        "crit_range": [20],
+        "crit_multiplier": 2
+      },
+      {
+        "name": "Morso",
+        "damage": "1d6+1",
+        "type": "piercing",
+        "attack_bonus": 4,
+        "crit_range": [20],
+        "crit_multiplier": 2
+      },
+      {
+        "name": "Corno",
+        "damage": "1d6+1",
+        "type": "piercing",
+        "attack_bonus": 4,
+        "crit_range": [20],
+        "crit_multiplier": 2
+      }
+    ],
+    "special_abilities": ["Mimetismo (come statua)", "Volo (60 ft, scarsa manovrabilità)", "Freeze"],
+    "environment": "Any"
+  },
+  {
+    "name": "Ombra",
+    "cr": 3,
+    "size": "medium",
+    "type": "undead",
+    "alignment": "chaotic evil",
+    "hp": 19,
+    "hd": "3d12",
+    "ac": 13,
+    "touch_ac": 13,
+      "flat_footed_ac": 10,
+    "abilities": {
+      "str": 0,
+      "dex": 16,
+      "con": 0,
+      "int": 6,
+      "wis": 12,
+      "cha": 13
+    },
+    "saves": {
+      "fort": 1,
+      "ref": 4,
+      "will": 5
+    },
+    "bab": 1,
+    "attacks": [
+      {
+        "name": "Tocco incorporeo",
+        "damage": "1d6 Forza",
+        "type": "negative energy",
+        "attack_bonus": 3,
+        "crit_range": [20],
+        "crit_multiplier": 2,
+        "special": "Drena 1 punto di Forza permanentemente"
+      }
+    ],
+    "special_qualities": ["Incorporeo", "Vulnerabilità alla luce", "Creazione di spawn"],
+    "immunities": ["mind-affecting", "poison", "sleep", "paralysis", "stunning", "disease", "death effects", "critical hits", "non-magical weapons"],
+    "environment": "Any"
+  },
+  {
+    "name": "Capitano Hobgoblin",
+    "cr": 3,
+    "size": "medium",
+    "type": "humanoid",
+    "alignment": "lawful evil",
+    "hp": 30,
+    "hd": "4d8+12",
+    "ac": 17,
+    "touch_ac": 11,
+    "flat_footed_ac": 16,
+    "abilities": {
+      "str": 15,
+      "dex": 12,
+      "con": 16,
+      "int": 10,
+      "wis": 10,
+      "cha": 9
+    },
+    "saves": {
+      "fort": 7,
+      "ref": 1,
+      "will": 1
+    },
+    "bab": 4,
+    "attacks": [
+      {
+        "name": "Spada lunga",
+        "damage": "1d8+3",
+        "type": "slashing",
+        "attack_bonus": 7,
+        "crit_range": [19, 20],
+        "crit_multiplier": 2
+      },
+      {
+        "name": "Arco corto",
+        "damage": "1d6",
+        "type": "piercing",
+        "attack_bonus": 5,
+        "range": 70,
+        "crit_range": [20],
+        "crit_multiplier": 3
+      }
+    ],
+    "special_abilities": ["Leadership", "Tattiche di gruppo"],
+    "skills": ["Intimidire +7", "Ascoltare +4", "Cavalcare +8", "Osservare +4"],
+    "languages": ["Goblin", "Comune"],
+    "environment": "Temperate plains, hills"
+  },
+  {
+    "name": "Bugbear",
+    "cr": 2,
+    "size": "medium",
+    "type": "humanoid",
+    "alignment": "chaotic evil",
+    "hp": 16,
+    "hd": "3d8+3",
+    "ac": 17,
+    "touch_ac": 12,
+    "flat_footed_ac": 15,
+    "abilities": {
+      "str": 15,
+      "dex": 14,
+      "con": 13,
+      "int": 10,
+      "wis": 10,
+      "cha": 9
+    },
+    "saves": {
+      "fort": 3,
+      "ref": 4,
+      "will": 1
+    },
+    "bab": 2,
+    "attacks": [
+      {
+        "name": "Mazzafrusto",
+        "damage": "1d8+2",
+        "type": "bludgeoning",
+        "attack_bonus": 4,
+        "crit_range": [20],
+        "crit_multiplier": 2
+      }
+    ],
+    "special_abilities": ["Sorpresa +4", "Movimento silenzioso"],
+    "skills": ["Nascondersi +6", "Muoversi silenziosamente +6", "Ascoltare +4", "Osservare +4"],
+    "languages": ["Goblin", "Comune"],
+    "environment": "Temperate forest, underground"
+  },
+  {
+    "name": "Gnoll",
+    "cr": 1,
+    "size": "medium",
+    "type": "humanoid",
+    "alignment": "chaotic evil",
+    "hp": 11,
+    "hd": "2d8+2",
+    "ac": 15,
+    "touch_ac": 10,
+    "flat_footed_ac": 15,
+    "abilities": {
+      "str": 15,
+      "dex": 10,
+      "con": 13,
+      "int": 8,
+      "wis": 11,
+      "cha": 8
+    },
+    "saves": {
+      "fort": 4,
+      "ref": 0,
+      "will": 0
+    },
+    "bab": 1,
+    "attacks": [
+      {
+        "name": "Spada bastarda",
+        "damage": "1d10+2",
+        "type": "slashing",
+        "attack_bonus": 3,
+        "crit_range": [19, 20],
+        "crit_multiplier": 2
+      },
+      {
+        "name": "Arco lungo",
+        "damage": "1d8",
+        "type": "piercing",
+        "attack_bonus": 1,
+        "range": 110,
+        "crit_range": [20],
+        "crit_multiplier": 3
+      }
+    ],
+    "skills": ["Ascoltare +2", "Osservare +2"],
+    "languages": ["Gnoll"],
+    "environment": "Warm desert, plains"
+  },
+  {
+    "name": "Wererat",
+    "cr": 2,
+    "size": "medium",
+    "type": "humanoid",
+    "alignment": "lawful evil",
+    "hp": 18,
+    "hd": "2d8+6",
+    "ac": 15,
+    "touch_ac": 12,
+    "flat_footed_ac": 13,
+    "abilities": {
+      "str": 10,
+      "dex": 15,
+      "con": 12,
+      "int": 11,
+      "wis": 10,
+      "cha": 8
+    },
+    "saves": {
+      "fort": 4,
+      "ref": 5,
+      "will": 3
+    },
+    "bab": 1,
+    "attacks": [
+      {
+        "name": "Spada corta",
+        "damage": "1d6",
+        "type": "piercing",
+        "attack_bonus": 3,
+        "crit_range": [19, 20],
+        "crit_multiplier": 2
+      },
+      {
+        "name": "Morso (forma ratto/ibrida)",
+        "damage": "1d4",
+        "type": "piercing",
+        "attack_bonus": 3,
+        "crit_range": [20],
+        "crit_multiplier": 2,
+        "special": "Malattia: Febbre di Ratto (DC 12)"
+      }
+    ],
+    "special_abilities": ["Cambiamento di forma", "Vulnerabilità all'argento", "Curvarsi", "Scavalcare pareti"],
+    "skills": ["Arrampicarsi +10", "Nascondersi +9", "Muoversi silenziosamente +9"],
+    "languages": ["Comune"],
+    "environment": "Any urban"
+  },
+  {
+    "name": "Mummia",
+    "cr": 3,
+    "size": "medium",
+    "type": "undead",
+    "alignment": "lawful evil",
+    "hp": 39,
+    "hd": "6d12",
+    "ac": 20,
+    "touch_ac": 9,
+    "flat_footed_ac": 20,
+    "abilities": {
+      "str": 19,
+      "dex": 8,
+      "con": 0,
+      "int": 6,
+      "wis": 11,
+      "cha": 12
+    },
+    "saves": {
+      "fort": 2,
+      "ref": 1,
+      "will": 7
+    },
+    "bab": 3,
+    "attacks": [
+      {
+        "name": "Slam",
+        "damage": "1d6+4",
+        "type": "bludgeoning",
+        "attack_bonus": 8,
+        "crit_range": [20],
+        "crit_multiplier": 2,
+        "special": "Maledizione della mummia (DC 16): malattia incurabile"
+      }
+    ],
+    "special_abilities": ["Spaventare", "Vulnerabilità al fuoco"],
+    "immunities": ["mind-affecting", "poison", "sleep", "paralysis", "stunning", "disease", "death effects", "critical hits", "non-magical weapons"],
+    "environment": "Temperate desert"
+  },
+  {
+    "name": "Wight",
+    "cr": 3,
+    "size": "medium",
+    "type": "undead",
+    "alignment": "lawful evil",
+    "hp": 26,
+    "hd": "4d12",
+    "ac": 15,
+    "touch_ac": 12,
+    "flat_footed_ac": 13,
+    "abilities": {
+      "str": 14,
+      "dex": 14,
+      "con": 0,
+      "int": 11,
+      "wis": 13,
+      "cha": 15
+    },
+    "saves": {
+      "fort": 1,
+      "ref": 5,
+      "will": 5
+    },
+    "bab": 2,
+    "attacks": [
+      {
+        "name": "Artiglio",
+        "damage": "1d4+2",
+        "type": "slashing",
+        "attack_bonus": 5,
+        "crit_range": [20],
+        "crit_multiplier": 2,
+        "special": "Drena 1 livello energetico (DC 14)"
+      }
+    ],
+    "special_abilities": ["Creazione di spawn", "Vulnerabilità alla luce solare"],
+    "immunities": ["mind-affecting", "poison", "sleep", "paralysis", "stunning", "disease", "death effects"],
+    "environment": "Any"
+  },
+  {
+    "name": "Spettro",
+    "cr": 5,
+    "size": "medium",
+    "type": "undead",
+    "alignment": "lawful evil",
+    "hp": 45,
+    "hd": "7d12",
+    "ac": 15,
+    "touch_ac": 15,
+    "flat_footed_ac": 12,
+    "abilities": {
+      "str": 0,
+      "dex": 16,
+      "con": 0,
+      "int": 12,
+      "wis": 14,
+      "cha": 15
+    },
+    "saves": {
+      "fort": 2,
+      "ref": 7,
+      "will": 7
+    },
+    "bab": 3,
+    "attacks": [
+      {
+        "name": "Tocco incorporeo",
+        "damage": "1d8 Forza",
+        "type": "negative energy",
+        "attack_bonus": 6,
+        "crit_range": [20],
+        "crit_multiplier": 2,
+        "special": "Drena 2 punti di Forza permanentemente"
+      }
+    ],
+    "special_qualities": ["Incorporeo", "Creazione di spawn"],
+    "immunities": ["mind-affecting", "poison", "sleep", "paralysis", "stunning", "disease", "death effects", "critical hits", "non-magical weapons"],
+    "environment": "Any"
+  },
+  {
+    "name": "Vampiro Spawn",
+    "cr": 4,
+    "size": "medium",
+    "type": "undead",
+    "alignment": "lawful evil",
+    "hp": 37,
+    "hd": "6d12",
+    "ac": 15,
+    "touch_ac": 12,
+    "flat_footed_ac": 13,
+    "abilities": {
+      "str": 17,
+      "dex": 16,
+      "con": 0,
+      "int": 13,
+      "wis": 14,
+      "cha": 14
+    },
+    "saves": {
+      "fort": 2,
+      "ref": 7,
+      "will": 7
+    },
+    "bab": 3,
+    "attacks": [
+      {
+        "name": "Artiglio",
+        "damage": "1d6+3",
+        "type": "slashing",
+        "attack_bonus": 8,
+        "crit_range": [20],
+        "crit_multiplier": 2
+      },
+      {
+        "name": "Morso",
+        "damage": "1d6+1",
+        "type": "piercing",
+        "attack_bonus": 3,
+        "crit_range": [20],
+        "crit_multiplier": 2,
+        "special": "Rigenera 5 hp se succhia sangue"
+      }
+    ],
+    "special_abilities": ["Vulnerabilità ai paletti, luce solare, acqua santa", "Rigenerazione 5", "Dominare (DC 14)", "Cambiamento di forma (pipistrello/nebbia)"],
+    "immunities": ["mind-affecting", "poison", "sleep", "paralysis", "stunning", "disease", "death effects"],
+    "environment": "Any"
+  },
+  {
+    "name": "Segugio Infernale",
+    "cr": 3,
+    "size": "medium",
+    "type": "outsider",
+    "alignment": "lawful evil",
+    "hp": 30,
+    "hd": "4d8+12",
+    "ac": 16,
+    "touch_ac": 10,
+    "flat_footed_ac": 16,
+    "abilities": {
+      "str": 17,
+      "dex": 10,
+      "con": 16,
+      "int": 6,
+      "wis": 10,
+      "cha": 6
+    },
+    "saves": {
+      "fort": 8,
+      "ref": 4,
+      "will": 4
+    },
+    "bab": 4,
+    "attacks": [
+      {
+        "name": "Morso",
+        "damage": "1d8+3",
+        "type": "piercing",
+        "attack_bonus": 7,
+        "crit_range": [20],
+        "crit_multiplier": 2
+      }
+    ],
+    "special_abilities": ["Alito di fuoco (2d6 danni, DC 14)", "Vulnerabilità al freddo", "Immunità al fuoco", "Scent"],
+    "skills": ["Ascoltare +7", "Muoversi silenziosamente +7", "Osservare +7", "Fiutare +7"],
+    "languages": ["Infernale (comprensione)"],
+    "environment": "Any evil-aligned plane"
+  },
+  {
+    "name": "Cocatrice",
+    "cr": 3,
+    "size": "small",
+    "type": "magical beast",
+    "alignment": "neutral",
+    "hp": 27,
+    "hd": "5d10",
+    "ac": 14,
+    "touch_ac": 11,
+    "flat_footed_ac": 13,
+    "abilities": {
+      "str": 10,
+      "dex": 12,
+      "con": 10,
+      "int": 2,
+      "wis": 13,
+      "cha": 8
+    },
+    "saves": {
+      "fort": 5,
+      "ref": 5,
+      "will": 2
+    },
+    "bab": 5,
+    "attacks": [
+      {
+        "name": "Beccata",
+        "damage": "1d4-2",
+        "type": "piercing",
+        "attack_bonus": 7,
+        "crit_range": [20],
+        "crit_multiplier": 2,
+        "special": "Pietrificazione (DC 13)"
+      }
+    ],
+    "skills": ["Ascoltare +5", "Osservare +9"],
+    "environment": "Temperate marshes"
+  },
+  {
+    "name": "Basilisco",
+    "cr": 5,
+    "size": "medium",
+    "type": "magical beast",
+    "alignment": "neutral",
+    "hp": 52,
+    "hd": "8d10+8",
+    "ac": 16,
+    "touch_ac": 11,
+    "flat_footed_ac": 15,
+    "abilities": {
+      "str": 15,
+      "dex": 10,
+      "con": 13,
+      "int": 2,
+      "wis": 12,
+      "cha": 11
+    },
+    "saves": {
+      "fort": 7,
+      "ref": 6,
+      "will": 4
+    },
+    "bab": 8,
+    "attacks": [
+      {
+        "name": "Morso",
+        "damage": "1d8+2",
+        "type": "piercing",
+        "attack_bonus": 10,
+        "crit_range": [20],
+        "crit_multiplier": 2
+      }
+    ],
+    "special_abilities": ["Sguardo pietrificante (DC 16)", "Vulnerabilità ai riflessi"],
+    "skills": ["Nascondersi +0*, "Osservare +10"],
+    "environment": "Temperate desert, underground"
+  },
+  {
+    "name": "Ghast",
+    "cr": 3,
+    "size": "medium",
+    "type": "undead",
+    "alignment": "chaotic evil",
+    "hp": 26,
+    "hd": "4d12",
+    "ac": 16,
+    "touch_ac": 14,
+    "flat_footed_ac": 14,
+    "abilities": {
+      "str": 17,
+      "dex": 15,
+      "con": 0,
+      "int": 13,
+      "wis": 14,
+      "cha": 14
+    },
+    "saves": {
+      "fort": 1,
+      "ref": 6,
+      "will": 7
+    },
+    "bab": 2,
+    "attacks": [
+      {
+        "name": "Artiglio",
+        "damage": "1d6+3",
+        "type": "slashing",
+        "attack_bonus": 6,
+        "crit_range": [20],
+        "crit_multiplier": 2
+      },
+      {
+        "name": "Morso",
+        "damage": "1d8+1",
+        "type": "piercing",
+        "attack_bonus": 1,
+        "crit_range": [20],
+        "crit_multiplier": 2
+      }
+    ],
+    "special_abilities": ["Paralisi (DC 15)", "Puzza nauseabonda (DC 15)", "Immunità alla paralisi", "Creazione di spawn"],
+    "immunities": ["mind-affecting", "poison", "sleep", "paralysis", "stunning", "disease", "death effects", "exhaustion", "fatigue"],
+    "environment": "Any"
+  },
+  {
+    "name": "Mutaforma",
+    "cr": 3,
+    "size": "medium",
+    "type": "monstrous humanoid",
+    "alignment": "neutral",
+    "hp": 31,
+    "hd": "4d10+8",
+    "ac": 15,
+    "touch_ac": 11,
+    "flat_footed_ac": 14,
+    "abilities": {
+      "str": 12,
+      "dex": 13,
+      "con": 14,
+      "int": 13,
+      "wis": 14,
+      "cha": 13
+    },
+    "saves": {
+      "fort": 3,
+      "ref": 4,
+      "will": 7
+    },
+    "bab": 4,
+    "attacks": [
+      {
+        "name": "Spada lunga",
+        "damage": "1d8+1",
+        "type": "slashing",
+        "attack_bonus": 5,
+        "crit_range": [19, 20],
+        "crit_multiplier": 2
+      }
+    ],
+    "special_abilities": ["Cambiamento di forma", "Rilevazione dei pensieri (DC 13)", "Immunità al sonno e all'incantesimo"],
+    "skills": ["Bluff +10", "Diplomazia +3", "Disguise +13*", "Intuizione +11"],
+    "languages": ["Comune", "Elfico", "Nano", "Gigante", "Gnoll", "Orchesco"],
+    "environment": "Any urban"
+  },
+  {
+    "name": "Orso-Gufo",
+    "cr": 4,
+    "size": "large",
+    "type": "magical beast",
+    "alignment": "neutral",
+    "hp": 47,
+    "hd": "5d10+20",
+    "ac": 15,
+    "touch_ac": 10,
+    "flat_footed_ac": 15,
+    "abilities": {
+      "str": 19,
+      "dex": 10,
+      "con": 18,
+      "int": 2,
+      "wis": 12,
+      "cha": 10
+    },
+    "saves": {
+      "fort": 9,
+      "ref": 4,
+      "will": 3
+    },
+    "bab": 5,
+    "attacks": [
+      {
+        "name": "Artiglio",
+        "damage": "1d6+4",
+        "type": "slashing",
+        "attack_bonus": 9,
+        "crit_range": [20],
+        "crit_multiplier": 2
+      },
+      {
+        "name": "Beccata",
+        "damage": "1d8+2",
+        "type": "piercing",
+        "attack_bonus": 4,
+        "crit_range": [20],
+        "crit_multiplier": 2
+      }
+    ],
+    "special_abilities": ["Abbraccio", "Scent"],
+    "skills": ["Ascoltare +8", "Osservare +8"],
+    "environment": "Temperate forest"
+  },
+  {
+    "name": "Bestia del Dislocamento",
+    "cr": 4,
+    "size": "large",
+    "type": "magical beast",
+    "alignment": "neutral evil",
+    "hp": 51,
+    "hd": "6d10+18",
+    "ac": 16,
+    "touch_ac": 11,
+    "flat_footed_ac": 16,
+    "abilities": {
+      "str": 18,
+      "dex": 15,
+      "con": 16,
+      "int": 5,
+      "wis": 12,
+      "cha": 8
+    },
+    "saves": {
+      "fort": 9,
+      "ref": 7,
+      "will": 4
+    },
+    "bab": 6,
+    "attacks": [
+      {
+        "name": "Tentacolo",
+        "damage": "1d6+4",
+        "type": "bludgeoning",
+        "attack_bonus": 11,
+        "crit_range": [20],
+        "crit_multiplier": 2
+      },
+      {
+        "name": "Morso",
+        "damage": "1d8+2",
+        "type": "piercing",
+        "attack_bonus": 6,
+        "crit_range": [20],
+        "crit_multiplier": 2
+      }
+    ],
+    "special_abilities": ["Dislocamento (20% di possibilità di mancare)", "Resistenza alla magia", "Scent"],
+    "skills": ["Nascondersi +4", "Muoversi silenziosamente +9", "Ascoltare +5", "Osservare +9"],
+    "environment": "Temperate forest"
+  }
+]
