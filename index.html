@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>DM Tool PWA</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <div id="app">
+        <header>
+            <h1>DM Assistant <span id="ed-label">3.5</span></h1>
+        </header>
+
+        <main id="main-content">
+            <div class="card" id="status-card">
+                <h2>Inizializzazione...</h2>
+                <p id="debug-info">Caricamento database in corso...</p>
+            </div>
+            
+            <div id="monster-list" class="list-container"></div>
+        </main>
+
+        <nav class="bottom-nav">
+           <button onclick="switchTab('search')">🔍 Cerca</button>
+           <button onclick="switchTab('combat')">⚔️ Combat</button>
+           <button onclick="switchTab('pg')">🛡️ PG</button>
+        </nav>
+    </div>
+
+    <script type="module" src="js/app.js"></script>
+    
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('./sw.js', { scope: './' })
+                    .then(reg => {
+                        console.log('SW registrato con successo!', reg.scope);
+                        // Forza l'aggiornamento se trova una versione nuova
+                        reg.update();
+                    })
+                    .catch(err => console.error('Errore registrazione SW:', err));
+            });
+        }
+    </script>
+</body>
+</html>
