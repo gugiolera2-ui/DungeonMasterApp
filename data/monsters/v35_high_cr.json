@@ -1,0 +1,810 @@
+[
+  {
+    "id": "young-red-dragon",
+    "name": "Young Red Dragon",
+    "edition": "3.5",
+    "cr": 10,
+    "size": "large",
+    "type": "dragon",
+    "subtype": ["fire"],
+    "alignment": "chaotic evil",
+    "hp": 142,
+    "hd": "15d12+45",
+    "ac": 22,
+    "touch_ac": 9,
+    "flat_footed_ac": 22,
+    "abilities": {
+      "str": 25,
+      "dex": 10,
+      "con": 17,
+      "int": 12,
+      "wis": 13,
+      "cha": 12
+    },
+    "saves": {
+      "fort": 13,
+      "ref": 9,
+      "will": 11
+    },
+    "bab": 15,
+    "attacks": [
+      {
+        "name": "Bite",
+        "damage": "2d6+8",
+        "type": "piercing",
+        "attack_bonus": 20,
+        "crit_range": [20],
+        "crit_multiplier": 2
+      },
+      {
+        "name": "2 Claws",
+        "damage": "1d8+4",
+        "type": "slashing",
+        "attack_bonus": 18,
+        "crit_range": [20],
+        "crit_multiplier": 2
+      },
+      {
+        "name": "2 Wings",
+        "damage": "1d6+4",
+        "type": "bludgeoning",
+        "attack_bonus": 18,
+        "crit_range": [20],
+        "crit_multiplier": 2
+      },
+      {
+        "name": "Tail slap",
+        "damage": "1d8+12",
+        "type": "bludgeoning",
+        "attack_bonus": 18,
+        "crit_range": [20],
+        "crit_multiplier": 2
+      }
+    ],
+    "special_abilities": ["Fire breath (12d10, DC 21)", "Frightful presence (DC 19)", "Immunity to fire", "Vulnerability to cold", "Blindsight 60ft", "Darkvision 120ft"],
+    "skills": ["Listen +19", "Search +19", "Spot +19", "Diplomacy +3", "Intimidate +19"],
+    "languages": ["Draconic", "Common"],
+    "environment": ["Warm mountains"]
+  },
+  {
+    "id": "beholder",
+    "name": "Beholder",
+    "edition": "3.5",
+    "cr": 13,
+    "size": "large",
+    "type": "aberration",
+    "alignment": "lawful evil",
+    "hp": 93,
+    "hd": "11d8+44",
+    "ac": 26,
+    "touch_ac": 12,
+    "flat_footed_ac": 26,
+    "abilities": {
+      "str": 10,
+      "dex": 14,
+      "con": 18,
+      "int": 17,
+      "wis": 15,
+      "cha": 15
+    },
+    "saves": {
+      "fort": 9,
+      "ref": 7,
+      "will": 11
+    },
+    "bab": 8,
+    "attacks": [
+      {
+        "name": "Eye rays (10)",
+        "damage": "varies",
+        "type": "varies",
+        "attack_bonus": 13,
+        "range": 150,
+        "crit_range": [20],
+        "crit_multiplier": 2,
+        "special": "Charm monster, sleep, telekinesis, flesh to stone, disintegrate, fear, slow, inflict moderate wounds, paralysis, death ray"
+      },
+      {
+        "name": "Central eye",
+        "damage": "none",
+        "type": "special",
+        "attack_bonus": 0,
+        "range": 150,
+        "special": "Antimagic cone"
+      },
+      {
+        "name": "Bite",
+        "damage": "2d4",
+        "type": "piercing",
+        "attack_bonus": 3,
+        "crit_range": [20],
+        "crit_multiplier": 2
+      }
+    ],
+    "special_abilities": ["All-around vision", "Flight (20 ft, perfect)", "Antimagic cone"],
+    "skills": ["Knowledge (arcana) +17", "Listen +18", "Search +21", "Spot +28", "Survival +2 (+4 following tracks)"],
+    "languages": ["Common", "Undercommon", "Draconic", "Dwarven", "Elven", "Giant", "Gnome", "Goblin", "Orc"],
+    "environment": ["Underground"]
+  },
+  {
+    "id": "mind-flayer",
+    "name": "Mind Flayer",
+    "edition": "3.5",
+    "cr": 8,
+    "size": "medium",
+    "type": "aberration",
+    "alignment": "lawful evil",
+    "hp": 44,
+    "hd": "8d8+8",
+    "ac": 15,
+    "touch_ac": 12,
+    "flat_footed_ac": 13,
+    "abilities": {
+      "str": 12,
+      "dex": 14,
+      "con": 12,
+      "int": 19,
+      "wis": 17,
+      "cha": 17
+    },
+    "saves": {
+      "fort": 3,
+      "ref": 4,
+      "will": 10
+    },
+    "bab": 6,
+    "attacks": [
+      {
+        "name": "Tentacles",
+        "damage": "4d4",
+        "type": "special",
+        "attack_bonus": 7,
+        "crit_range": [20],
+        "crit_multiplier": 2,
+        "special": "Extract brain on grapple"
+      }
+    ],
+    "special_abilities": ["Mind blast (cone, DC 18)", "Psionics", "Spell resistance 25", "Telepathy 100 ft"],
+    "skills": ["Bluff +11", "Concentration +12", "Diplomacy +7", "Disguise +3", "Intimidate +5", "Knowledge (any three) +15", "Listen +14", "Move Silently +13", "Sense Motive +14", "Spot +14"],
+    "languages": ["Undercommon", "telepathy 100 ft."],
+    "environment": ["Underground"]
+  },
+  {
+    "id": "frost-giant",
+    "name": "Frost Giant",
+    "edition": "3.5",
+    "cr": 9,
+    "size": "large",
+    "type": "giant",
+    "subtype": ["cold"],
+    "alignment": "chaotic evil",
+    "hp": 133,
+    "hd": "14d8+70",
+    "ac": 21,
+    "touch_ac": 8,
+    "flat_footed_ac": 21,
+    "abilities": {
+      "str": 29,
+      "dex": 10,
+      "con": 21,
+      "int": 10,
+      "wis": 14,
+      "cha": 11
+    },
+    "saves": {
+      "fort": 14,
+      "ref": 4,
+      "will": 6
+    },
+    "bab": 10,
+    "attacks": [
+      {
+        "name": "Greataxe",
+        "damage": "3d6+13",
+        "type": "slashing",
+        "attack_bonus": 20,
+        "crit_range": [20],
+        "crit_multiplier": 3
+      },
+      {
+        "name": "Rock",
+        "damage": "2d6+13",
+        "type": "bludgeoning",
+        "attack_bonus": 10,
+        "range": 120,
+        "crit_range": [20],
+        "crit_multiplier": 2
+      }
+    ],
+    "special_abilities": ["Rock catching", "Cold subtype", "Vulnerability to fire"],
+    "skills": ["Climb +13", "Intimidate +6", "Jump +13", "Spot +12"],
+    "languages": ["Giant", "Common"],
+    "environment": ["Cold mountains"]
+  },
+  {
+    "id": "pit-fiend",
+    "name": "Pit Fiend",
+    "edition": "3.5",
+    "cr": 20,
+    "size": "large",
+    "type": "outsider",
+    "subtype": ["evil", "lawful", "fiend"],
+    "alignment": "lawful evil",
+    "hp": 225,
+    "hd": "18d8+144",
+    "ac": 40,
+    "touch_ac": 9,
+    "flat_footed_ac": 40,
+    "abilities": {
+      "str": 39,
+      "dex": 12,
+      "con": 27,
+      "int": 22,
+      "wis": 24,
+      "cha": 24
+    },
+    "saves": {
+      "fort": 20,
+      "ref": 13,
+      "will": 19
+    },
+    "bab": 18,
+    "attacks": [
+      {
+        "name": "Bite",
+        "damage": "4d6+14",
+        "type": "piercing",
+        "attack_bonus": 33,
+        "crit_range": [20],
+        "crit_multiplier": 2,
+        "special": "Poison (DC 28)"
+      },
+      {
+        "name": "2 Claws",
+        "damage": "2d8+7",
+        "type": "slashing",
+        "attack_bonus": 33,
+        "crit_range": [20],
+        "crit_multiplier": 2
+      },
+      {
+        "name": "2 Wings",
+        "damage": "2d6+7",
+        "type": "bludgeoning",
+        "attack_bonus": 31,
+        "crit_range": [20],
+        "crit_multiplier": 2
+      },
+      {
+        "name": "Tail slap",
+        "damage": "2d8+14",
+        "type": "bludgeoning",
+        "attack_bonus": 31,
+        "crit_range": [20],
+        "crit_multiplier": 2
+      }
+    ],
+    "special_abilities": ["Fear aura (DC 27)", "Spell-like abilities", "Regeneration 5", "Damage reduction 15/good and silver", "Immunity to fire and poison", "Resistance to acid 10 and cold 10", "See in darkness", "Telepathy 100 ft"],
+    "skills": ["Bluff +28", "Concentration +29", "Diplomacy +30", "Disguise +28", "Intimidate +30", "Knowledge (arcana) +27", "Knowledge (religion) +27", "Listen +28", "Search +27", "Sense Motive +28", "Spellcraft +29", "Spot +28"],
+    "languages": ["Infernal", "Celestial", "Draconic", "telepathy 100 ft."],
+    "environment": ["Nine Hells"]
+  },
+  {
+    "id": "lich",
+    "name": "Lich",
+    "edition": "3.5",
+    "cr": 12,
+    "size": "medium",
+    "type": "undead",
+    "alignment": "any evil",
+    "hp": 78,
+    "hd": "12d12",
+    "ac": 21,
+    "touch_ac": 12,
+    "flat_footed_ac": 19,
+    "abilities": {
+      "str": 10,
+      "dex": 14,
+      "con": 0,
+      "int": 20,
+      "wis": 16,
+      "cha": 16
+    },
+    "saves": {
+      "fort": 4,
+      "ref": 8,
+      "will": 12
+    },
+    "bab": 6,
+    "attacks": [
+      {
+        "name": "Touch",
+        "damage": "1d8+5 negative energy",
+        "type": "negative energy",
+        "attack_bonus": 7,
+        "crit_range": [20],
+        "crit_multiplier": 2,
+        "special": "Paralysis (DC 20)"
+      }
+    ],
+    "special_abilities": ["Fear aura (DC 20)", "Damage reduction 15/bludgeoning and magic", "Immunities", "Turn resistance +4", "Spells as 12th-level wizard"],
+    "immunities": ["cold", "electricity", "polymorph", "mind-affecting"],
+    "skills": ["Concentration +18", "Knowledge (arcana) +20", "Knowledge (history) +20", "Spellcraft +22", "Spot +18"],
+    "languages": ["Common", "Draconic", "Infernal", "Celestial"],
+    "environment": ["Any"]
+  },
+  {
+    "id": "storm-giant",
+    "name": "Storm Giant",
+    "edition": "3.5",
+    "cr": 13,
+    "size": "huge",
+    "type": "giant",
+    "alignment": "chaotic good",
+    "hp": 199,
+    "hd": "19d8+114",
+    "ac": 28,
+    "touch_ac": 10,
+    "flat_footed_ac": 28,
+    "abilities": {
+      "str": 35,
+      "dex": 12,
+      "con": 23,
+      "int": 16,
+      "wis": 20,
+      "cha": 17
+    },
+    "saves": {
+      "fort": 16,
+      "ref": 8,
+      "will": 13
+    },
+    "bab": 14,
+    "attacks": [
+      {
+        "name": "Greatsword",
+        "damage": "4d6+18",
+        "type": "slashing",
+        "attack_bonus": 27,
+        "crit_range": [19, 20],
+        "crit_multiplier": 2
+      },
+      {
+        "name": "Rock",
+        "damage": "2d8+18",
+        "type": "bludgeoning",
+        "attack_bonus": 15,
+        "range": 180,
+        "crit_range": [20],
+        "crit_multiplier": 2
+      }
+    ],
+    "special_abilities": ["Rock catching", "Electricity immunity", "Water breathing", "Control weather 1/day", "Levitate 3/day", "Lightning bolt (15d6, DC 19)"],
+    "skills": ["Climb +20", "Craft (any one) +12", "Intimidate +16", "Jump +28", "Listen +19", "Spot +19", "Swim +20"],
+    "languages": ["Common", "Giant"],
+    "environment": ["Mountains", "coastal"]
+  },
+  {
+    "id": "balor",
+    "name": "Balor",
+    "edition": "3.5",
+    "cr": 20,
+    "size": "huge",
+    "type": "outsider",
+    "subtype": ["chaotic", "evil", "fiend"],
+    "alignment": "chaotic evil",
+    "hp": 290,
+    "hd": "20d8+200",
+    "ac": 35,
+    "touch_ac": 9,
+    "flat_footed_ac": 35,
+    "abilities": {
+      "str": 35,
+      "dex": 12,
+      "con": 31,
+      "int": 20,
+      "wis": 20,
+      "cha": 24
+    },
+    "saves": {
+      "fort": 23,
+      "ref": 13,
+      "will": 18
+    },
+    "bab": 20,
+    "attacks": [
+      {
+        "name": "+1 flaming longsword",
+        "damage": "2d6+13 plus 2d6 fire",
+        "type": "slashing",
+        "attack_bonus": 32,
+        "crit_range": [19, 20],
+        "crit_multiplier": 2
+      },
+      {
+        "name": "+1 flaming whip",
+        "damage": "1d4+7 plus 2d6 fire",
+        "type": "slashing",
+        "attack_bonus": 27,
+        "range": 30,
+        "crit_range": [20],
+        "crit_multiplier": 2,
+        "special": "Entangle"
+      }
+    ],
+    "special_abilities": ["Fear aura (DC 29)", "Death throes", "Vorpal sword", "Spell-like abilities", "Damage reduction 15/cold iron and good", "Immunity to electricity and poison", "Resistance to acid 10, cold 10, and fire 10", "Telepathy 100 ft", "True seeing"],
+    "skills": ["Bluff +30, Concentration +33, Diplomacy +10, Disguise +8, Intimidate +32, Knowledge (any three) +28, Listen +33, Move Silently +27, Search +28, Sense Motive +28, Spellcraft +30, Spot +33, Use Magic Device +30"],
+    "languages": ["Abyssal", "Celestial", "Draconic", "telepathy 100 ft."],
+    "environment": ["Abyss"]
+  },
+  {
+    "id": "ancient-black-dragon",
+    "name": "Ancient Black Dragon",
+    "edition": "3.5",
+    "cr": 19,
+    "size": "huge",
+    "type": "dragon",
+    "subtype": ["water"],
+    "alignment": "chaotic evil",
+    "hp": 337,
+    "hd": "27d12+162",
+    "ac": 38,
+    "touch_ac": 6,
+    "flat_footed_ac": 38,
+    "abilities": {
+      "str": 33,
+      "dex": 10,
+      "con": 23,
+      "int": 16,
+      "wis": 17,
+      "cha": 16
+    },
+    "saves": {
+      "fort": 21,
+      "ref": 16,
+      "will": 20
+    },
+    "bab": 27,
+    "attacks": [
+      {
+        "name": "Bite",
+        "damage": "4d6+13",
+        "type": "piercing",
+        "attack_bonus": 37,
+        "crit_range": [20],
+        "crit_multiplier": 2
+      },
+      {
+        "name": "2 Claws",
+        "damage": "2d8+6",
+        "type": "slashing",
+        "attack_bonus": 35,
+        "crit_range": [20],
+        "crit_multiplier": 2
+      },
+      {
+        "name": "2 Wings",
+        "damage": "2d6+6",
+        "type": "bludgeoning",
+        "attack_bonus": 35,
+        "crit_range": [20],
+        "crit_multiplier": 2
+      },
+      {
+        "name": "Tail slap",
+        "damage": "2d8+19",
+        "type": "bludgeoning",
+        "attack_bonus": 35,
+        "crit_range": [20],
+        "crit_multiplier": 2
+      },
+      {
+        "name": "Crush",
+        "damage": "4d6+19",
+        "type": "bludgeoning",
+        "attack_bonus": 35,
+        "special": "Against pinned opponent"
+      }
+    ],
+    "special_abilities": ["Acid breath (24d4, DC 29)", "Frightful presence (DC 28)", "Water breathing", "Corrupt water", "Immunity to acid", "Vulnerability to fire", "Blindsight 60ft", "Darkvision 120ft", "Keen senses"],
+    "skills": ["Hide +23", "Listen +33", "Move Silently +31", "Search +33", "Spot +33", "Swim +45"],
+    "languages": ["Draconic", "Common", "Giant", "Goblin", "Orc"],
+    "environment": ["Swamps", "marshes"]
+  },
+  {
+    "id": "marilith",
+    "name": "Marilith",
+    "edition": "3.5",
+    "cr": 17,
+    "size": "large",
+    "type": "outsider",
+    "subtype": ["chaotic", "evil", "fiend"],
+    "alignment": "chaotic evil",
+    "hp": 216,
+    "hd": "16d8+144",
+    "ac": 29,
+    "touch_ac": 12,
+    "flat_footed_ac": 29,
+    "abilities": {
+      "str": 28,
+      "dex": 15,
+      "con": 25,
+      "int": 18,
+      "wis": 18,
+      "cha": 24
+    },
+    "saves": {
+      "fort": 19,
+      "ref": 13,
+      "will": 16
+    },
+    "bab": 16,
+    "attacks": [
+      {
+        "name": "6 Longswords",
+        "damage": "1d8+9",
+        "type": "slashing",
+        "attack_bonus": 25,
+        "crit_range": [19, 20],
+        "crit_multiplier": 2
+      },
+      {
+        "name": "Tail slap",
+        "damage": "2d6+4",
+        "type": "bludgeoning",
+        "attack_bonus": 20,
+        "crit_range": [20],
+        "crit_multiplier": 2,
+        "special": "Improved grab"
+      }
+    ],
+    "special_abilities": ["Constrict (2d6+13)", "Improved grab", "Spell-like abilities", "Damage reduction 10/cold iron and good", "Immunity to poison", "Resistance to acid 10, cold 10, and fire 10", "Telepathy 100 ft", "True seeing"],
+    "skills": ["Bluff +26, Concentration +28, Diplomacy +10, Disguise +8, Intimidate +28, Knowledge (any three) +23, Listen +25, Move Silently +21, Search +23, Sense Motive +23, Spellcraft +25, Spot +25, Use Magic Device +26"],
+    "languages": ["Abyssal", "Celestial", "Draconic", "telepathy 100 ft."],
+    "environment": ["Abyss"]
+  },
+  {
+    "id": "death-knight",
+    "name": "Death Knight",
+    "edition": "3.5",
+    "cr": 14,
+    "size": "medium",
+    "type": "undead",
+    "alignment": "lawful evil",
+    "hp": 120,
+    "hd": "16d12+16",
+    "ac": 27,
+    "touch_ac": 10,
+    "flat_footed_ac": 27,
+    "abilities": {
+      "str": 22,
+      "dex": 10,
+      "con": 0,
+      "int": 12,
+      "wis": 16,
+      "cha": 18
+    },
+    "saves": {
+      "fort": 5,
+      "ref": 5,
+      "will": 12
+    },
+    "bab": 8,
+    "attacks": [
+      {
+        "name": "+1 unholy longsword",
+        "damage": "1d8+8 plus 2d6 vs good",
+        "type": "slashing",
+        "attack_bonus": 15,
+        "crit_range": [19, 20],
+        "crit_multiplier": 2
+      }
+    ],
+    "special_abilities": ["Aura of despair", "Detect good", "Spells as 10th-level blackguard", "Damage reduction 10/magic", "Immunity to cold and electricity", "Turn resistance +6"],
+    "skills": ["Intimidate +23", "Ride +19", "Sense Motive +22"],
+    "languages": ["Common", "Infernal"],
+    "environment": ["Any"]
+  },
+  {
+    "id": "stone-golem",
+    "name": "Stone Golem",
+    "edition": "3.5",
+    "cr": 11,
+    "size": "large",
+    "type": "construct",
+    "alignment": "neutral",
+    "hp": 107,
+    "hd": "14d10+30",
+    "ac": 26,
+    "touch_ac": 9,
+    "flat_footed_ac": 26,
+    "abilities": {
+      "str": 26,
+      "dex": 10,
+      "con": 0,
+      "int": 0,
+      "wis": 11,
+      "cha": 1
+    },
+    "saves": {
+      "fort": 4,
+      "ref": 4,
+      "will": 4
+    },
+    "bab": 10,
+    "damage_reduction": {
+      "amount": 10,
+      "bypass": ["adamantine"]
+    },
+    "attacks": [
+      {
+        "name": "2 Slams",
+        "damage": "2d10+8",
+        "type": "bludgeoning",
+        "attack_bonus": 19,
+        "crit_range": [20],
+        "crit_multiplier": 2
+      }
+    ],
+    "special_abilities": ["Magic immunity", "Slow (DC 17)", "Construct traits"],
+    "immunities": ["magic", "poison", "sleep", "paralysis", "stunning", "disease", "death effects", "necromancy effects", "mind-affecting effects"],
+    "environment": ["Any"]
+  },
+  {
+    "id": "vampire-lord",
+    "name": "Vampire Lord",
+    "edition": "3.5",
+    "cr": 15,
+    "size": "medium",
+    "type": "undead",
+    "alignment": "lawful evil",
+    "hp": 120,
+    "hd": "12d12+48",
+    "ac": 25,
+    "touch_ac": 15,
+    "flat_footed_ac": 22,
+    "abilities": {
+      "str": 26,
+      "dex": 20,
+      "con": 0,
+      "int": 17,
+      "wis": 18,
+      "cha": 22
+    },
+    "saves": {
+      "fort": 8,
+      "ref": 12,
+      "will": 13
+    },
+    "bab": 6,
+    "attacks": [
+      {
+        "name": "Slam",
+        "damage": "1d6+8",
+        "type": "bludgeoning",
+        "attack_bonus": 14,
+        "crit_range": [20],
+        "crit_multiplier": 2,
+        "special": "Energy drain"
+      }
+    ],
+    "special_abilities": ["Blood drain", "Children of the night", "Dominate (DC 21)", "Energy drain", "Gaseous form", "Spider climb", "Alternate form", "Create spawn", "Damage reduction 15/silver and magic", "Fast healing 5", "Resistances", "Turn resistance +4"],
+    "skills": ["Bluff +21", "Climb +15", "Hide +20", "Listen +19", "Move Silently +20", "Search +18", "Sense Motive +19", "Spot +19"],
+    "languages": ["Common", "Infernal", "2 others"],
+    "environment": ["Any"]
+  },
+  {
+    "id": "iron-golem",
+    "name": "Iron Golem",
+    "edition": "3.5",
+    "cr": 13,
+    "size": "large",
+    "type": "construct",
+    "alignment": "neutral",
+    "hp": 126,
+    "hd": "18d10+27",
+    "ac": 30,
+    "touch_ac": 9,
+    "flat_footed_ac": 30,
+    "abilities": {
+      "str": 32,
+      "dex": 10,
+      "con": 0,
+      "int": 0,
+      "wis": 11,
+      "cha": 1
+    },
+    "saves": {
+      "fort": 6,
+      "ref": 6,
+      "will": 6
+    },
+    "bab": 13,
+    "damage_reduction": {
+      "amount": 15,
+      "bypass": ["adamantine"]
+    },
+    "attacks": [
+      {
+        "name": "2 Slams",
+        "damage": "2d10+11",
+        "type": "bludgeoning",
+        "attack_bonus": 24,
+        "crit_range": [20],
+        "crit_multiplier": 2
+      }
+    ],
+    "special_abilities": ["Breath weapon (cloud of poison gas, DC 19)", "Magic immunity", "Construct traits"],
+    "immunities": ["magic", "poison", "sleep", "paralysis", "stunning", "disease", "death effects", "necromancy effects", "mind-affecting effects"],
+    "environment": ["Any"]
+  },
+  {
+    "id": "tarrasque",
+    "name": "Tarrasque",
+    "edition": "3.5",
+    "cr": 20,
+    "size": "colossal",
+    "type": "magical beast",
+    "alignment": "neutral",
+    "hp": 858,
+    "hd": "48d10+594",
+    "ac": 35,
+    "touch_ac": 5,
+    "flat_footed_ac": 35,
+    "abilities": {
+      "str": 45,
+      "dex": 12,
+      "con": 35,
+      "int": 3,
+      "wis": 14,
+      "cha": 14
+    },
+    "saves": {
+      "fort": 38,
+      "ref": 22,
+      "will": 20
+    },
+    "bab": 48,
+    "damage_reduction": {
+      "amount": 15,
+      "bypass": ["epic"]
+    },
+    "attacks": [
+      {
+        "name": "Bite",
+        "damage": "4d8+17",
+        "type": "piercing",
+        "attack_bonus": 57,
+        "crit_range": [20],
+        "crit_multiplier": 3
+      },
+      {
+        "name": "2 Claws",
+        "damage": "1d12+8",
+        "type": "slashing",
+        "attack_bonus": 52,
+        "crit_range": [20],
+        "crit_multiplier": 2
+      },
+      {
+        "name": "2 Horns",
+        "damage": "1d10+8",
+        "type": "piercing",
+        "attack_bonus": 52,
+        "crit_range": [20],
+        "crit_multiplier": 2
+      },
+      {
+        "name": "Tail slap",
+        "damage": "3d8+8",
+        "type": "bludgeoning",
+        "attack_bonus": 52,
+        "crit_range": [20],
+        "crit_multiplier": 2
+      }
+    ],
+    "special_abilities": ["Carapace", "Frightful presence (DC 32)", "Improved grab", "Rush", "Swallow whole", "Damage reduction 15/epic", "Immunity to fire, poison, disease, energy drain, and ability damage", "Regeneration 40", "Spell resistance 32"],
+    "skills": ["Listen +17", "Search +9", "Spot +17", "Survival +17"],
+    "environment": ["Any"]
+  }
+]

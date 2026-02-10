@@ -1,0 +1,1280 @@
+[
+  {
+    "id": "orc-warrior",
+    "name": "Orc Warrior",
+    "edition": "3.5",
+    "cr": "1/2",
+    "size": "medium",
+    "type": "humanoid",
+    "subtype": "orc",
+    "alignment": "chaotic evil",
+    "hp": 6,
+    "hd": "1d8+2",
+    "ac": 13,
+    "touch_ac": 10,
+    "flat_footed_ac": 13,
+    "abilities": {
+      "str": 15,
+      "dex": 10,
+      "con": 12,
+      "int": 8,
+      "wis": 7,
+      "cha": 6
+    },
+    "saves": {
+      "fort": 4,
+      "ref": 0,
+      "will": -2
+    },
+    "bab": 1,
+    "attacks": [
+      {
+        "name": "Falchion",
+        "damage": "2d4+3",
+        "type": "slashing",
+        "attack_bonus": 4,
+        "crit_range": [18, 20],
+        "crit_multiplier": 2
+      }
+    ],
+    "skills": ["Intimidate +2", "Listen +0", "Spot +0"],
+    "languages": ["Orc", "Common"],
+    "environment": ["Temperate hills"]
+  },
+  {
+    "id": "skeleton-warrior",
+    "name": "Skeleton Warrior",
+    "edition": "3.5",
+    "cr": "1/2",
+    "size": "medium",
+    "type": "undead",
+    "alignment": "neutral evil",
+    "hp": 6,
+    "hd": "1d12",
+    "ac": 15,
+    "touch_ac": 12,
+    "flat_footed_ac": 13,
+    "abilities": {
+      "str": 13,
+      "dex": 13,
+      "con": 0,
+      "int": 0,
+      "wis": 10,
+      "cha": 1
+    },
+    "saves": {
+      "fort": 0,
+      "ref": 4,
+      "will": 2
+    },
+    "bab": 0,
+    "damage_reduction": {
+      "amount": 5,
+      "bypass": ["blunt"]
+    },
+    "attacks": [
+      {
+        "name": "Longsword",
+        "damage": "1d8+1",
+        "type": "slashing",
+        "attack_bonus": 1,
+        "crit_range": [19, 20],
+        "crit_multiplier": 2
+      }
+    ],
+    "immunities": ["cold", "mind-affecting", "poison", "sleep", "paralysis", "stunning", "disease", "death effects"],
+    "environment": ["Any"]
+  },
+  {
+    "id": "goblin-scout",
+    "name": "Goblin Scout",
+    "edition": "3.5",
+    "cr": "1/4",
+    "size": "small",
+    "type": "humanoid",
+    "subtype": "goblinoid",
+    "alignment": "neutral evil",
+    "hp": 5,
+    "hd": "1d6+2",
+    "ac": 14,
+    "touch_ac": 13,
+    "flat_footed_ac": 12,
+    "abilities": {
+      "str": 9,
+      "dex": 15,
+      "con": 12,
+      "int": 10,
+      "wis": 9,
+      "cha": 6
+    },
+    "saves": {
+      "fort": 3,
+      "ref": 4,
+      "will": -1
+    },
+    "bab": 0,
+    "attacks": [
+      {
+        "name": "Shortbow",
+        "damage": "1d4",
+        "type": "piercing",
+        "attack_bonus": 2,
+        "range": 60,
+        "crit_range": [20],
+        "crit_multiplier": 3
+      },
+      {
+        "name": "Dagger",
+        "damage": "1d3-1",
+        "type": "piercing or slashing",
+        "attack_bonus": 0,
+        "crit_range": [19, 20],
+        "crit_multiplier": 2
+      }
+    ],
+    "skills": ["Hide +6", "Move Silently +6", "Spot +3"],
+    "languages": ["Goblin", "Common"],
+    "environment": ["Temperate forest"]
+  },
+  {
+    "id": "dire-rat",
+    "name": "Dire Rat",
+    "edition": "3.5",
+    "cr": "1/3",
+    "size": "small",
+    "type": "animal",
+    "alignment": "neutral",
+    "hp": 5,
+    "hd": "1d8+1",
+    "ac": 14,
+    "touch_ac": 13,
+    "flat_footed_ac": 12,
+    "abilities": {
+      "str": 8,
+      "dex": 15,
+      "con": 12,
+      "int": 2,
+      "wis": 12,
+      "cha": 4
+    },
+    "saves": {
+      "fort": 4,
+      "ref": 4,
+      "will": 1
+    },
+    "bab": 0,
+    "attacks": [
+      {
+        "name": "Bite",
+        "damage": "1d4",
+        "type": "piercing",
+        "attack_bonus": 1,
+        "crit_range": [20],
+        "crit_multiplier": 2
+      }
+    ],
+    "special_abilities": ["Disease: Filth Fever (DC 12)"],
+    "skills": ["Hide +10", "Move Silently +6", "Spot +5"],
+    "environment": ["Any urban", "underground"]
+  },
+  {
+    "id": "zombie",
+    "name": "Zombie",
+    "edition": "3.5",
+    "cr": "1/2",
+    "size": "medium",
+    "type": "undead",
+    "alignment": "neutral evil",
+    "hp": 12,
+    "hd": "2d12",
+    "ac": 11,
+    "touch_ac": 10,
+    "flat_footed_ac": 11,
+    "abilities": {
+      "str": 13,
+      "dex": 8,
+      "con": 0,
+      "int": 0,
+      "wis": 10,
+      "cha": 1
+    },
+    "saves": {
+      "fort": 0,
+      "ref": 0,
+      "will": 3
+    },
+    "bab": 1,
+    "attacks": [
+      {
+        "name": "Slam",
+        "damage": "1d6+1",
+        "type": "bludgeoning",
+        "attack_bonus": 2,
+        "crit_range": [20],
+        "crit_multiplier": 2
+      }
+    ],
+    "special_qualities": ["Single actions only", "Damage reduction 5/slashing"],
+    "immunities": ["mind-affecting", "poison", "sleep", "paralysis", "stunning", "disease", "death effects", "ability damage", "fatigue", "exhaustion"],
+    "environment": ["Any"]
+  },
+  {
+    "id": "kobold-warrior",
+    "name": "Kobold Warrior",
+    "edition": "3.5",
+    "cr": "1/4",
+    "size": "small",
+    "type": "humanoid",
+    "subtype": "reptilian",
+    "alignment": "lawful evil",
+    "hp": 4,
+    "hd": "1d6+1",
+    "ac": 12,
+    "touch_ac": 12,
+    "flat_footed_ac": 11,
+    "abilities": {
+      "str": 9,
+      "dex": 13,
+      "con": 10,
+      "int": 10,
+      "wis": 9,
+      "cha": 8
+    },
+    "saves": {
+      "fort": 2,
+      "ref": 1,
+      "will": -1
+    },
+    "bab": 0,
+    "attacks": [
+      {
+        "name": "Spear",
+        "damage": "1d6-1",
+        "type": "piercing",
+        "attack_bonus": 0,
+        "crit_range": [20],
+        "crit_multiplier": 3
+      },
+      {
+        "name": "Sling",
+        "damage": "1d3-1",
+        "type": "bludgeoning",
+        "attack_bonus": 1,
+        "range": 50,
+        "crit_range": [20],
+        "crit_multiplier": 2
+      }
+    ],
+    "skills": ["Craft (trapmaking) +4", "Hide +5", "Search +2"],
+    "languages": ["Draconic", "Common"],
+    "environment": ["Temperate underground"]
+  },
+  {
+    "id": "worg",
+    "name": "Worg",
+    "edition": "3.5",
+    "cr": 2,
+    "size": "medium",
+    "type": "magical beast",
+    "alignment": "neutral evil",
+    "hp": 26,
+    "hd": "4d10+4",
+    "ac": 14,
+    "touch_ac": 12,
+    "flat_footed_ac": 12,
+    "abilities": {
+      "str": 16,
+      "dex": 13,
+      "con": 13,
+      "int": 6,
+      "wis": 12,
+      "cha": 8
+    },
+    "saves": {
+      "fort": 6,
+      "ref": 5,
+      "will": 2
+    },
+    "bab": 4,
+    "attacks": [
+      {
+        "name": "Bite",
+        "damage": "1d6+3",
+        "type": "piercing",
+        "attack_bonus": 6,
+        "crit_range": [20],
+        "crit_multiplier": 2
+      }
+    ],
+    "special_abilities": ["Trip", "Darkvision 60ft", "Low-light vision", "Scent"],
+    "skills": ["Hide +3", "Listen +7", "Move Silently +5", "Spot +7", "Survival +2"],
+    "languages": ["Goblin", "Worg"],
+    "environment": ["Temperate forest"]
+  },
+  {
+    "id": "giant-spider",
+    "name": "Giant Spider",
+    "edition": "3.5",
+    "cr": 1,
+    "size": "medium",
+    "type": "vermin",
+    "alignment": "neutral",
+    "hp": 11,
+    "hd": "2d8+2",
+    "ac": 14,
+    "touch_ac": 12,
+    "flat_footed_ac": 12,
+    "abilities": {
+      "str": 12,
+      "dex": 15,
+      "con": 13,
+      "int": 0,
+      "wis": 10,
+      "cha": 2
+    },
+    "saves": {
+      "fort": 4,
+      "ref": 4,
+      "will": 0
+    },
+    "bab": 1,
+    "attacks": [
+      {
+        "name": "Bite",
+        "damage": "1d6+1",
+        "type": "piercing",
+        "attack_bonus": 3,
+        "crit_range": [20],
+        "crit_multiplier": 2,
+        "special": "Poison (DC 13): 1d4 Strength damage"
+      }
+    ],
+    "special_abilities": ["Climb walls", "Limited telepathy with spiders", "Web spinning"],
+    "skills": ["Climb +12", "Hide +10", "Move Silently +10"],
+    "environment": ["Temperate forest", "underground"]
+  },
+  {
+    "id": "ghoul",
+    "name": "Ghoul",
+    "edition": "3.5",
+    "cr": 1,
+    "size": "medium",
+    "type": "undead",
+    "alignment": "chaotic evil",
+    "hp": 13,
+    "hd": "2d12",
+    "ac": 14,
+    "touch_ac": 12,
+    "flat_footed_ac": 12,
+    "abilities": {
+      "str": 15,
+      "dex": 15,
+      "con": 0,
+      "int": 13,
+      "wis": 14,
+      "cha": 12
+    },
+    "saves": {
+      "fort": 0,
+      "ref": 4,
+      "will": 5
+    },
+    "bab": 1,
+    "attacks": [
+      {
+        "name": "Claw",
+        "damage": "1d6+2",
+        "type": "slashing",
+        "attack_bonus": 3,
+        "crit_range": [20],
+        "crit_multiplier": 2
+      },
+      {
+        "name": "Bite",
+        "damage": "1d6+1",
+        "type": "piercing",
+        "attack_bonus": 2,
+        "crit_range": [20],
+        "crit_multiplier": 2
+      }
+    ],
+    "special_abilities": ["Paralysis (DC 13)", "Immunity to paralysis", "Create spawn"],
+    "immunities": ["mind-affecting", "poison", "sleep", "paralysis", "stunning", "disease", "death effects", "exhaustion", "fatigue"],
+    "environment": ["Any"]
+  },
+  {
+    "id": "harpy",
+    "name": "Harpy",
+    "edition": "3.5",
+    "cr": 4,
+    "size": "medium",
+    "type": "monstrous humanoid",
+    "alignment": "chaotic evil",
+    "hp": 38,
+    "hd": "7d8+7",
+    "ac": 13,
+    "touch_ac": 11,
+    "flat_footed_ac": 12,
+    "abilities": {
+      "str": 12,
+      "dex": 13,
+      "con": 12,
+      "int": 7,
+      "wis": 10,
+      "cha": 17
+    },
+    "saves": {
+      "fort": 3,
+      "ref": 5,
+      "will": 6
+    },
+    "bab": 7,
+    "attacks": [
+      {
+        "name": "Claw",
+        "damage": "1d4+1",
+        "type": "slashing",
+        "attack_bonus": 8,
+        "crit_range": [20],
+        "crit_multiplier": 2
+      }
+    ],
+    "special_abilities": ["Captivating song (DC 16)", "Flight (40 ft, average maneuverability)"],
+    "skills": ["Perform (sing) +12", "Listen +10", "Hide +9", "Spot +10"],
+    "languages": ["Common"],
+    "environment": ["Temperate hills", "mountains"]
+  },
+  {
+    "id": "minotaur",
+    "name": "Minotaur",
+    "edition": "3.5",
+    "cr": 4,
+    "size": "large",
+    "type": "monstrous humanoid",
+    "alignment": "chaotic evil",
+    "hp": 45,
+    "hd": "6d10+12",
+    "ac": 14,
+    "touch_ac": 9,
+    "flat_footed_ac": 14,
+    "abilities": {
+      "str": 19,
+      "dex": 10,
+      "con": 15,
+      "int": 7,
+      "wis": 10,
+      "cha": 8
+    },
+    "saves": {
+      "fort": 6,
+      "ref": 5,
+      "will": 5
+    },
+    "bab": 6,
+    "attacks": [
+      {
+        "name": "Greataxe",
+        "damage": "3d6+6",
+        "type": "slashing",
+        "attack_bonus": 10,
+        "crit_range": [20],
+        "crit_multiplier": 3
+      },
+      {
+        "name": "Gore",
+        "damage": "1d6+3",
+        "type": "piercing",
+        "attack_bonus": 5,
+        "crit_range": [20],
+        "crit_multiplier": 2
+      }
+    ],
+    "special_abilities": ["Labyrinthine memory", "Scent", "Powerful charge"],
+    "skills": ["Intimidate +8", "Listen +9", "Search +5", "Spot +9"],
+    "languages": ["Giant"],
+    "environment": ["Underground", "labyrinths"]
+  },
+  {
+    "id": "ogre",
+    "name": "Ogre",
+    "edition": "3.5",
+    "cr": 3,
+    "size": "large",
+    "type": "giant",
+    "alignment": "chaotic evil",
+    "hp": 29,
+    "hd": "4d8+12",
+    "ac": 16,
+    "touch_ac": 9,
+    "flat_footed_ac": 16,
+    "abilities": {
+      "str": 21,
+      "dex": 8,
+      "con": 15,
+      "int": 6,
+      "wis": 10,
+      "cha": 7
+    },
+    "saves": {
+      "fort": 6,
+      "ref": 1,
+      "will": 1
+    },
+    "bab": 3,
+    "attacks": [
+      {
+        "name": "Greatclub",
+        "damage": "2d8+7",
+        "type": "bludgeoning",
+        "attack_bonus": 8,
+        "crit_range": [20],
+        "crit_multiplier": 2
+      }
+    ],
+    "skills": ["Listen +2", "Spot +2"],
+    "languages": ["Giant", "Common"],
+    "environment": ["Temperate hills", "mountains"]
+  },
+  {
+    "id": "gargoyle",
+    "name": "Gargoyle",
+    "edition": "3.5",
+    "cr": 4,
+    "size": "medium",
+    "type": "monstrous humanoid",
+    "alignment": "chaotic evil",
+    "hp": 42,
+    "hd": "6d8+18",
+    "ac": 16,
+    "touch_ac": 12,
+    "flat_footed_ac": 13,
+    "abilities": {
+      "str": 17,
+      "dex": 14,
+      "con": 16,
+      "int": 6,
+      "wis": 11,
+      "cha": 7
+    },
+    "saves": {
+      "fort": 8,
+      "ref": 6,
+      "will": 3
+    },
+    "bab": 6,
+    "damage_reduction": {
+      "amount": 10,
+      "bypass": ["magic"]
+    },
+    "attacks": [
+      {
+        "name": "Claw",
+        "damage": "1d4+3",
+        "type": "slashing",
+        "attack_bonus": 9,
+        "crit_range": [20],
+        "crit_multiplier": 2
+      },
+      {
+        "name": "Bite",
+        "damage": "1d6+1",
+        "type": "piercing",
+        "attack_bonus": 4,
+        "crit_range": [20],
+        "crit_multiplier": 2
+      },
+      {
+        "name": "Horn",
+        "damage": "1d6+1",
+        "type": "piercing",
+        "attack_bonus": 4,
+        "crit_range": [20],
+        "crit_multiplier": 2
+      }
+    ],
+    "special_abilities": ["Mimicry (as statue)", "Flight (60 ft, poor maneuverability)", "Freeze"],
+    "environment": ["Any"]
+  },
+  {
+    "id": "shadow",
+    "name": "Shadow",
+    "edition": "3.5",
+    "cr": 3,
+    "size": "medium",
+    "type": "undead",
+    "alignment": "chaotic evil",
+    "hp": 19,
+    "hd": "3d12",
+    "ac": 13,
+    "touch_ac": 13,
+    "flat_footed_ac": 10,
+    "abilities": {
+      "str": 0,
+      "dex": 16,
+      "con": 0,
+      "int": 6,
+      "wis": 12,
+      "cha": 13
+    },
+    "saves": {
+      "fort": 1,
+      "ref": 4,
+      "will": 5
+    },
+    "bab": 1,
+    "attacks": [
+      {
+        "name": "Incorporeal touch",
+        "damage": "1d6 Strength",
+        "type": "negative energy",
+        "attack_bonus": 3,
+        "crit_range": [20],
+        "crit_multiplier": 2,
+        "special": "Drains 1 Strength point permanently"
+      }
+    ],
+    "special_qualities": ["Incorporeal", "Vulnerability to light", "Create spawn"],
+    "immunities": ["mind-affecting", "poison", "sleep", "paralysis", "stunning", "disease", "death effects", "critical hits", "non-magical weapons"],
+    "environment": ["Any"]
+  },
+  {
+    "id": "hobgoblin-captain",
+    "name": "Hobgoblin Captain",
+    "edition": "3.5",
+    "cr": 3,
+    "size": "medium",
+    "type": "humanoid",
+    "subtype": "goblinoid",
+    "alignment": "lawful evil",
+    "hp": 30,
+    "hd": "4d8+12",
+    "ac": 17,
+    "touch_ac": 11,
+    "flat_footed_ac": 16,
+    "abilities": {
+      "str": 15,
+      "dex": 12,
+      "con": 16,
+      "int": 10,
+      "wis": 10,
+      "cha": 9
+    },
+    "saves": {
+      "fort": 7,
+      "ref": 1,
+      "will": 1
+    },
+    "bab": 4,
+    "attacks": [
+      {
+        "name": "Longsword",
+        "damage": "1d8+3",
+        "type": "slashing",
+        "attack_bonus": 7,
+        "crit_range": [19, 20],
+        "crit_multiplier": 2
+      },
+      {
+        "name": "Shortbow",
+        "damage": "1d6",
+        "type": "piercing",
+        "attack_bonus": 5,
+        "range": 70,
+        "crit_range": [20],
+        "crit_multiplier": 3
+      }
+    ],
+    "special_abilities": ["Leadership", "Group tactics"],
+    "skills": ["Intimidate +7", "Listen +4", "Ride +8", "Spot +4"],
+    "languages": ["Goblin", "Common"],
+    "environment": ["Temperate plains", "hills"]
+  },
+  {
+    "id": "bugbear",
+    "name": "Bugbear",
+    "edition": "3.5",
+    "cr": 2,
+    "size": "medium",
+    "type": "humanoid",
+    "subtype": "goblinoid",
+    "alignment": "chaotic evil",
+    "hp": 16,
+    "hd": "3d8+3",
+    "ac": 17,
+    "touch_ac": 12,
+    "flat_footed_ac": 15,
+    "abilities": {
+      "str": 15,
+      "dex": 14,
+      "con": 13,
+      "int": 10,
+      "wis": 10,
+      "cha": 9
+    },
+    "saves": {
+      "fort": 3,
+      "ref": 4,
+      "will": 1
+    },
+    "bab": 2,
+    "attacks": [
+      {
+        "name": "Morningstar",
+        "damage": "1d8+2",
+        "type": "bludgeoning",
+        "attack_bonus": 4,
+        "crit_range": [20],
+        "crit_multiplier": 2
+      }
+    ],
+    "special_abilities": ["Surprise +4", "Silent movement"],
+    "skills": ["Hide +6", "Move Silently +6", "Listen +4", "Spot +4"],
+    "languages": ["Goblin", "Common"],
+    "environment": ["Temperate forest", "underground"]
+  },
+  {
+    "id": "gnoll",
+    "name": "Gnoll",
+    "edition": "3.5",
+    "cr": 1,
+    "size": "medium",
+    "type": "humanoid",
+    "subtype": "gnoll",
+    "alignment": "chaotic evil",
+    "hp": 11,
+    "hd": "2d8+2",
+    "ac": 15,
+    "touch_ac": 10,
+    "flat_footed_ac": 15,
+    "abilities": {
+      "str": 15,
+      "dex": 10,
+      "con": 13,
+      "int": 8,
+      "wis": 11,
+      "cha": 8
+    },
+    "saves": {
+      "fort": 4,
+      "ref": 0,
+      "will": 0
+    },
+    "bab": 1,
+    "attacks": [
+      {
+        "name": "Bastard sword",
+        "damage": "1d10+2",
+        "type": "slashing",
+        "attack_bonus": 3,
+        "crit_range": [19, 20],
+        "crit_multiplier": 2
+      },
+      {
+        "name": "Longbow",
+        "damage": "1d8",
+        "type": "piercing",
+        "attack_bonus": 1,
+        "range": 110,
+        "crit_range": [20],
+        "crit_multiplier": 3
+      }
+    ],
+    "skills": ["Listen +2", "Spot +2"],
+    "languages": ["Gnoll"],
+    "environment": ["Warm desert", "plains"]
+  },
+  {
+    "id": "wererat",
+    "name": "Wererat",
+    "edition": "3.5",
+    "cr": 2,
+    "size": "medium",
+    "type": "humanoid",
+    "subtype": "shapechanger",
+    "alignment": "lawful evil",
+    "hp": 18,
+    "hd": "2d8+6",
+    "ac": 15,
+    "touch_ac": 12,
+    "flat_footed_ac": 13,
+    "abilities": {
+      "str": 10,
+      "dex": 15,
+      "con": 12,
+      "int": 11,
+      "wis": 10,
+      "cha": 8
+    },
+    "saves": {
+      "fort": 4,
+      "ref": 5,
+      "will": 3
+    },
+    "bab": 1,
+    "attacks": [
+      {
+        "name": "Short sword",
+        "damage": "1d6",
+        "type": "piercing",
+        "attack_bonus": 3,
+        "crit_range": [19, 20],
+        "crit_multiplier": 2
+      },
+      {
+        "name": "Bite (rat/hybrid form)",
+        "damage": "1d4",
+        "type": "piercing",
+        "attack_bonus": 3,
+        "crit_range": [20],
+        "crit_multiplier": 2,
+        "special": "Disease: Rat fever (DC 12)"
+      }
+    ],
+    "special_abilities": ["Shape change", "Vulnerability to silver", "Scurry", "Wall climbing"],
+    "skills": ["Climb +10", "Hide +9", "Move Silently +9"],
+    "languages": ["Common"],
+    "environment": ["Any urban"]
+  },
+  {
+    "id": "mummy",
+    "name": "Mummy",
+    "edition": "3.5",
+    "cr": 3,
+    "size": "medium",
+    "type": "undead",
+    "alignment": "lawful evil",
+    "hp": 39,
+    "hd": "6d12",
+    "ac": 20,
+    "touch_ac": 9,
+    "flat_footed_ac": 20,
+    "abilities": {
+      "str": 19,
+      "dex": 8,
+      "con": 0,
+      "int": 6,
+      "wis": 11,
+      "cha": 12
+    },
+    "saves": {
+      "fort": 2,
+      "ref": 1,
+      "will": 7
+    },
+    "bab": 3,
+    "attacks": [
+      {
+        "name": "Slam",
+        "damage": "1d6+4",
+        "type": "bludgeoning",
+        "attack_bonus": 8,
+        "crit_range": [20],
+        "crit_multiplier": 2,
+        "special": "Mummy curse (DC 16): incurable disease"
+      }
+    ],
+    "special_abilities": ["Despair", "Vulnerability to fire"],
+    "immunities": ["mind-affecting", "poison", "sleep", "paralysis", "stunning", "disease", "death effects", "critical hits", "non-magical weapons"],
+    "environment": ["Temperate desert"]
+  },
+  {
+    "id": "wight",
+    "name": "Wight",
+    "edition": "3.5",
+    "cr": 3,
+    "size": "medium",
+    "type": "undead",
+    "alignment": "lawful evil",
+    "hp": 26,
+    "hd": "4d12",
+    "ac": 15,
+    "touch_ac": 12,
+    "flat_footed_ac": 13,
+    "abilities": {
+      "str": 14,
+      "dex": 14,
+      "con": 0,
+      "int": 11,
+      "wis": 13,
+      "cha": 15
+    },
+    "saves": {
+      "fort": 1,
+      "ref": 5,
+      "will": 5
+    },
+    "bab": 2,
+    "attacks": [
+      {
+        "name": "Claw",
+        "damage": "1d4+2",
+        "type": "slashing",
+        "attack_bonus": 5,
+        "crit_range": [20],
+        "crit_multiplier": 2,
+        "special": "Drains 1 energy level (DC 14)"
+      }
+    ],
+    "special_abilities": ["Create spawn", "Vulnerability to sunlight"],
+    "immunities": ["mind-affecting", "poison", "sleep", "paralysis", "stunning", "disease", "death effects"],
+    "environment": ["Any"]
+  },
+  {
+    "id": "spectre",
+    "name": "Spectre",
+    "edition": "3.5",
+    "cr": 5,
+    "size": "medium",
+    "type": "undead",
+    "alignment": "lawful evil",
+    "hp": 45,
+    "hd": "7d12",
+    "ac": 15,
+    "touch_ac": 15,
+    "flat_footed_ac": 12,
+    "abilities": {
+      "str": 0,
+      "dex": 16,
+      "con": 0,
+      "int": 12,
+      "wis": 14,
+      "cha": 15
+    },
+    "saves": {
+      "fort": 2,
+      "ref": 7,
+      "will": 7
+    },
+    "bab": 3,
+    "attacks": [
+      {
+        "name": "Incorporeal touch",
+        "damage": "1d8 Strength",
+        "type": "negative energy",
+        "attack_bonus": 6,
+        "crit_range": [20],
+        "crit_multiplier": 2,
+        "special": "Drains 2 Strength points permanently"
+      }
+    ],
+    "special_qualities": ["Incorporeal", "Create spawn"],
+    "immunities": ["mind-affecting", "poison", "sleep", "paralysis", "stunning", "disease", "death effects", "critical hits", "non-magical weapons"],
+    "environment": ["Any"]
+  },
+  {
+    "id": "hell-hound",
+    "name": "Hell Hound",
+    "edition": "3.5",
+    "cr": 3,
+    "size": "medium",
+    "type": "outsider",
+    "subtype": ["evil", "fire", "lawful"],
+    "alignment": "lawful evil",
+    "hp": 30,
+    "hd": "4d8+12",
+    "ac": 16,
+    "touch_ac": 10,
+    "flat_footed_ac": 16,
+    "abilities": {
+      "str": 17,
+      "dex": 10,
+      "con": 16,
+      "int": 6,
+      "wis": 10,
+      "cha": 6
+    },
+    "saves": {
+      "fort": 8,
+      "ref": 4,
+      "will": 4
+    },
+    "bab": 4,
+    "attacks": [
+      {
+        "name": "Bite",
+        "damage": "1d8+3",
+        "type": "piercing",
+        "attack_bonus": 7,
+        "crit_range": [20],
+        "crit_multiplier": 2
+      }
+    ],
+    "special_abilities": ["Fire breath (2d6 damage, DC 14)", "Vulnerability to cold", "Immunity to fire", "Scent"],
+    "skills": ["Listen +7", "Move Silently +7", "Spot +7", "Survival +7"],
+    "languages": ["Infernal (understand)"],
+    "environment": ["Any evil-aligned plane"]
+  },
+  {
+    "id": "cockatrice",
+    "name": "Cockatrice",
+    "edition": "3.5",
+    "cr": 3,
+    "size": "small",
+    "type": "magical beast",
+    "alignment": "neutral",
+    "hp": 27,
+    "hd": "5d10",
+    "ac": 14,
+    "touch_ac": 11,
+    "flat_footed_ac": 13,
+    "abilities": {
+      "str": 10,
+      "dex": 12,
+      "con": 10,
+      "int": 2,
+      "wis": 13,
+      "cha": 8
+    },
+    "saves": {
+      "fort": 5,
+      "ref": 5,
+      "will": 2
+    },
+    "bab": 5,
+    "attacks": [
+      {
+        "name": "Beak",
+        "damage": "1d4-2",
+        "type": "piercing",
+        "attack_bonus": 7,
+        "crit_range": [20],
+        "crit_multiplier": 2,
+        "special": "Petrification (DC 13)"
+      }
+    ],
+    "skills": ["Listen +5", "Spot +9"],
+    "environment": ["Temperate marshes"]
+  },
+  {
+    "id": "basilisk",
+    "name": "Basilisk",
+    "edition": "3.5",
+    "cr": 5,
+    "size": "medium",
+    "type": "magical beast",
+    "alignment": "neutral",
+    "hp": 52,
+    "hd": "8d10+8",
+    "ac": 16,
+    "touch_ac": 11,
+    "flat_footed_ac": 15,
+    "abilities": {
+      "str": 15,
+      "dex": 10,
+      "con": 13,
+      "int": 2,
+      "wis": 12,
+      "cha": 11
+    },
+    "saves": {
+      "fort": 7,
+      "ref": 6,
+      "will": 4
+    },
+    "bab": 8,
+    "attacks": [
+      {
+        "name": "Bite",
+        "damage": "1d8+2",
+        "type": "piercing",
+        "attack_bonus": 10,
+        "crit_range": [20],
+        "crit_multiplier": 2
+      }
+    ],
+    "special_abilities": ["Petrifying gaze (DC 16)", "Vulnerability to reflections"],
+    "skills": ["Hide +0*", "Spot +10"],
+    "environment": ["Temperate desert", "underground"]
+  }
+,
+  {
+    "id": "ghast",
+    "name": "Ghast",
+    "edition": "3.5",
+    "cr": 3,
+    "size": "medium",
+    "type": "undead",
+    "alignment": "chaotic evil",
+    "hp": 26,
+    "hd": "4d12",
+    "ac": 16,
+    "touch_ac": 14,
+    "flat_footed_ac": 14,
+    "abilities": {
+      "str": 17,
+      "dex": 15,
+      "con": 0,
+      "int": 13,
+      "wis": 14,
+      "cha": 14
+    },
+    "saves": {
+      "fort": 1,
+      "ref": 6,
+      "will": 7
+    },
+    "bab": 2,
+    "attacks": [
+      {
+        "name": "Claw",
+        "damage": "1d6+3",
+        "type": "slashing",
+        "attack_bonus": 6,
+        "crit_range": [20],
+        "crit_multiplier": 2
+      },
+      {
+        "name": "Bite",
+        "damage": "1d8+1",
+        "type": "piercing",
+        "attack_bonus": 1,
+        "crit_range": [20],
+        "crit_multiplier": 2
+      }
+    ],
+    "special_abilities": ["Paralysis (DC 15)", "Stench (DC 15)", "Immunity to paralysis", "Create spawn"],
+    "immunities": ["mind-affecting", "poison", "sleep", "paralysis", "stunning", "disease", "death effects", "exhaustion", "fatigue"],
+    "environment": ["Any"]
+  },
+  {
+    "id": "doppelganger",
+    "name": "Doppelganger",
+    "edition": "3.5",
+    "cr": 3,
+    "size": "medium",
+    "type": "monstrous humanoid",
+    "subtype": ["shapechanger"],
+    "alignment": "neutral",
+    "hp": 31,
+    "hd": "4d10+8",
+    "ac": 15,
+    "touch_ac": 11,
+    "flat_footed_ac": 14,
+    "abilities": {
+      "str": 12,
+      "dex": 13,
+      "con": 14,
+      "int": 13,
+      "wis": 14,
+      "cha": 13
+    },
+    "saves": {
+      "fort": 3,
+      "ref": 4,
+      "will": 7
+    },
+    "bab": 4,
+    "attacks": [
+      {
+        "name": "Longsword",
+        "damage": "1d8+1",
+        "type": "slashing",
+        "attack_bonus": 5,
+        "crit_range": [19, 20],
+        "crit_multiplier": 2
+      }
+    ],
+    "special_abilities": ["Change shape", "Detect thoughts (DC 13)", "Immunity to sleep and charm"],
+    "skills": ["Bluff +10", "Diplomacy +3", "Disguise +13*", "Sense Motive +11"],
+    "languages": ["Common", "Elven", "Dwarven", "Giant", "Gnoll", "Orc"],
+    "environment": ["Any urban"]
+  },
+  {
+    "id": "owlbear",
+    "name": "Owlbear",
+    "edition": "3.5",
+    "cr": 4,
+    "size": "large",
+    "type": "magical beast",
+    "alignment": "neutral",
+    "hp": 47,
+    "hd": "5d10+20",
+    "ac": 15,
+    "touch_ac": 10,
+    "flat_footed_ac": 15,
+    "abilities": {
+      "str": 19,
+      "dex": 10,
+      "con": 18,
+      "int": 2,
+      "wis": 12,
+      "cha": 10
+    },
+    "saves": {
+      "fort": 9,
+      "ref": 4,
+      "will": 3
+    },
+    "bab": 5,
+    "attacks": [
+      {
+        "name": "Claw",
+        "damage": "1d6+4",
+        "type": "slashing",
+        "attack_bonus": 9,
+        "crit_range": [20],
+        "crit_multiplier": 2
+      },
+      {
+        "name": "Beak",
+        "damage": "1d8+2",
+        "type": "piercing",
+        "attack_bonus": 4,
+        "crit_range": [20],
+        "crit_multiplier": 2
+      }
+    ],
+    "special_abilities": ["Hug", "Scent"],
+    "skills": ["Listen +8", "Spot +8"],
+    "environment": ["Temperate forest"]
+  },
+  {
+    "id": "displacer-beast",
+    "name": "Displacer Beast",
+    "edition": "3.5",
+    "cr": 4,
+    "size": "large",
+    "type": "magical beast",
+    "alignment": "neutral evil",
+    "hp": 51,
+    "hd": "6d10+18",
+    "ac": 16,
+    "touch_ac": 11,
+    "flat_footed_ac": 16,
+    "abilities": {
+      "str": 18,
+      "dex": 15,
+      "con": 16,
+      "int": 5,
+      "wis": 12,
+      "cha": 8
+    },
+    "saves": {
+      "fort": 9,
+      "ref": 7,
+      "will": 4
+    },
+    "bab": 6,
+    "attacks": [
+      {
+        "name": "Tentacle",
+        "damage": "1d6+4",
+        "type": "bludgeoning",
+        "attack_bonus": 11,
+        "crit_range": [20],
+        "crit_multiplier": 2
+      },
+      {
+        "name": "Bite",
+        "damage": "1d8+2",
+        "type": "piercing",
+        "attack_bonus": 6,
+        "crit_range": [20],
+        "crit_multiplier": 2
+      }
+    ],
+    "special_abilities": ["Displacement (20% miss chance)", "Resistance to magic", "Scent"],
+    "skills": ["Hide +4", "Move Silently +9", "Listen +5", "Spot +9"],
+    "environment": ["Temperate forest"]
+  }
+]

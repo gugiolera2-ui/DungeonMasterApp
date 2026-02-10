@@ -1,0 +1,1366 @@
+[
+  {
+    "id": "orc-warrior-v5",
+    "name": "Orc Warrior",
+    "edition": "5e",
+    "cr": 0.5,
+    "size": "medium",
+    "type": "humanoid",
+    "subtype": "orc",
+    "alignment": "chaotic evil",
+    "hp": 15,
+    "hd": "2d8+6",
+    "ac": 13,
+    "speed": "30 ft",
+    "abilities": {
+      "str": 16,
+      "dex": 12,
+      "con": 16,
+      "int": 7,
+      "wis": 11,
+      "cha": 10
+    },
+    "saving_throws": {},
+    "skills": ["Intimidation +2"],
+    "damage_resistances": [],
+    "damage_immunities": [],
+    "condition_immunities": [],
+    "senses": "darkvision 60 ft.",
+    "languages": ["Common", "Orc"],
+    "actions": [
+      {
+        "name": "Greataxe",
+        "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 9 (1d12 + 3) slashing damage.",
+        "attack_bonus": 5,
+        "damage_dice": "1d12+3"
+      },
+      {
+        "name": "Javelin",
+        "desc": "Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft. or range 30/120 ft., one target. Hit: 6 (1d6 + 3) piercing damage.",
+        "attack_bonus": 5,
+        "damage_dice": "1d6+3"
+      }
+    ],
+    "special_abilities": [
+      {
+        "name": "Aggressive",
+        "desc": "As a bonus action, the orc can move up to its speed toward a hostile creature that it can see."
+      }
+    ],
+    "environment": ["hills", "mountains"]
+  },
+  {
+    "id": "skeleton-warrior-v5",
+    "name": "Skeleton",
+    "edition": "5e",
+    "cr": 0.25,
+    "size": "medium",
+    "type": "undead",
+    "alignment": "lawful evil",
+    "hp": 13,
+    "hd": "2d8+4",
+    "ac": 13,
+    "speed": "30 ft",
+    "abilities": {
+      "str": 10,
+      "dex": 14,
+      "con": 15,
+      "int": 6,
+      "wis": 8,
+      "cha": 5
+    },
+    "saving_throws": {},
+    "skills": [],
+    "damage_vulnerabilities": ["bludgeoning"],
+    "damage_resistances": [],
+    "damage_immunities": ["poison"],
+    "condition_immunities": ["exhaustion", "poisoned"],
+    "senses": "darkvision 60 ft.",
+    "languages": ["understands all languages it spoke in life but can't speak"],
+    "actions": [
+      {
+        "name": "Shortsword",
+        "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing damage.",
+        "attack_bonus": 4,
+        "damage_dice": "1d6+2"
+      },
+      {
+        "name": "Shortbow",
+        "desc": "Ranged Weapon Attack: +4 to hit, range 80/320 ft., one target. Hit: 5 (1d6 + 2) piercing damage.",
+        "attack_bonus": 4,
+        "damage_dice": "1d6+2"
+      }
+    ],
+    "environment": ["any"]
+  },
+  {
+    "id": "goblin-scout-v5",
+    "name": "Goblin",
+    "edition": "5e",
+    "cr": 0.25,
+    "size": "small",
+    "type": "humanoid",
+    "subtype": "goblinoid",
+    "alignment": "neutral evil",
+    "hp": 7,
+    "hd": "2d6",
+    "ac": 15,
+    "speed": "30 ft",
+    "abilities": {
+      "str": 8,
+      "dex": 14,
+      "con": 10,
+      "int": 10,
+      "wis": 8,
+      "cha": 8
+    },
+    "saving_throws": {},
+    "skills": ["Stealth +6"],
+    "damage_resistances": [],
+    "damage_immunities": [],
+    "condition_immunities": [],
+    "senses": "darkvision 60 ft.",
+    "languages": ["Common", "Goblin"],
+    "actions": [
+      {
+        "name": "Scimitar",
+        "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) slashing damage.",
+        "attack_bonus": 4,
+        "damage_dice": "1d6+2"
+      },
+      {
+        "name": "Shortbow",
+        "desc": "Ranged Weapon Attack: +4 to hit, range 80/320 ft., one target. Hit: 5 (1d6 + 2) piercing damage.",
+        "attack_bonus": 4,
+        "damage_dice": "1d6+2"
+      }
+    ],
+    "special_abilities": [
+      {
+        "name": "Nimble Escape",
+        "desc": "The goblin can take the Disengage or Hide action as a bonus action on each of its turns."
+      }
+    ],
+    "environment": ["forest", "hills", "underground"]
+  },
+  {
+    "id": "dire-rat-v5",
+    "name": "Giant Rat",
+    "edition": "5e",
+    "cr": 0.125,
+    "size": "small",
+    "type": "beast",
+    "alignment": "unaligned",
+    "hp": 7,
+    "hd": "2d6",
+    "ac": 12,
+    "speed": "30 ft",
+    "abilities": {
+      "str": 7,
+      "dex": 15,
+      "con": 11,
+      "int": 2,
+      "wis": 10,
+      "cha": 4
+    },
+    "saving_throws": {},
+    "skills": [],
+    "damage_resistances": [],
+    "damage_immunities": [],
+    "condition_immunities": [],
+    "senses": "darkvision 60 ft.",
+    "languages": [],
+    "actions": [
+      {
+        "name": "Bite",
+        "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) piercing damage.",
+        "attack_bonus": 4,
+        "damage_dice": "1d4+2"
+      }
+    ],
+    "special_abilities": [
+      {
+        "name": "Keen Smell",
+        "desc": "The rat has advantage on Wisdom (Perception) checks that rely on smell."
+      },
+      {
+        "name": "Pack Tactics",
+        "desc": "The rat has advantage on an attack roll against a creature if at least one of the rat's allies is within 5 feet of the creature and the ally isn't incapacitated."
+      }
+    ],
+    "environment": ["urban", "underground"]
+  },
+  {
+    "id": "zombie-v5",
+    "name": "Zombie",
+    "edition": "5e",
+    "cr": 0.25,
+    "size": "medium",
+    "type": "undead",
+    "alignment": "neutral evil",
+    "hp": 22,
+    "hd": "3d8+9",
+    "ac": 8,
+    "speed": "20 ft",
+    "abilities": {
+      "str": 13,
+      "dex": 6,
+      "con": 16,
+      "int": 3,
+      "wis": 6,
+      "cha": 5
+    },
+    "saving_throws": {
+      "wis": 0
+    },
+    "skills": [],
+    "damage_immunities": ["poison"],
+    "condition_immunities": ["poisoned"],
+    "senses": "darkvision 60 ft.",
+    "languages": ["understands the languages it knew in life but can't speak"],
+    "actions": [
+      {
+        "name": "Slam",
+        "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) bludgeoning damage.",
+        "attack_bonus": 3,
+        "damage_dice": "1d6+1"
+      }
+    ],
+    "special_abilities": [
+      {
+        "name": "Undead Fortitude",
+        "desc": "If damage reduces the zombie to 0 hit points, it must make a Constitution saving throw with a DC of 5 + the damage taken, unless the damage is radiant or from a critical hit. On a success, the zombie drops to 1 hit point instead."
+      }
+    ],
+    "environment": ["any"]
+  },
+  {
+    "id": "kobold-warrior-v5",
+    "name": "Kobold",
+    "edition": "5e",
+    "cr": 0.125,
+    "size": "small",
+    "type": "humanoid",
+    "subtype": "kobold",
+    "alignment": "lawful evil",
+    "hp": 5,
+    "hd": "2d6-2",
+    "ac": 12,
+    "speed": "30 ft",
+    "abilities": {
+      "str": 7,
+      "dex": 15,
+      "con": 9,
+      "int": 8,
+      "wis": 7,
+      "cha": 8
+    },
+    "saving_throws": {},
+    "skills": [],
+    "damage_resistances": [],
+    "damage_immunities": [],
+    "condition_immunities": [],
+    "senses": "darkvision 60 ft.",
+    "languages": ["Common", "Draconic"],
+    "actions": [
+      {
+        "name": "Dagger",
+        "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) piercing damage.",
+        "attack_bonus": 4,
+        "damage_dice": "1d4+2"
+      },
+      {
+        "name": "Sling",
+        "desc": "Ranged Weapon Attack: +4 to hit, range 30/120 ft., one target. Hit: 4 (1d4 + 2) bludgeoning damage.",
+        "attack_bonus": 4,
+        "damage_dice": "1d4+2"
+      }
+    ],
+    "special_abilities": [
+      {
+        "name": "Sunlight Sensitivity",
+        "desc": "While in sunlight, the kobold has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+      },
+      {
+        "name": "Pack Tactics",
+        "desc": "The kobold has advantage on an attack roll against a creature if at least one of the kobold's allies is within 5 feet of the creature and the ally isn't incapacitated."
+      }
+    ],
+    "environment": ["underground"]
+  },
+  {
+    "id": "worg-v5",
+    "name": "Worg",
+    "edition": "5e",
+    "cr": 0.5,
+    "size": "large",
+    "type": "monstrosity",
+    "alignment": "neutral evil",
+    "hp": 26,
+    "hd": "4d10+4",
+    "ac": 13,
+    "speed": "50 ft",
+    "abilities": {
+      "str": 16,
+      "dex": 13,
+      "con": 13,
+      "int": 7,
+      "wis": 11,
+      "cha": 8
+    },
+    "saving_throws": {},
+    "skills": ["Perception +4"],
+    "damage_resistances": [],
+    "damage_immunities": [],
+    "condition_immunities": [],
+    "senses": "darkvision 60 ft.",
+    "languages": ["Goblin", "Worg"],
+    "actions": [
+      {
+        "name": "Bite",
+        "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) piercing damage. If the target is a creature, it must succeed on a DC 13 Strength saving throw or be knocked prone.",
+        "attack_bonus": 5,
+        "damage_dice": "2d6+3"
+      }
+    ],
+    "special_abilities": [
+      {
+        "name": "Keen Hearing and Smell",
+        "desc": "The worg has advantage on Wisdom (Perception) checks that rely on hearing or smell."
+      }
+    ],
+    "environment": ["forest", "hills"]
+  },
+  {
+    "id": "giant-spider-v5",
+    "name": "Giant Spider",
+    "edition": "5e",
+    "cr": 1,
+    "size": "large",
+    "type": "beast",
+    "alignment": "unaligned",
+    "hp": 26,
+    "hd": "4d10+4",
+    "ac": 14,
+    "speed": "30 ft, climb 30 ft",
+    "abilities": {
+      "str": 14,
+      "dex": 16,
+      "con": 12,
+      "int": 2,
+      "wis": 11,
+      "cha": 4
+    },
+    "saving_throws": {},
+    "skills": ["Stealth +7"],
+    "damage_resistances": [],
+    "damage_immunities": [],
+    "condition_immunities": [],
+    "senses": "blindsight 10 ft., darkvision 60 ft.",
+    "languages": [],
+    "actions": [
+      {
+        "name": "Bite",
+        "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one creature. Hit: 7 (1d8 + 3) piercing damage, and the target must make a DC 11 Constitution saving throw, taking 9 (2d8) poison damage on a failed save, or half as much damage on a successful one. If the poison damage reduces the target to 0 hit points, the target is stable but poisoned for 1 hour, even after regaining hit points, and is paralyzed while poisoned in this way.",
+        "attack_bonus": 5,
+        "damage_dice": "1d8+3"
+      },
+      {
+        "name": "Web (Recharge 5-6)",
+        "desc": "Ranged Weapon Attack: +5 to hit, range 30/60 ft., one creature. Hit: The target is restrained by webbing. As an action, the restrained target can make a DC 12 Strength check, bursting the webbing on a success. The webbing can also be attacked and destroyed (AC 10; hp 5; vulnerability to fire damage; immunity to bludgeoning, poison, and psychic damage).",
+        "attack_bonus": 5
+      }
+    ],
+    "special_abilities": [
+      {
+        "name": "Spider Climb",
+        "desc": "The spider can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+      },
+      {
+        "name": "Web Sense",
+        "desc": "While in contact with a web, the spider knows the exact location of any other creature in contact with the same web."
+      },
+      {
+        "name": "Web Walker",
+        "desc": "The spider ignores movement restrictions caused by webbing."
+      }
+    ],
+    "environment": ["forest", "underground"]
+  },
+  {
+    "id": "ghoul-v5",
+    "name": "Ghoul",
+    "edition": "5e",
+    "cr": 1,
+    "size": "medium",
+    "type": "undead",
+    "alignment": "chaotic evil",
+    "hp": 22,
+    "hd": "5d8",
+    "ac": 12,
+    "speed": "30 ft",
+    "abilities": {
+      "str": 13,
+      "dex": 15,
+      "con": 10,
+      "int": 7,
+      "wis": 10,
+      "cha": 6
+    },
+    "saving_throws": {},
+    "skills": [],
+    "damage_immunities": ["poison"],
+    "condition_immunities": ["charmed", "exhaustion", "poisoned"],
+    "senses": "darkvision 60 ft.",
+    "languages": ["Common"],
+    "actions": [
+      {
+        "name": "Bite",
+        "desc": "Melee Weapon Attack: +2 to hit, reach 5 ft., one creature. Hit: 9 (2d6 + 2) piercing damage.",
+        "attack_bonus": 2,
+        "damage_dice": "2d6+2"
+      },
+      {
+        "name": "Claws",
+        "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (2d4 + 2) slashing damage. If the target is a creature other than an elf or undead, it must succeed on a DC 10 Constitution saving throw or be paralyzed for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
+        "attack_bonus": 4,
+        "damage_dice": "2d4+2"
+      }
+    ],
+    "environment": ["any"]
+  },
+  {
+    "id": "harpy-v5",
+    "name": "Harpy",
+    "edition": "5e",
+    "cr": 1,
+    "size": "medium",
+    "type": "monstrosity",
+    "alignment": "chaotic evil",
+    "hp": 38,
+    "hd": "7d8+7",
+    "ac": 11,
+    "speed": "20 ft., fly 40 ft.",
+    "abilities": {
+      "str": 12,
+      "dex": 13,
+      "con": 12,
+      "int": 7,
+      "wis": 10,
+      "cha": 13
+    },
+    "saving_throws": {},
+    "skills": [],
+    "damage_resistances": [],
+    "damage_immunities": [],
+    "condition_immunities": [],
+    "senses": "",
+    "languages": ["Common"],
+    "actions": [
+      {
+        "name": "Multiattack",
+        "desc": "The harpy makes two attacks: one with its claws and one with its club."
+      },
+      {
+        "name": "Claws",
+        "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 6 (2d4 + 1) slashing damage.",
+        "attack_bonus": 3,
+        "damage_dice": "2d4+1"
+      },
+      {
+        "name": "Club",
+        "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d4 + 1) bludgeoning damage.",
+        "attack_bonus": 3,
+        "damage_dice": "1d4+1"
+      }
+    ],
+    "special_abilities": [
+      {
+        "name": "Luring Song",
+        "desc": "The harpy sings a magical melody. Every humanoid and giant within 300 feet of the harpy that can hear the song must succeed on a DC 11 Wisdom saving throw or be charmed until the song ends. The harpy must take a bonus action on its subsequent turns to continue singing. It can stop singing at any time. The song ends if the harpy is incapacitated."
+      }
+    ],
+    "environment": ["coastal", "mountains"]
+  },
+  {
+    "id": "minotaur-v5",
+    "name": "Minotaur",
+    "edition": "5e",
+    "cr": 3,
+    "size": "large",
+    "type": "monstrosity",
+    "alignment": "chaotic evil",
+    "hp": 76,
+    "hd": "9d10+27",
+    "ac": 14,
+    "speed": "40 ft.",
+    "abilities": {
+      "str": 18,
+      "dex": 11,
+      "con": 16,
+      "int": 6,
+      "wis": 16,
+      "cha": 9
+    },
+    "saving_throws": {},
+    "skills": ["Perception +7"],
+    "damage_resistances": [],
+    "damage_immunities": [],
+    "condition_immunities": [],
+    "senses": "darkvision 60 ft.",
+    "languages": ["Abyssal"],
+    "actions": [
+      {
+        "name": "Greataxe",
+        "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 17 (2d12 + 4) slashing damage.",
+        "attack_bonus": 6,
+        "damage_dice": "2d12+4"
+      },
+      {
+        "name": "Gore",
+        "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) piercing damage.",
+        "attack_bonus": 6,
+        "damage_dice": "2d8+4"
+      }
+    ],
+    "special_abilities": [
+      {
+        "name": "Charge",
+        "desc": "If the minotaur moves at least 10 feet straight toward a target and then hits it with a gore attack on the same turn, the target takes an extra 9 (2d8) piercing damage. If the target is a creature, it must succeed on a DC 14 Strength saving throw or be pushed up to 10 feet away and knocked prone."
+      },
+      {
+        "name": "Labyrinthine Recall",
+        "desc": "The minotaur can perfectly recall any path it has traveled."
+      },
+      {
+        "name": "Reckless",
+        "desc": "At the start of its turn, the minotaur can gain advantage on all melee weapon attack rolls it makes during that turn, but attack rolls against it have advantage until the start of its next turn."
+      }
+    ],
+    "environment": ["underground"]
+  },
+  {
+    "id": "ogre-v5",
+    "name": "Ogre",
+    "edition": "5e",
+    "cr": 2,
+    "size": "large",
+    "type": "giant",
+    "alignment": "chaotic evil",
+    "hp": 59,
+    "hd": "7d10+21",
+    "ac": 11,
+    "speed": "40 ft.",
+    "abilities": {
+      "str": 19,
+      "dex": 8,
+      "con": 16,
+      "int": 5,
+      "wis": 7,
+      "cha": 7
+    },
+    "saving_throws": {},
+    "skills": [],
+    "damage_resistances": [],
+    "damage_immunities": [],
+    "condition_immunities": [],
+    "senses": "darkvision 60 ft.",
+    "languages": ["Common", "Giant"],
+    "actions": [
+      {
+        "name": "Greatclub",
+        "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) bludgeoning damage.",
+        "attack_bonus": 6,
+        "damage_dice": "2d8+4"
+      },
+      {
+        "name": "Javelin",
+        "desc": "Melee or Ranged Weapon Attack: +6 to hit, reach 5 ft. or range 30/120 ft., one target. Hit: 11 (2d6 + 4) piercing damage.",
+        "attack_bonus": 6,
+        "damage_dice": "2d6+4"
+      }
+    ],
+    "environment": ["hills", "mountains"]
+  },
+  {
+    "id": "gargoyle-v5",
+    "name": "Gargoyle",
+    "edition": "5e",
+    "cr": 2,
+    "size": "medium",
+    "type": "elemental",
+    "alignment": "chaotic evil",
+    "hp": 52,
+    "hd": "7d8+21",
+    "ac": 15,
+    "speed": "30 ft., fly 60 ft.",
+    "abilities": {
+      "str": 15,
+      "dex": 11,
+      "con": 16,
+      "int": 6,
+      "wis": 11,
+      "cha": 7
+    },
+    "saving_throws": {},
+    "skills": [],
+    "damage_resistances": ["bludgeoning, piercing, and slashing from nonmagical attacks not made with adamantine weapons"],
+    "damage_immunities": ["poison"],
+    "condition_immunities": ["exhaustion", "petrified", "poisoned"],
+    "senses": "darkvision 60 ft.",
+    "languages": ["Terran"],
+    "actions": [
+      {
+        "name": "Multiattack",
+        "desc": "The gargoyle makes two attacks: one with its bite and one with its claws."
+      },
+      {
+        "name": "Bite",
+        "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing damage.",
+        "attack_bonus": 4,
+        "damage_dice": "1d6+2"
+      },
+      {
+        "name": "Claws",
+        "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) slashing damage.",
+        "attack_bonus": 4,
+        "damage_dice": "1d6+2"
+      }
+    ],
+    "special_abilities": [
+      {
+        "name": "False Appearance",
+        "desc": "While the gargoyle remains motionless, it is indistinguishable from an inanimate statue."
+      }
+    ],
+    "environment": ["any"]
+  },
+  {
+    "id": "shadow-v5",
+    "name": "Shadow",
+    "edition": "5e",
+    "cr": 0.5,
+    "size": "medium",
+    "type": "undead",
+    "alignment": "chaotic evil",
+    "hp": 16,
+    "hd": "3d8+3",
+    "ac": 12,
+    "speed": "40 ft.",
+    "abilities": {
+      "str": 6,
+      "dex": 14,
+      "con": 13,
+      "int": 6,
+      "wis": 10,
+      "cha": 8
+    },
+    "saving_throws": {},
+    "skills": ["Stealth +4"],
+    "damage_vulnerabilities": ["radiant"],
+    "damage_resistances": ["acid, cold, fire, lightning, thunder; bludgeoning, piercing, and slashing from nonmagical attacks"],
+    "damage_immunities": ["necrotic", "poison"],
+    "condition_immunities": ["exhaustion", "frightened", "grappled", "paralyzed", "petrified", "poisoned", "prone", "restrained"],
+    "senses": "darkvision 60 ft.",
+    "languages": [],
+    "actions": [
+      {
+        "name": "Strength Drain",
+        "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 9 (2d6 + 2) necrotic damage, and the target's Strength score is reduced by 1d4. The target dies if this reduces its Strength to 0. Otherwise, the reduction lasts until the target finishes a short or long rest.",
+        "attack_bonus": 4,
+        "damage_dice": "2d6+2"
+      }
+    ],
+    "special_abilities": [
+      {
+        "name": "Amorphous",
+        "desc": "The shadow can move through a space as narrow as 1 inch wide without squeezing."
+      },
+      {
+        "name": "Shadow Stealth",
+        "desc": "While in dim light or darkness, the shadow can take the Hide action as a bonus action."
+      },
+      {
+        "name": "Sunlight Weakness",
+        "desc": "While in sunlight, the shadow has disadvantage on attack rolls, ability checks, and saving throws."
+      }
+    ],
+    "environment": ["any"]
+  },
+  {
+    "id": "hobgoblin-captain-v5",
+    "name": "Hobgoblin Captain",
+    "edition": "5e",
+    "cr": 3,
+    "size": "medium",
+    "type": "humanoid",
+    "subtype": "goblinoid",
+    "alignment": "lawful evil",
+    "hp": 39,
+    "hd": "6d8+12",
+    "ac": 17,
+    "speed": "30 ft.",
+    "abilities": {
+      "str": 15,
+      "dex": 14,
+      "con": 14,
+      "int": 12,
+      "wis": 10,
+      "cha": 13
+    },
+    "saving_throws": {},
+    "skills": [],
+    "damage_resistances": [],
+    "damage_immunities": [],
+    "condition_immunities": [],
+    "senses": "darkvision 60 ft.",
+    "languages": ["Common", "Goblin"],
+    "actions": [
+      {
+        "name": "Multiattack",
+        "desc": "The hobgoblin makes two greatsword attacks."
+      },
+      {
+        "name": "Greatsword",
+        "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 9 (2d6 + 2) slashing damage.",
+        "attack_bonus": 4,
+        "damage_dice": "2d6+2"
+      },
+      {
+        "name": "Javelin",
+        "desc": "Melee or Ranged Weapon Attack: +4 to hit, reach 5 ft. or range 30/120 ft., one target. Hit: 5 (1d6 + 2) piercing damage.",
+        "attack_bonus": 4,
+        "damage_dice": "1d6+2"
+      }
+    ],
+    "special_abilities": [
+      {
+        "name": "Martial Advantage",
+        "desc": "Once per turn, the hobgoblin can deal an extra 7 (2d6) damage to a creature it hits with a weapon attack if that creature is within 5 feet of an ally of the hobgoblin that isn't incapacitated."
+      }
+    ],
+    "environment": ["hills", "plains"]
+  },
+  {
+    "id": "bugbear-v5",
+    "name": "Bugbear",
+    "edition": "5e",
+    "cr": 1,
+    "size": "medium",
+    "type": "humanoid",
+    "subtype": "goblinoid",
+    "alignment": "chaotic evil",
+    "hp": 27,
+    "hd": "5d8+5",
+    "ac": 16,
+    "speed": "30 ft.",
+    "abilities": {
+      "str": 15,
+      "dex": 14,
+      "con": 13,
+      "int": 8,
+      "wis": 11,
+      "cha": 9
+    },
+    "saving_throws": {},
+    "skills": ["Stealth +6", "Survival +2"],
+    "damage_resistances": [],
+    "damage_immunities": [],
+    "condition_immunities": [],
+    "senses": "darkvision 60 ft.",
+    "languages": ["Common", "Goblin"],
+    "actions": [
+      {
+        "name": "Morningstar",
+        "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 11 (2d8 + 2) piercing damage.",
+        "attack_bonus": 4,
+        "damage_dice": "2d8+2"
+      },
+      {
+        "name": "Javelin",
+        "desc": "Melee or Ranged Weapon Attack: +4 to hit, reach 5 ft. or range 30/120 ft., one target. Hit: 9 (2d6 + 2) piercing damage.",
+        "attack_bonus": 4,
+        "damage_dice": "2d6+2"
+      }
+    ],
+    "special_abilities": [
+      {
+        "name": "Brute",
+        "desc": "A melee weapon deals one extra die of its damage when the bugbear hits with it (included in the attack)."
+      },
+      {
+        "name": "Surprise Attack",
+        "desc": "If the bugbear surprises a creature and hits it with an attack during the first round of combat, the target takes an extra 7 (2d6) damage from the attack."
+      }
+    ],
+    "environment": ["forest", "underground"]
+  },
+  {
+    "id": "gnoll-v5",
+    "name": "Gnoll",
+    "edition": "5e",
+    "cr": 0.5,
+    "size": "medium",
+    "type": "humanoid",
+    "subtype": "gnoll",
+    "alignment": "chaotic evil",
+    "hp": 22,
+    "hd": "5d8",
+    "ac": 15,
+    "speed": "30 ft.",
+    "abilities": {
+      "str": 14,
+      "dex": 12,
+      "con": 11,
+      "int": 6,
+      "wis": 10,
+      "cha": 7
+    },
+    "saving_throws": {},
+    "skills": [],
+    "damage_resistances": [],
+    "damage_immunities": [],
+    "condition_immunities": [],
+    "senses": "darkvision 60 ft.",
+    "languages": ["Gnoll"],
+    "actions": [
+      {
+        "name": "Bite",
+        "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) piercing damage.",
+        "attack_bonus": 4,
+        "damage_dice": "1d4+2"
+      },
+      {
+        "name": "Spear",
+        "desc": "Melee or Ranged Weapon Attack: +4 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 5 (1d6 + 2) piercing damage, or 6 (1d8 + 2) piercing damage if used with two hands to make a melee attack.",
+        "attack_bonus": 4,
+        "damage_dice": "1d6+2"
+      }
+    ],
+    "special_abilities": [
+      {
+        "name": "Rampage",
+        "desc": "When the gnoll reduces a creature to 0 hit points with a melee attack on its turn, the gnoll can take a bonus action to move up to half its speed and make a bite attack."
+      }
+    ],
+    "environment": ["desert", "plains"]
+  },
+  {
+    "id": "wererat-v5",
+    "name": "Wererat",
+    "edition": "5e",
+    "cr": 2,
+    "size": "medium",
+    "type": "humanoid",
+    "subtype": "human, shapechanger",
+    "alignment": "lawful evil",
+    "hp": 33,
+    "hd": "6d8+6",
+    "ac": 12,
+    "speed": "30 ft.",
+    "abilities": {
+      "str": 10,
+      "dex": 15,
+      "con": 12,
+      "int": 11,
+      "wis": 10,
+      "cha": 8
+    },
+    "saving_throws": {},
+    "skills": ["Perception +2", "Stealth +4"],
+    "damage_immunities": ["bludgeoning, piercing, and slashing from nonmagical attacks not made with silvered weapons"],
+    "condition_immunities": [],
+    "senses": "darkvision 60 ft. (rat form only)",
+    "languages": ["Common (can't speak in rat form)"],
+    "actions": [
+      {
+        "name": "Multiattack (Humanoid or Hybrid Form Only)",
+        "desc": "The wererat makes two attacks, only one of which can be a bite."
+      },
+      {
+        "name": "Bite (Rat or Hybrid Form Only)",
+        "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) piercing damage. If the target is a humanoid, it must succeed on a DC 11 Constitution saving throw or be cursed with wererat lycanthropy.",
+        "attack_bonus": 4,
+        "damage_dice": "1d4+2"
+      },
+      {
+        "name": "Shortsword (Humanoid or Hybrid Form Only)",
+        "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing damage.",
+        "attack_bonus": 4,
+        "damage_dice": "1d6+2"
+      },
+      {
+        "name": "Hand Crossbow (Humanoid or Hybrid Form Only)",
+        "desc": "Ranged Weapon Attack: +4 to hit, range 30/120 ft., one target. Hit: 5 (1d6 + 2) piercing damage.",
+        "attack_bonus": 4,
+        "damage_dice": "1d6+2"
+      }
+    ],
+    "special_abilities": [
+      {
+        "name": "Shapechanger",
+        "desc": "The wererat can use its action to polymorph into a rat-humanoid hybrid or into a giant rat, or back into its true form, which is humanoid. Its statistics, other than its size, are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies."
+      },
+      {
+        "name": "Keen Smell",
+        "desc": "The wererat has advantage on Wisdom (Perception) checks that rely on smell."
+      }
+    ],
+    "environment": ["urban"]
+  },
+  {
+    "id": "mummy-v5",
+    "name": "Mummy",
+    "edition": "5e",
+    "cr": 3,
+    "size": "medium",
+    "type": "undead",
+    "alignment": "lawful evil",
+    "hp": 58,
+    "hd": "9d8+18",
+    "ac": 11,
+    "speed": "20 ft.",
+    "abilities": {
+      "str": 16,
+      "dex": 8,
+      "con": 15,
+      "int": 6,
+      "wis": 10,
+      "cha": 12
+    },
+    "saving_throws": {"wis": 2},
+    "skills": [],
+    "damage_vulnerabilities": ["fire"],
+    "damage_resistances": ["bludgeoning, piercing, and slashing from nonmagical attacks"],
+    "damage_immunities": ["necrotic", "poison"],
+    "condition_immunities": ["charmed", "exhaustion", "frightened", "paralyzed", "poisoned"],
+    "senses": "darkvision 60 ft.",
+    "languages": ["the languages it knew in life"],
+    "actions": [
+      {
+        "name": "Multiattack",
+        "desc": "The mummy can use its Dreadful Glare and makes one attack with its rotting fist."
+      },
+      {
+        "name": "Rotting Fist",
+        "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) bludgeoning damage plus 10 (3d6) necrotic damage. If the target is a creature, it must succeed on a DC 12 Constitution saving throw or be cursed with mummy rot. The cursed target can't regain hit points, and its hit point maximum decreases by 10 (3d6) for every 24 hours that elapse. If the curse reduces the target's hit point maximum to 0, the target dies, and its body turns to dust. The curse lasts until removed by the remove curse spell or other magic.",
+        "attack_bonus": 5,
+        "damage_dice": "2d6+3"
+      },
+      {
+        "name": "Dreadful Glare",
+        "desc": "The mummy targets one creature it can see within 60 feet of it. If the target can see the mummy, the target must succeed on a DC 11 Wisdom saving throw against this magic or become frightened until the end of the mummy's next turn. If the target fails the saving throw by 5 or more, it is also paralyzed for the same duration. A target that succeeds on the saving throw is immune to the Dreadful Glare of all mummies (but not mummy lords) for the next 24 hours.",
+        "attack_bonus": 0
+      }
+    ],
+    "environment": ["desert"]
+  },
+  {
+    "id": "wight-v5",
+    "name": "Wight",
+    "edition": "5e",
+    "cr": 3,
+    "size": "medium",
+    "type": "undead",
+    "alignment": "neutral evil",
+    "hp": 45,
+    "hd": "6d8+18",
+    "ac": 14,
+    "speed": "30 ft.",
+    "abilities": {
+      "str": 15,
+      "dex": 14,
+      "con": 16,
+      "int": 10,
+      "wis": 13,
+      "cha": 15
+    },
+    "saving_throws": {},
+    "skills": ["Perception +3", "Stealth +4"],
+    "damage_resistances": ["necrotic; bludgeoning, piercing, and slashing from nonmagical attacks not made with silvered weapons"],
+    "damage_immunities": ["poison"],
+    "condition_immunities": ["exhaustion", "poisoned"],
+    "senses": "darkvision 60 ft.",
+    "languages": ["the languages it knew in life"],
+    "actions": [
+      {
+        "name": "Multiattack",
+        "desc": "The wight makes two longsword attacks or two longbow attacks. It can use its Life Drain in place of one longsword attack."
+      },
+      {
+        "name": "Life Drain",
+        "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 5 (1d6 + 2) necrotic damage. The target must succeed on a DC 13 Constitution saving throw or its hit point maximum is reduced by an amount equal to the damage taken. This reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0.",
+        "attack_bonus": 4,
+        "damage_dice": "1d6+2"
+      },
+      {
+        "name": "Longsword",
+        "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d8 + 2) slashing damage, or 7 (1d10 + 2) slashing damage if used with two hands.",
+        "attack_bonus": 4,
+        "damage_dice": "1d8+2"
+      },
+      {
+        "name": "Longbow",
+        "desc": "Ranged Weapon Attack: +4 to hit, range 150/600 ft., one target. Hit: 6 (1d8 + 2) piercing damage.",
+        "attack_bonus": 4,
+        "damage_dice": "1d8+2"
+      }
+    ],
+    "special_abilities": [
+      {
+        "name": "Sunlight Sensitivity",
+        "desc": "While in sunlight, the wight has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+      }
+    ],
+    "environment": ["any"]
+  }
+,
+  {
+    "id": "hell-hound-v5",
+    "name": "Hell Hound",
+    "edition": "5e",
+    "cr": 3,
+    "size": "medium",
+    "type": "fiend",
+    "alignment": "lawful evil",
+    "hp": 45,
+    "hd": "7d8+14",
+    "ac": 15,
+    "speed": "50 ft.",
+    "abilities": {
+      "str": 17,
+      "dex": 12,
+      "con": 14,
+      "int": 6,
+      "wis": 13,
+      "cha": 6
+    },
+    "saving_throws": {},
+    "skills": ["Perception +5"],
+    "damage_immunities": ["fire"],
+    "condition_immunities": [],
+    "senses": "darkvision 60 ft.",
+    "languages": ["understands Infernal but can't speak it"],
+    "actions": [
+      {
+        "name": "Bite",
+        "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) piercing damage plus 7 (2d6) fire damage.",
+        "attack_bonus": 5,
+        "damage_dice": "1d8+3"
+      },
+      {
+        "name": "Fire Breath (Recharge 5-6)",
+        "desc": "The hound exhales fire in a 15-foot cone. Each creature in that area must make a DC 12 Dexterity saving throw, taking 21 (6d6) fire damage on a failed save, or half as much damage on a successful one.",
+        "attack_bonus": 0
+      }
+    ],
+    "special_abilities": [
+      {
+        "name": "Keen Hearing and Smell",
+        "desc": "The hound has advantage on Wisdom (Perception) checks that rely on hearing or smell."
+      },
+      {
+        "name": "Pack Tactics",
+        "desc": "The hound has advantage on an attack roll against a creature if at least one of the hound's allies is within 5 feet of the creature and the ally isn't incapacitated."
+      }
+    ],
+    "environment": ["hells"]
+  },
+  {
+    "id": "cockatrice-v5",
+    "name": "Cockatrice",
+    "edition": "5e",
+    "cr": 0.5,
+    "size": "small",
+    "type": "monstrosity",
+    "alignment": "unaligned",
+    "hp": 27,
+    "hd": "6d6+6",
+    "ac": 11,
+    "speed": "20 ft., fly 40 ft.",
+    "abilities": {
+      "str": 6,
+      "dex": 12,
+      "con": 12,
+      "int": 2,
+      "wis": 13,
+      "cha": 5
+    },
+    "saving_throws": {},
+    "skills": [],
+    "damage_resistances": [],
+    "damage_immunities": [],
+    "condition_immunities": [],
+    "senses": "darkvision 60 ft.",
+    "languages": [],
+    "actions": [
+      {
+        "name": "Bite",
+        "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one creature. Hit: 3 (1d4 + 1) piercing damage, and the target must succeed on a DC 11 Constitution saving throw against being magically petrified. On a failed save, the creature begins to turn to stone and is restrained. It must repeat the saving throw at the end of its next turn. On a success, the effect ends. On a failure, the creature is petrified for 24 hours.",
+        "attack_bonus": 3,
+        "damage_dice": "1d4+1"
+      }
+    ],
+    "environment": ["marshes"]
+  },
+  {
+    "id": "basilisk-v5",
+    "name": "Basilisk",
+    "edition": "5e",
+    "cr": 3,
+    "size": "medium",
+    "type": "monstrosity",
+    "alignment": "unaligned",
+    "hp": 52,
+    "hd": "8d8+16",
+    "ac": 15,
+    "speed": "20 ft.",
+    "abilities": {
+      "str": 16,
+      "dex": 8,
+      "con": 15,
+      "int": 2,
+      "wis": 8,
+      "cha": 7
+    },
+    "saving_throws": {},
+    "skills": [],
+    "damage_resistances": [],
+    "damage_immunities": [],
+    "condition_immunities": [],
+    "senses": "darkvision 60 ft.",
+    "languages": [],
+    "actions": [
+      {
+        "name": "Bite",
+        "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) piercing damage plus 7 (2d6) poison damage.",
+        "attack_bonus": 5,
+        "damage_dice": "2d6+3"
+      }
+    ],
+    "special_abilities": [
+      {
+        "name": "Petrifying Gaze",
+        "desc": "If a creature starts its turn within 30 feet of the basilisk and the two of them can see each other, the basilisk can force the creature to make a DC 12 Constitution saving throw if the basilisk isn't incapacitated. On a failed save, the creature magically begins to turn to stone and is restrained. It must repeat the saving throw at the end of its next turn. On a success, the effect ends. On a failure, the creature is petrified until freed by the greater restoration spell or other magic."
+      }
+    ],
+    "environment": ["desert", "underground"]
+  },
+  {
+    "id": "ghast-v5",
+    "name": "Ghast",
+    "edition": "5e",
+    "cr": 2,
+    "size": "medium",
+    "type": "undead",
+    "alignment": "chaotic evil",
+    "hp": 36,
+    "hd": "8d8",
+    "ac": 13,
+    "speed": "30 ft.",
+    "abilities": {
+      "str": 16,
+      "dex": 17,
+      "con": 10,
+      "int": 11,
+      "wis": 10,
+      "cha": 8
+    },
+    "saving_throws": {},
+    "skills": [],
+    "damage_immunities": ["necrotic", "poison"],
+    "condition_immunities": ["charmed", "exhaustion", "poisoned"],
+    "senses": "darkvision 60 ft.",
+    "languages": ["Common"],
+    "actions": [
+      {
+        "name": "Bite",
+        "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one creature. Hit: 12 (2d8 + 3) piercing damage.",
+        "attack_bonus": 3,
+        "damage_dice": "2d8+3"
+      },
+      {
+        "name": "Claws",
+        "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) slashing damage. If the target is a creature other than an undead, it must succeed on a DC 10 Constitution saving throw or be paralyzed for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
+        "attack_bonus": 5,
+        "damage_dice": "2d6+3"
+      }
+    ],
+    "special_abilities": [
+      {
+        "name": "Stench",
+        "desc": "Any creature that starts its turn within 5 feet of the ghast must succeed on a DC 10 Constitution saving throw or be poisoned until the start of its next turn. On a successful saving throw, the creature is immune to the ghast's Stench for 24 hours."
+      },
+      {
+        "name": "Turning Defiance",
+        "desc": "The ghast and any ghouls within 30 feet of it have advantage on saving throws against effects that turn undead."
+      }
+    ],
+    "environment": ["any"]
+  },
+  {
+    "id": "doppelganger-v5",
+    "name": "Doppelganger",
+    "edition": "5e",
+    "cr": 3,
+    "size": "medium",
+    "type": "monstrosity",
+    "subtype": "shapechanger",
+    "alignment": "neutral",
+    "hp": 52,
+    "hd": "8d8+16",
+    "ac": 14,
+    "speed": "30 ft.",
+    "abilities": {
+      "str": 11,
+      "dex": 18,
+      "con": 14,
+      "int": 11,
+      "wis": 12,
+      "cha": 14
+    },
+    "saving_throws": {},
+    "skills": ["Deception +6", "Insight +3"],
+    "damage_resistances": [],
+    "damage_immunities": ["charmed"],
+    "condition_immunities": [],
+    "senses": "darkvision 60 ft.",
+    "languages": ["Common"],
+    "actions": [
+      {
+        "name": "Multiattack",
+        "desc": "The doppelganger makes two melee attacks."
+      },
+      {
+        "name": "Slam",
+        "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 7 (1d6 + 4) bludgeoning damage.",
+        "attack_bonus": 6,
+        "damage_dice": "1d6+4"
+      },
+      {
+        "name": "Read Thoughts",
+        "desc": "The doppelganger magically reads the surface thoughts of one creature within 60 feet of it. The effect can penetrate barriers, but 3 feet of wood or dirt, 2 feet of stone, 2 inches of metal, or a thin sheet of lead blocks it. While the target is in range, the doppelganger can continue reading its thoughts, as long as the doppelganger's concentration isn't broken (as if concentrating on a spell). While reading the target's mind, the doppelganger has advantage on Wisdom (Insight) and Charisma (Deception, Intimidation, and Persuasion) checks against the target.",
+        "attack_bonus": 0
+      }
+    ],
+    "special_abilities": [
+      {
+        "name": "Shapechanger",
+        "desc": "The doppelganger can use its action to polymorph into a Small or Medium humanoid it has seen, or back into its true form. Its statistics, other than its size, are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies."
+      },
+      {
+        "name": "Ambusher",
+        "desc": "In the first round of a combat, the doppelganger has advantage on attack rolls against any creature it has surprised."
+      },
+      {
+        "name": "Surprise Attack",
+        "desc": "If the doppelganger surprises a creature and hits it with an attack during the first round of combat, the target takes an extra 10 (3d6) damage from the attack."
+      }
+    ],
+    "environment": ["urban"]
+  },
+  {
+    "id": "owlbear-v5",
+    "name": "Owlbear",
+    "edition": "5e",
+    "cr": 3,
+    "size": "large",
+    "type": "monstrosity",
+    "alignment": "unaligned",
+    "hp": 59,
+    "hd": "7d10+21",
+    "ac": 13,
+    "speed": "40 ft.",
+    "abilities": {
+      "str": 20,
+      "dex": 12,
+      "con": 17,
+      "int": 3,
+      "wis": 12,
+      "cha": 7
+    },
+    "saving_throws": {},
+    "skills": ["Perception +3"],
+    "damage_resistances": [],
+    "damage_immunities": [],
+    "condition_immunities": [],
+    "senses": "darkvision 60 ft.",
+    "languages": [],
+    "actions": [
+      {
+        "name": "Multiattack",
+        "desc": "The owlbear makes two attacks: one with its beak and one with its claws."
+      },
+      {
+        "name": "Beak",
+        "desc": "Melee Weapon Attack: +7 to hit, reach 5 ft., one creature. Hit: 10 (1d10 + 5) piercing damage.",
+        "attack_bonus": 7,
+        "damage_dice": "1d10+5"
+      },
+      {
+        "name": "Claws",
+        "desc": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 14 (2d8 + 5) slashing damage.",
+        "attack_bonus": 7,
+        "damage_dice": "2d8+5"
+      }
+    ],
+    "special_abilities": [
+      {
+        "name": "Keen Sight and Smell",
+        "desc": "The owlbear has advantage on Wisdom (Perception) checks that rely on sight or smell."
+      }
+    ],
+    "environment": ["forest"]
+  },
+  {
+    "id": "displacer-beast-v5",
+    "name": "Displacer Beast",
+    "edition": "5e",
+    "cr": 3,
+    "size": "large",
+    "type": "monstrosity",
+    "alignment": "lawful evil",
+    "hp": 85,
+    "hd": "10d10+30",
+    "ac": 13,
+    "speed": "40 ft.",
+    "abilities": {
+      "str": 18,
+      "dex": 15,
+      "con": 16,
+      "int": 6,
+      "wis": 12,
+      "cha": 8
+    },
+    "saving_throws": {},
+    "skills": [],
+    "damage_resistances": [],
+    "damage_immunities": [],
+    "condition_immunities": [],
+    "senses": "darkvision 60 ft.",
+    "languages": [],
+    "actions": [
+      {
+        "name": "Multiattack",
+        "desc": "The displacer beast makes two attacks with its tentacles."
+      },
+      {
+        "name": "Tentacle",
+        "desc": "Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 7 (1d6 + 4) bludgeoning damage plus 3 (1d6) piercing damage.",
+        "attack_bonus": 6,
+        "damage_dice": "1d6+4"
+      }
+    ],
+    "special_abilities": [
+      {
+        "name": "Avoidance",
+        "desc": "If the displacer beast is subjected to an effect that allows it to make a saving throw to take only half damage, it instead takes no damage if it succeeds on the saving throw, and only half damage if it fails."
+      },
+      {
+        "name": "Displacement",
+        "desc": "The displacer beast projects a magical illusion that makes it appear to be standing near its actual location, causing attack rolls against it to have disadvantage. If it is hit by an attack, this trait is disrupted until the end of its next turn. This trait is also disrupted while the displacer beast is incapacitated or has a speed of 0."
+      }
+    ],
+    "environment": ["forest"]
+  }
+]
